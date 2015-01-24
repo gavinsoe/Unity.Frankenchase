@@ -196,10 +196,12 @@
     <Compile Include="Assets\SampleAssets\Vehicles\Car\Scripts\Wheel.cs" />
     <Compile Include="Assets\SampleAssets\Vehicles\RollerBall\Scripts\Ball.cs" />
     <Compile Include="Assets\SampleAssets\Vehicles\RollerBall\Scripts\BallUserControl.cs" />
+    <Compile Include="Assets\Scripts\BackgroundParallax.cs" />
     <Compile Include="Assets\Scripts\CameraRunner.cs" />
     <Compile Include="Assets\Scripts\Chaser.cs" />
     <Compile Include="Assets\Scripts\Destroyer.cs" />
     <Compile Include="Assets\Scripts\GUI\MainGameGUI.cs" />
+    <Compile Include="Assets\Scripts\HoldingPhase.cs" />
     <Compile Include="Assets\Scripts\Powerup.cs" />
     <Compile Include="Assets\Scripts\Spawner.cs" />
   </ItemGroup>
