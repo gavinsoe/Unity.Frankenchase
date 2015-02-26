@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.Frankenchase.CSharp", "UnityVS.Frankenchase.CSharp.csproj", "{6DFF0E71-E733-86D2-7030-CE31790EEC56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.Frankenchase.CSharp.Editor", "UnityVS.Frankenchase.CSharp.Editor.csproj", "{2641FBAD-7867-4B05-2446-2EBBB0AD6E62}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6DFF0E71-E733-86D2-7030-CE31790EEC56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DFF0E71-E733-86D2-7030-CE31790EEC56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DFF0E71-E733-86D2-7030-CE31790EEC56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DFF0E71-E733-86D2-7030-CE31790EEC56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2641FBAD-7867-4B05-2446-2EBBB0AD6E62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2641FBAD-7867-4B05-2446-2EBBB0AD6E62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2641FBAD-7867-4B05-2446-2EBBB0AD6E62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2641FBAD-7867-4B05-2446-2EBBB0AD6E62}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
