@@ -13,11 +13,21 @@ public class Spawner : MonoBehaviour {
         instance = this;
     }
 
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log("Triggered! ::" + other.tag);
+        if (other.tag.Equals("SectionEnd"))
+        {
+            Instantiate(obj[Random.Range(0, obj.Length)], transform.position, Quaternion.identity);
+        }
+    }
+
 	// Use this for initialization
 	void Start () {
-        Spawn();
+        //Spawn();
 	}
 
+    /*
     public void Spawn()
     {
         Instantiate(obj[Random.Range(0, obj.Length)], transform.position, Quaternion.identity);
@@ -28,4 +38,5 @@ public class Spawner : MonoBehaviour {
     {
         CancelInvoke();
     }
+     */
 }

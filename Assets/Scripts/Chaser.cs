@@ -1,13 +1,10 @@
 ﻿using UnityEngine;
-using UnitySampleAssets.CrossPlatformInput;
 
-namespace UnitySampleAssets._2D
-{
-    [RequireComponent(typeof(PlatformerCharacter2D))]
-    public class Chaser : MonoBehaviour
+[RequireComponent(typeof(Character2D))]
+public class Chaser : MonoBehaviour
     {
         public static Chaser instance;
-        public PlatformerCharacter2D character;
+        public Character2D character;
 
         private float move;
 
@@ -16,7 +13,7 @@ namespace UnitySampleAssets._2D
             // set the static variable so that other classes can easily use this class
             instance = this;
 
-            character = GetComponent<PlatformerCharacter2D>();
+            character = GetComponent<Character2D>();
 
             // default to run
             move = 1;
@@ -52,4 +49,3 @@ namespace UnitySampleAssets._2D
             move = speed;
         }
     }
-}

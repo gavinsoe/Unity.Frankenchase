@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
-using UnitySampleAssets._2D;
 
 public class HoldingPhase : MonoBehaviour {
 
@@ -57,7 +56,7 @@ public class HoldingPhase : MonoBehaviour {
     public void TriggerEvent()
     {
         // Stop player and frankenstein from running
-        Platformer2DUserControl.instance.SetSpeed(0);
+        Character2DController.instance.SetSpeed(0);
         Chaser.instance.SetSpeed(0);
         Spawner.instance.CancelInvoke();
 
@@ -78,10 +77,9 @@ public class HoldingPhase : MonoBehaviour {
         canvas.SetActive(false);
 
         // Stop player and frankenstein from running
-        Platformer2DUserControl.instance.SetSpeed(1);
+        Character2DController.instance.SetSpeed(1);
         Chaser.instance.SetSpeed(1);
-        Chaser.instance.character.Powerup(14, 4);
-        Spawner.instance.Spawn();
+        Chaser.instance.character.SetSpeed(14, 4);
     }
 
     public void Tapped()

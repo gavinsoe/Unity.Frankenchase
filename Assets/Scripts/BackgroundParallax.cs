@@ -26,22 +26,22 @@ public class BackgroundParallax : MonoBehaviour {
         {
             if (MoveContinously) 
             {
-                renderer.material.mainTextureOffset = new Vector2(Time.time * speed, 0f);
+                GetComponent<Renderer>().material.mainTextureOffset = new Vector2(Time.time * speed, 0f);
             }
             else
             {
-                renderer.material.mainTextureOffset = new Vector2((camera_pos.x - X) * speed, 0f);
+                GetComponent<Renderer>().material.mainTextureOffset = new Vector2((camera_pos.x - X) * speed, 0f);
             }
         }
         else
         {
             if (MoveContinously)
             {
-                renderer.material.mainTextureOffset = new Vector2(-Time.time * speed, 0f);
+                GetComponent<Renderer>().material.mainTextureOffset = new Vector2(-Time.time * speed, 0f);
             }
             else
             {
-                renderer.material.mainTextureOffset = new Vector2((X - camera_pos.x) * speed, 0f);
+                GetComponent<Renderer>().material.mainTextureOffset = new Vector2((X - camera_pos.x) * speed, 0f);
             }
         }
 	}

@@ -7,7 +7,7 @@ public class Character2D : MonoBehaviour
     private bool facingRight = true; // For determining which way the player is currently facing.
 
     [SerializeField] private float defaultSpeed = 10f; // The default running speed
-    private float currentSpeed; // Current speed character is running at
+    public float currentSpeed; // Current speed character is running at
     [SerializeField] private float jumpForce = 400f; // Amount of force added when the player jumps.
     [Range(0, 1)][SerializeField] private float crouchSpeed = 0.36f; // Amount of maxspeed applied to crouching movement. 1 = 100%
 
@@ -24,6 +24,7 @@ public class Character2D : MonoBehaviour
     private Animator anim; // Reference to the player's animator component.
 
     private bool doubleJump = false; // Whether or not the double jump has been used
+    private Rigidbody2D body; // A link to the rigidbody objecty of the character
 
     private void Awake()
     {
@@ -31,6 +32,7 @@ public class Character2D : MonoBehaviour
         groundCheck = transform.Find("GroundCheck");
         ceilingCheck = transform.Find("CeilingCheck");
         anim = GetComponent<Animator>();
+        body = GetComponent<Rigidbody2D>();
 
         // Set default speed
         currentSpeed = defaultSpeed;
@@ -41,12 +43,20 @@ public class Character2D : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
-        grounded = Physics2D.OverlapCircle(groundCheck.position, groundedRadius, whatIsGround);
+        // The player is grounded if a circlecast to the groundcheck position hits 
+        // anything designated as ground, and if y velocity is positive
+        if (!Physics2D.OverlapCircle(groundCheck.position, groundedRadius, whatIsGround))
+        {
+            grounded = false;
+        }
+        else if (body.velocity.y <= 0)
+        {
+            grounded = true;
+        }
         anim.SetBool("Ground", grounded);
 
         // Set the vertical animation
-        anim.SetFloat("vSpeed", rigidbody2D.velocity.y);
+        anim.SetFloat("vSpeed", GetComponent<Rigidbody2D>().velocity.y);
 
         if (grounded)
         {
@@ -57,7 +67,7 @@ public class Character2D : MonoBehaviour
     public void Move(float move, bool crouch, bool jump)
     {
         // If crouching, check to see if the character can stand up
-        if (!crouch && anim.GetBool("Crouch"))
+        /*if (!crouch && anim.GetBool("Crouch"))
         {
             // If the character has a ceiling preventing them from standing up, keep them crouching
             if (Physics2D.OverlapCircle(ceilingCheck.position, ceilingRadius, whatIsGround))
@@ -68,6 +78,7 @@ public class Character2D : MonoBehaviour
 
         // Set whether or not the character is crouching in the animator
         anim.SetBool("Crouch", crouch);
+         * */
 
         // Only control player if grounded or airControl is turned on
         if (grounded || airControl)
@@ -79,7 +90,7 @@ public class Character2D : MonoBehaviour
             anim.SetFloat("Speed", Mathf.Abs(move));
 
             // Move the character
-            rigidbody2D.velocity = new Vector2(move * currentSpeed, rigidbody2D.velocity.y);
+            body.velocity = new Vector2(move * currentSpeed, body.velocity.y);
 
             // If the input is moving the palyer right and the player is facing left
             if (move > 0 && !facingRight)
@@ -95,14 +106,16 @@ public class Character2D : MonoBehaviour
             }
         }
         
+
+
         // If the player should jump...
         if (((grounded && anim.GetBool("Ground")) || !doubleJump) && jump)
         {
             // reset velocity for double jump
-            rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, 0);
+            body.velocity = new Vector2(body.velocity.x, 0);
 
             // Add a vertical force to the player
-            rigidbody.AddForce(new Vector2(0f, jumpForce));
+            body.AddForce(new Vector2(0f, jumpForce));
             grounded = false;
             anim.SetBool("Ground", false);
 
