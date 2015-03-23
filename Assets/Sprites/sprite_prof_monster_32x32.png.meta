@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: ff19d06b03de3ed4c95b038b3708c62c
+timeCreated: 1426733913
+licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: professor_idle01
@@ -28,16 +30,20 @@ TextureImporter:
   isReadable: 0
   grayScaleToAlpha: 0
   generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
   maxTextureSize: 1024
   textureSettings:
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
+  rGBM: 0
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
@@ -45,7 +51,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 20
+  spritePixelsToUnits: 48
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
@@ -57,17 +63,17 @@ TextureImporter:
         x: 4
         y: 64
         width: 23
-        height: 27
+        height: 29
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: professor_idle02
       rect:
         serializedVersion: 2
-        x: 37
+        x: 36
         y: 64
-        width: 21
-        height: 28
+        width: 23
+        height: 29
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -97,17 +103,17 @@ TextureImporter:
         x: 5
         y: 32
         width: 23
-        height: 27
+        height: 29
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: professor_run02
       rect:
         serializedVersion: 2
-        x: 37
-        y: 33
-        width: 21
-        height: 28
+        x: 36
+        y: 32
+        width: 23
+        height: 29
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,3 +139,5 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

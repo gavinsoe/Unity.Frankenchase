@@ -65,7 +65,6 @@
      <Compile Include="Assets\Scripts\CrossPlatformInput\Scripts\TouchPad.cs" />
      <Compile Include="Assets\Scripts\CrossPlatformInput\Scripts\VirtualInput.cs" />
      <Compile Include="Assets\Scripts\Destroyer.cs" />
-     <Compile Include="Assets\Scripts\GUI\MainGameGUI.cs" />
      <Compile Include="Assets\Scripts\GameEvents.cs" />
      <Compile Include="Assets\Scripts\HoldingPhase.cs" />
      <Compile Include="Assets\Scripts\Spawner.cs" />

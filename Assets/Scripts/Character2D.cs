@@ -9,6 +9,7 @@ public class Character2D : MonoBehaviour
     [SerializeField] private float defaultSpeed = 10f; // The default running speed
     public float currentSpeed; // Current speed character is running at
     [SerializeField] private float jumpForce = 400f; // Amount of force added when the player jumps.
+    [SerializeField] private float doubleJumpForce = 300f;
     [Range(0, 1)][SerializeField] private float crouchSpeed = 0.36f; // Amount of maxspeed applied to crouching movement. 1 = 100%
 
     [SerializeField] private bool airControl = false; // Whether or not a player can steer while jumping
@@ -114,13 +115,22 @@ public class Character2D : MonoBehaviour
             // reset velocity for double jump
             body.velocity = new Vector2(body.velocity.x, 0);
 
+            // Disable double jump (if character just double jumped)
+            if (!grounded) doubleJump = true;
+
             // Add a vertical force to the player
-            body.AddForce(new Vector2(0f, jumpForce));
+            if (doubleJump)
+            {
+                body.AddForce(new Vector2(0f, doubleJumpForce));
+            }
+            else
+            {
+                body.AddForce(new Vector2(0f, jumpForce));
+            }
+            
             grounded = false;
             anim.SetBool("Ground", false);
 
-            // Disable double jump (if character just double jumped)
-            if (!grounded) doubleJump = true;
 
         }
 
@@ -142,6 +152,7 @@ public class Character2D : MonoBehaviour
     {
         // Animation?
         // Fall off?
+        Debug.Log("Dead");
     }
 
     #region Speed adjustment

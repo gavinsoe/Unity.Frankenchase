@@ -22,10 +22,10 @@ TagManager:
   - Menu Items
   - Environment
   - Obstacle
-  - Chaser
-  - 
-  - 
-  - 
+  - Professor
+  - Frankenstein
+  - Powerup
+  - Triggers
   - 
   - 
   - 
@@ -50,13 +50,7 @@ TagManager:
   - name: Background
     uniqueID: 1093696345
     locked: 0
-  - name: Foreground lvl 3
-    uniqueID: 898285723
-    locked: 0
-  - name: Foreground lvl 2
-    uniqueID: 1776131885
-    locked: 0
-  - name: Foreground lvl 1
+  - name: Foreground
     uniqueID: 1859086223
     locked: 0
   - name: Characters

@@ -5,20 +5,19 @@ public class Spawner : MonoBehaviour {
     public static Spawner instance;
 
     public GameObject[] obj;
-    public float spawnMin = 1f;
-    public float spawnMax = 2f;
 
     void Awake()
     {
         instance = this;
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerExit2D(Collider2D other)
     {
-        Debug.Log("Triggered! ::" + other.tag);
         if (other.tag.Equals("SectionEnd"))
         {
-            Instantiate(obj[Random.Range(0, obj.Length)], transform.position, Quaternion.identity);
+            // Get spawn position
+            var spawnPosition = new Vector3(other.transform.position.x, transform.position.y, transform.position.z);
+            Instantiate(obj[Random.Range(0, obj.Length)], spawnPosition, Quaternion.identity);
         }
     }
 

@@ -14,7 +14,6 @@ public class GameEvents : MonoBehaviour
         // When in contact with player
         if (other.tag == "Player")
         {
-            Debug.Log("Triggered!!");
             if (effect == Effects.Speed)
             {
                 // Speed up/down depending on whether it's a trap/powerup
