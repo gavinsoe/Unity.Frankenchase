@@ -50,7 +50,9 @@
      <Compile Include="Assets\Scripts\CameraRunner.cs" />
      <Compile Include="Assets\Scripts\Character2D.cs" />
      <Compile Include="Assets\Scripts\Character2DController.cs" />
-     <Compile Include="Assets\Scripts\Chaser.cs" />
+     <Compile Include="Assets\Scripts\Core\Enumerations.cs" />
+     <Compile Include="Assets\Scripts\Core\Game.cs" />
+     <Compile Include="Assets\Scripts\Core\NavigationManager.cs" />
      <Compile Include="Assets\Scripts\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
      <Compile Include="Assets\Scripts\CrossPlatformInput\Scripts\ButtonHandler.cs" />
      <Compile Include="Assets\Scripts\CrossPlatformInput\Scripts\CameraSwitch.cs" />
@@ -65,9 +67,10 @@
      <Compile Include="Assets\Scripts\CrossPlatformInput\Scripts\TouchPad.cs" />
      <Compile Include="Assets\Scripts\CrossPlatformInput\Scripts\VirtualInput.cs" />
      <Compile Include="Assets\Scripts\Destroyer.cs" />
-     <Compile Include="Assets\Scripts\GameEvents.cs" />
+     <Compile Include="Assets\Scripts\Frankenstein.cs" />
      <Compile Include="Assets\Scripts\HoldingPhase.cs" />
      <Compile Include="Assets\Scripts\Spawner.cs" />
+     <Compile Include="Assets\Scripts\Triggers\GameEvents.cs" />
      <None Include="Assets\Scripts\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

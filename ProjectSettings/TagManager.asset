@@ -10,6 +10,8 @@ TagManager:
   - Fire
   - Chaser
   - SectionEnd
+  - JumpTrigger
+  - Frankenstein
   layers:
   - Default
   - TransparentFX

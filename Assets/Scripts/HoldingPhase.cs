@@ -7,35 +7,40 @@ public class HoldingPhase : MonoBehaviour {
     public static HoldingPhase instance;
 
     private int counter = 0;
-    private GameObject canvas;
-    private Image image;
 
     public float tapStrength;
     public float endurance;
     public float secondaryEndurance;
-    private bool active;
+    
+    private bool active; // When the holding phase is active
+
+    
+    public GameObject prof;
+    private RectTransform profTransform;
+    public float profStartPosition;
+    public float profEndPosition;
+
+    public GameObject frank;
+    private RectTransform frankTransform;
+    public float frankStartPosition;
+    public float frankEndPosition;
+
+    public float frankSpeedupAfterHold;
+    public float frankSpeedupDuration;
+
     void Awake()
     {
         // set the static variable so that other classes can easily use this class
         instance = this;
 
-        // Hide canvas as a start
-        image = gameObject.GetComponent<Image>();
-        image.fillAmount = 1;
+        // Retrieve the Transform components
+        profTransform = prof.GetComponent<RectTransform>();
+        frankTransform = frank.GetComponent<RectTransform>();
 
-        canvas = gameObject.transform.parent.gameObject;
-        canvas.SetActive(false);
-
-
-        // Disable the update
-        active = false;
+        // disable object
+        gameObject.SetActive(false);
     }
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
 	// Update is called once per frame
 	void Update () {
 	    if (active)
@@ -43,10 +48,16 @@ public class HoldingPhase : MonoBehaviour {
             endurance -= Time.deltaTime * 10;
             secondaryEndurance -= Time.deltaTime * 10;
             if (secondaryEndurance >= 50) secondaryEndurance = 50;
-            
-            image.fillAmount = (endurance + secondaryEndurance) / 100;
 
-            if (image.fillAmount <= 0)
+            float xPositionOffset  = (frankEndPosition - frankStartPosition)*(endurance + secondaryEndurance) / 100;
+
+            frankTransform.anchoredPosition = new Vector2(
+                    frankEndPosition - xPositionOffset,
+                    frankTransform.anchoredPosition.y
+                );
+
+
+            if (frankTransform.anchoredPosition.x >= frankEndPosition)
             {
                 EndEvent();
             }
@@ -56,13 +67,25 @@ public class HoldingPhase : MonoBehaviour {
     public void TriggerEvent()
     {
         // Stop player and frankenstein from running
-        Character2DController.instance.SetSpeed(0);
-        Chaser.instance.SetSpeed(0);
-        Spawner.instance.CancelInvoke();
+        Character2D.instance.Pause();
+        Frankenstein.instance.Pause();
 
         // Show GUI
-        canvas.SetActive(true);
+        gameObject.SetActive(true);
+        Game.instance.currentState = GameState.HoldingPhase;
 
+        // Reinitialise the position of Frankenstein and the Professor
+        profTransform.anchoredPosition = new Vector2(
+                profStartPosition,
+                profTransform.anchoredPosition.y
+            );
+
+        frankTransform.anchoredPosition = new Vector2(
+                frankStartPosition,
+                frankTransform.anchoredPosition.y
+            );
+
+        // Initialise the endurance
         endurance = 50;
         secondaryEndurance = 50;
         active = true;
@@ -74,17 +97,18 @@ public class HoldingPhase : MonoBehaviour {
     public void EndEvent()
     {
         active = false;
-        canvas.SetActive(false);
+        Game.instance.currentState = GameState.ChasingPhase;
+        gameObject.SetActive(false);
 
-        // Stop player and frankenstein from running
-        Character2DController.instance.SetSpeed(1);
-        Chaser.instance.SetSpeed(1);
-        Chaser.instance.character.SetSpeed(14, 4);
+        // Let frankenstein and player to continue running
+        Character2D.instance.Resume();
+        Frankenstein.instance.Resume();
+        Frankenstein.instance.SetSpeed(frankSpeedupAfterHold, frankSpeedupDuration);
     }
 
     public void Tapped()
     {
-        Debug.Log("tapped");
+        //Debug.Log("tapped");
         secondaryEndurance += tapStrength;
     }
 }

@@ -34,13 +34,8 @@ public class Character2DController : MonoBehaviour {
         // float h = CrossPlatformInputManager.GetAxis("Horizontal");
 
         // Pass all parameters to the character control script.
-        character.Move(move, false, jump);
+        character.Move(move, jump);
         jump = false;
     }
 
-    public void SetSpeed(float speed)
-    {
-        // Currently either 1 or 0
-        move = speed;
-    }
 }

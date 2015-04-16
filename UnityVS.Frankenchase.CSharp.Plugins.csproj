@@ -5,17 +5,17 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{6DFF0E71-E733-86D2-7030-CE31790EEC56}</ProjectGuid>
+    <ProjectGuid>{AE82CE47-1EE3-28C3-E20C-DB88BC41CBB9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace></RootNamespace>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
     <CompilerResponseFile></CompilerResponseFile>
-    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityProjectType>GamePlugins:3</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.0.0f4</UnityVersion>
   </PropertyGroup>
@@ -54,33 +54,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\BackgroundParallax.cs" />
-    <Compile Include="Assets\Scripts\CameraRunner.cs" />
-    <Compile Include="Assets\Scripts\Character2D.cs" />
-    <Compile Include="Assets\Scripts\Character2DController.cs" />
-    <Compile Include="Assets\Scripts\Core\Enumerations.cs" />
-    <Compile Include="Assets\Scripts\Core\Game.cs" />
-    <Compile Include="Assets\Scripts\Core\NavigationManager.cs" />
-    <Compile Include="Assets\Scripts\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
-    <Compile Include="Assets\Scripts\CrossPlatformInput\Scripts\ButtonHandler.cs" />
-    <Compile Include="Assets\Scripts\CrossPlatformInput\Scripts\CameraSwitch.cs" />
-    <Compile Include="Assets\Scripts\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
-    <Compile Include="Assets\Scripts\CrossPlatformInput\Scripts\InputAxisScrollbar.cs" />
-    <Compile Include="Assets\Scripts\CrossPlatformInput\Scripts\Joystick.cs" />
-    <Compile Include="Assets\Scripts\CrossPlatformInput\Scripts\LevelReset.cs" />
-    <Compile Include="Assets\Scripts\CrossPlatformInput\Scripts\MobileControlRig.cs" />
-    <Compile Include="Assets\Scripts\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
-    <Compile Include="Assets\Scripts\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
-    <Compile Include="Assets\Scripts\CrossPlatformInput\Scripts\TiltInput.cs" />
-    <Compile Include="Assets\Scripts\CrossPlatformInput\Scripts\TouchPad.cs" />
-    <Compile Include="Assets\Scripts\CrossPlatformInput\Scripts\VirtualInput.cs" />
-    <Compile Include="Assets\Scripts\Destroyer.cs" />
-    <Compile Include="Assets\Scripts\Frankenstein.cs" />
-    <Compile Include="Assets\Scripts\HoldingPhase.cs" />
-    <Compile Include="Assets\Scripts\Spawner.cs" />
-    <Compile Include="Assets\Scripts\Triggers\GameEvents.cs" />
+    <Compile Include="Assets\Plugins\Pixelplacement\iTween\Sample\MoveSample.cs" />
+    <Compile Include="Assets\Plugins\Pixelplacement\iTween\Sample\RotateSample.cs" />
+    <Compile Include="Assets\Plugins\Pixelplacement\iTween\Sample\SampleInfo.cs" />
+    <Compile Include="Assets\Plugins\Pixelplacement\iTween\iTween.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
     <None Include="Assets\Scripts\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
