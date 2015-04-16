@@ -79,12 +79,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 158058}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd3328a5e2fc2ce40b0d2445c651705e, type: 3}
+  m_Script: {fileID: 11500000, guid: 40fc0c6a206640c438bb144f3db87069, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   effect: 0
-  effectCoefficient: 6
-  effectDuration: 4
+  effectCoefficient: 14
+  effectDuration: 5
 --- !u!212 &21258060
 SpriteRenderer:
   m_ObjectHideFlags: 1

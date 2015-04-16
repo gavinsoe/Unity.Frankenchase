@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd3328a5e2fc2ce40b0d2445c651705e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effect: 0
+  effect: 1
   effectCoefficient: 3
   effectDuration: 4
 --- !u!212 &21256052
