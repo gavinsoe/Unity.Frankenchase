@@ -381,18 +381,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 15
       objectReference: {fileID: 0}
-    - target: {fileID: 6163364, guid: 2452788255287d94690e90ef467ff792, type: 2}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 190664, guid: 2452788255287d94690e90ef467ff792, type: 2}
-      propertyPath: m_TagString
-      value: JumpTrigger
-      objectReference: {fileID: 0}
-    - target: {fileID: 190664, guid: 2452788255287d94690e90ef467ff792, type: 2}
-      propertyPath: m_Layer
-      value: 14
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2452788255287d94690e90ef467ff792, type: 2}
   m_IsPrefabParent: 0
@@ -688,33 +676,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 410338, guid: 2b24d60eb63c7d643a407cd3cac85bce, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11491048, guid: 2b24d60eb63c7d643a407cd3cac85bce, type: 2}
       propertyPath: holdPhaseScoreMultiplier
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 131714, guid: 2b24d60eb63c7d643a407cd3cac85bce, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2b24d60eb63c7d643a407cd3cac85bce, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &880990677
-GameObject:
-  m_PrefabParentObject: {fileID: 190664, guid: 2452788255287d94690e90ef467ff792, type: 2}
-  m_PrefabInternal: {fileID: 387988783}
---- !u!114 &880990678
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 880990677}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40fc0c6a206640c438bb144f3db87069, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  effect: 2
-  effectCoefficient: 0
-  effectDuration: 0
 --- !u!4 &880990680
 Transform:
   m_PrefabParentObject: {fileID: 485026, guid: 2452788255287d94690e90ef467ff792, type: 2}
@@ -802,16 +776,24 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 472092, guid: b106fdbb374af2e4ab45771285cd744b, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11475430, guid: b106fdbb374af2e4ab45771285cd744b, type: 2}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 113886, guid: b106fdbb374af2e4ab45771285cd744b, type: 2}
+      propertyPath: m_Name
+      value: DeathTimer
+      objectReference: {fileID: 0}
+    - target: {fileID: 108052, guid: b106fdbb374af2e4ab45771285cd744b, type: 2}
+      propertyPath: m_Name
+      value: Timer
       objectReference: {fileID: 0}
     - target: {fileID: 11486664, guid: b106fdbb374af2e4ab45771285cd744b, type: 2}
-      propertyPath: whatIsGround.m_Bits
-      value: 512
-      objectReference: {fileID: 0}
-    - target: {fileID: 11486664, guid: b106fdbb374af2e4ab45771285cd744b, type: 2}
-      propertyPath: airControl
-      value: 0
-      objectReference: {fileID: 0}
+      propertyPath: deathTimer
+      value: 
+      objectReference: {fileID: 2063560294}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b106fdbb374af2e4ab45771285cd744b, type: 2}
   m_IsPrefabParent: 0
@@ -882,11 +864,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 426236, guid: a8b59f43cde04be4db2b757e44245f26, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -.995999992
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 426236, guid: a8b59f43cde04be4db2b757e44245f26, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.50100005
+      value: -1.5
       objectReference: {fileID: 0}
     - target: {fileID: 426236, guid: a8b59f43cde04be4db2b757e44245f26, type: 2}
       propertyPath: m_LocalPosition.z
@@ -910,7 +892,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 426236, guid: a8b59f43cde04be4db2b757e44245f26, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 11490588, guid: a8b59f43cde04be4db2b757e44245f26, type: 2}
       propertyPath: jump
@@ -927,6 +909,10 @@ Prefab:
     - target: {fileID: 11490588, guid: a8b59f43cde04be4db2b757e44245f26, type: 2}
       propertyPath: defaultSpeed
       value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 174152, guid: a8b59f43cde04be4db2b757e44245f26, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a8b59f43cde04be4db2b757e44245f26, type: 2}
@@ -968,7 +954,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 496606, guid: 49501f10364e62f4dad172f904825715, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 196600, guid: 49501f10364e62f4dad172f904825715, type: 2}
       propertyPath: m_Name
@@ -1043,7 +1029,7 @@ Transform:
   - {fileID: 1532469041}
   - {fileID: 880990680}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!4 &1147683408
 Transform:
   m_PrefabParentObject: {fileID: 472092, guid: b106fdbb374af2e4ab45771285cd744b, type: 2}
@@ -1648,7 +1634,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 496606, guid: 49501f10364e62f4dad172f904825715, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 131428, guid: 49501f10364e62f4dad172f904825715, type: 2}
       propertyPath: m_Layer
@@ -1789,3 +1775,7 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 465798, guid: fd09521676b7e8843adc41c8a28ba666, type: 2}
   m_PrefabInternal: {fileID: 334910985}
+--- !u!1 &2063560294
+GameObject:
+  m_PrefabParentObject: {fileID: 108052, guid: b106fdbb374af2e4ab45771285cd744b, type: 2}
+  m_PrefabInternal: {fileID: 961127990}

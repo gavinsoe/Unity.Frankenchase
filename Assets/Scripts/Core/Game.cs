@@ -77,4 +77,11 @@ public class Game : MonoBehaviour
         score = 0;
         lastPosition = Character2D.instance.transform.position;
     }
+
+    public void GameOver()
+    {
+        Character2D.instance.Kill();
+        Frankenstein.instance.Kill();
+        NavigationManager.instance.ShowGameOverGUI();
+    }
 }

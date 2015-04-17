@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class Character2D : MonoBehaviour
@@ -26,10 +27,29 @@ public class Character2D : MonoBehaviour
     private bool doubleJump = false; // Whether or not the double jump has been used
     private Rigidbody2D body; // A link to the rigidbody objecty of the character
 
+    #region Death Orb related variables
+
+    [SerializeField] 
+    private GameObject debuffObj;
+    private Animator animOrb; // Reference to tha animation object that animates the orbs
+    [SerializeField]
+    private GameObject deathTimer; // A reference to the canvas holding the death timer
+    private Text deathTimerText; // A direct reference to the text object of the GUI
+    public float debuffDeathTimer = 10f; // Timer before character dies after 3 stacks of debuff
+    public float debuffResetTimer = 10f; // Timer before the debuff dissapears
+    public int debuffStacks = 0; // Stores the number of debuff stacks on the character
+    private bool doomed = false;
+    private float timeToDeath;
+
+    #endregion
+    #region Pause related variables
+    
     // Pause variables
     private bool paused = false;
     private Vector2 pausedVelocity;
     private float pausedAngularVelocity;
+
+    #endregion
 
     private void Awake()
     {
@@ -38,6 +58,8 @@ public class Character2D : MonoBehaviour
         ceilingCheck = transform.Find("CeilingCheck");
         anim = GetComponent<Animator>();
         body = GetComponent<Rigidbody2D>();
+        animOrb = debuffObj.GetComponent<Animator>();
+        deathTimerText = deathTimer.GetComponent<Text>();
 
         // Set default speed
         currentSpeed = defaultSpeed;
@@ -66,6 +88,17 @@ public class Character2D : MonoBehaviour
         if (grounded)
         {
             doubleJump = false;
+        }
+
+        // Countdown death timer (when applicable)
+        if (doomed)
+        {
+            timeToDeath -= Time.fixedDeltaTime;
+            deathTimerText.text = timeToDeath.ToString("#");
+            if (timeToDeath <= 0)
+            {
+                Game.instance.GameOver();
+            }
         }
     }
 
@@ -97,8 +130,6 @@ public class Character2D : MonoBehaviour
             }
         }
         
-
-
         // If the player should jump...
         if (((grounded && anim.GetBool("Ground")) || !doubleJump) && jump)
         {
@@ -120,8 +151,6 @@ public class Character2D : MonoBehaviour
             
             grounded = false;
             anim.SetBool("Ground", false);
-
-
         }
 
     }
@@ -164,17 +193,52 @@ public class Character2D : MonoBehaviour
         Debug.Log("Dead");
     }
 
+    #region Debuff
+
+    public void AddDebuff()
+    {
+        // Do not do anything if already at 3 stacks
+        if (debuffStacks == 3) return;
+
+        // Update the number of debuff stacks
+        debuffStacks++;
+
+        // Update the animation
+        animOrb.SetInteger("DebuffStacks", debuffStacks);
+
+        if (debuffStacks == 3)
+        {
+            doomed = true;
+            timeToDeath = debuffDeathTimer;
+        }
+        else
+        {
+            CancelInvoke("ClearDebuff");
+            Invoke("ClearDebuff", debuffResetTimer);
+        }
+    }
+
+    private void ClearDebuff()
+    {
+        debuffStacks = 0;
+        animOrb.SetInteger("DebuffStacks", debuffStacks);
+    }
+
+    #endregion
     #region Speed adjustment
+
     public void SetSpeed(float velocity, float duration)
     {
         currentSpeed = velocity;
         CancelInvoke("ResetSpeed");
         Invoke("ResetSpeed", duration);
     }
+
     private void ResetSpeed()
     {
         currentSpeed = defaultSpeed;
     }
+
     #endregion
 
 }

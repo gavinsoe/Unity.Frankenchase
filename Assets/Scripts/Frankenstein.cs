@@ -23,6 +23,7 @@ public class Frankenstein : MonoBehaviour
     private Transform groundCheck; // A position marking where to check if the player is grounded.
     public float groundedRadius = 0.2f; // Radius of the overlap circle to determine if grounded
     private bool grounded = false; // Whether or not the player is grounded.
+    private bool immune = false; // Whether or not Frankenstein is immune from the Professor
 
     private Transform ceilingCheck; // A Position marking where to check for ceilings
     public float ceilingRadius = 0.01f; // Radius of the overlap circle to determine if the player can stand up
@@ -52,9 +53,9 @@ public class Frankenstein : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" &&
+            !immune)
         {
-            Debug.Log("Frankenstein: Collided with Player");
             HoldingPhase.instance.TriggerEvent();
         }
     }
@@ -164,12 +165,14 @@ public class Frankenstein : MonoBehaviour
     public void SetSpeed(float velocity, float duration)
     {
         currentSpeed = velocity;
+        immune = true;
         CancelInvoke("ResetSpeed");
         Invoke("ResetSpeed", duration);
     }
     private void ResetSpeed()
     {
         currentSpeed = defaultSpeed;
+        immune = false;
     }
     #endregion
 
