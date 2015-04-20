@@ -126,6 +126,7 @@ public class Frankenstein : MonoBehaviour
     public void Pause()
     {
         paused = true;
+        anim.enabled = false;
         pausedVelocity = body.velocity;
         pausedAngularVelocity = body.angularVelocity;
         body.isKinematic = true;
@@ -138,6 +139,7 @@ public class Frankenstein : MonoBehaviour
         body.isKinematic = false;
         body.AddForce(pausedVelocity, ForceMode2D.Impulse);
         body.AddTorque(pausedAngularVelocity, ForceMode2D.Force);
+        anim.enabled = true;
         body.WakeUp();
     }
 
@@ -162,6 +164,7 @@ public class Frankenstein : MonoBehaviour
     }
 
     #region Speed adjustment
+
     public void SetSpeed(float velocity, float duration)
     {
         currentSpeed = velocity;
@@ -169,11 +172,13 @@ public class Frankenstein : MonoBehaviour
         CancelInvoke("ResetSpeed");
         Invoke("ResetSpeed", duration);
     }
+
     private void ResetSpeed()
     {
         currentSpeed = defaultSpeed;
         immune = false;
     }
+
     #endregion
 
 }

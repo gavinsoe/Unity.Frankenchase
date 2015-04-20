@@ -97,7 +97,7 @@ public class Character2D : MonoBehaviour
             deathTimerText.text = timeToDeath.ToString("#");
             if (timeToDeath <= 0)
             {
-                Game.instance.GameOver();
+                NavigationManager.instance.GameOver();
             }
         }
     }
@@ -158,6 +158,7 @@ public class Character2D : MonoBehaviour
     public void Pause()
     {
         paused = true;
+        anim.enabled = false;
         pausedVelocity = body.velocity;
         pausedAngularVelocity = body.angularVelocity;
         body.isKinematic = true;
@@ -170,6 +171,7 @@ public class Character2D : MonoBehaviour
         body.isKinematic = false;
         body.AddForce(pausedVelocity, ForceMode2D.Impulse);
         body.AddTorque(pausedAngularVelocity, ForceMode2D.Force);
+        anim.enabled = true;
         body.WakeUp();
     }
 

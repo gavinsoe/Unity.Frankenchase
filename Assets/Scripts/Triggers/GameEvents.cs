@@ -26,7 +26,7 @@ public class GameEvents : MonoBehaviour
             else if (effect == Effects.Death)
             {
                 // Game Over
-                Game.instance.GameOver();
+                NavigationManager.instance.GameOver();
                 triggered = true;
             }
             else if (effect == Effects.GraveDebuff)

@@ -47,7 +47,7 @@ public class Game : MonoBehaviour
 
     void Start()
     {
-        Reset();
+        Reinitialise();
     }
 
     void Update()
@@ -60,8 +60,7 @@ public class Game : MonoBehaviour
         if (currentState == GameState.HoldingPhase)
         {
             holdPhaseBonus += Time.deltaTime * holdPhaseScoreMultiplier;
-        }
-        
+        }        
     }
 
     void FixedUpdate()
@@ -71,17 +70,12 @@ public class Game : MonoBehaviour
         GUIScoreText.text = score.ToString("0");
     }
 
-    private void Reset()
+    public void Reinitialise()
     {
         distanceTraveled = 0;
         score = 0;
         lastPosition = Character2D.instance.transform.position;
     }
 
-    public void GameOver()
-    {
-        Character2D.instance.Kill();
-        Frankenstein.instance.Kill();
-        NavigationManager.instance.ShowGameOverGUI();
-    }
+
 }
