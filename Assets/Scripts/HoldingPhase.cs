@@ -36,9 +36,6 @@ public class HoldingPhase : MonoBehaviour {
         // Retrieve the Transform components
         profTransform = prof.GetComponent<RectTransform>();
         frankTransform = frank.GetComponent<RectTransform>();
-
-        // disable object
-        gameObject.SetActive(false);
     }
 
 	// Update is called once per frame
@@ -66,14 +63,6 @@ public class HoldingPhase : MonoBehaviour {
 
     public void TriggerEvent()
     {
-        // Stop player and frankenstein from running
-        Character2D.instance.Pause();
-        Frankenstein.instance.Pause();
-
-        // Show GUI
-        gameObject.SetActive(true);
-        Game.instance.currentState = GameState.HoldingPhase;
-
         // Reinitialise the position of Frankenstein and the Professor
         profTransform.anchoredPosition = new Vector2(
                 profStartPosition,
@@ -97,12 +86,10 @@ public class HoldingPhase : MonoBehaviour {
     public void EndEvent()
     {
         active = false;
-        Game.instance.currentState = GameState.ChasingPhase;
-        gameObject.SetActive(false);
 
-        // Let frankenstein and player to continue running
-        Character2D.instance.Resume();
-        Frankenstein.instance.Resume();
+        NavigationManager.instance.HoldingPhaseEnd();
+
+        // Boost Frankenstein's speed
         Frankenstein.instance.SetSpeed(frankSpeedupAfterHold, frankSpeedupDuration);
     }
 

@@ -8,18 +8,11 @@ public class Frankenstein : MonoBehaviour
 
     public float move = 1; // moving direction 1 = right, -1 = left;
     public bool jump = false;
-    [SerializeField]
-    private float defaultSpeed = 10f; // The default running speed
+    [SerializeField] private float defaultSpeed = 10f; // The default running speed
     public float currentSpeed; // Current speed character is running at
-    [SerializeField]
-    private float jumpForce = 400f; // Amount of force added when the player jumps.
-    [Range(0, 1)]
+    [SerializeField] private float jumpForce = 400f; // Amount of force added when the player jumps.
 
-    [SerializeField]
-    private bool airControl = false; // Whether or not a player can steer while jumping
-    [SerializeField]
-    private LayerMask whatIsGround; // A mask determining what is ground to the character
-
+    [SerializeField] private LayerMask whatIsGround; // A mask determining what is ground to the character
     private Transform groundCheck; // A position marking where to check if the player is grounded.
     public float groundedRadius = 0.2f; // Radius of the overlap circle to determine if grounded
     private bool grounded = false; // Whether or not the player is grounded.
@@ -56,7 +49,7 @@ public class Frankenstein : MonoBehaviour
         if (other.gameObject.tag == "Player" &&
             !immune)
         {
-            HoldingPhase.instance.TriggerEvent();
+            NavigationManager.instance.HoldingPhaseStart();
         }
     }
 
@@ -85,7 +78,7 @@ public class Frankenstein : MonoBehaviour
     {
         if (paused) return;
         // Only control player if grounded or airControl is turned on
-        if (grounded || airControl)
+        if (grounded)
         {
             // The Speed animator parameter is set to the absolute value of the horizontal input.
             anim.SetFloat("Speed", Mathf.Abs(move));
@@ -143,6 +136,16 @@ public class Frankenstein : MonoBehaviour
         body.WakeUp();
     }
 
+    public void Reset()
+    {
+        paused = false;
+        body.isKinematic = false;
+        body.velocity = Vector3.zero;
+        body.angularVelocity = 0;
+        anim.enabled = true;
+        body.WakeUp();
+    }
+
     private void Flip()
     {
         // Switch the way the player is labelled as facing.
@@ -157,10 +160,10 @@ public class Frankenstein : MonoBehaviour
     // Kill the character
     public void Kill()
     {
-        // Animation?
-        // Fall off?
-        currentSpeed = 0;
-        Debug.Log("Dead");
+        paused = true;
+        anim.enabled = false;
+        body.isKinematic = true;
+        body.Sleep();
     }
 
     #region Speed adjustment

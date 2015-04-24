@@ -11,10 +11,8 @@ public class Character2D : MonoBehaviour
     public float currentSpeed; // Current speed character is running at
     [SerializeField] private float jumpForce = 400f; // Amount of force added when the player jumps.
     [SerializeField] private float doubleJumpForce = 300f;
-    [Range(0, 1)][SerializeField] private float crouchSpeed = 0.36f; // Amount of maxspeed applied to crouching movement. 1 = 100%
 
     [SerializeField] private LayerMask whatIsGround; // A mask determining what is ground to the character
-
     private Transform groundCheck; // A position marking where to check if the player is grounded.
     public float groundedRadius = 0.2f; // Radius of the overlap circle to determine if grounded
     private bool grounded = false; // Whether or not the player is grounded.
@@ -45,7 +43,7 @@ public class Character2D : MonoBehaviour
     #region Pause related variables
     
     // Pause variables
-    private bool paused = false;
+    private bool paused; // default to paused
     private Vector2 pausedVelocity;
     private float pausedAngularVelocity;
 
@@ -175,6 +173,16 @@ public class Character2D : MonoBehaviour
         body.WakeUp();
     }
 
+    public void Reset()
+    {
+        paused = false;
+        body.isKinematic = false;
+        body.velocity = Vector3.zero;
+        body.angularVelocity = 0;
+        anim.enabled = true;
+        body.WakeUp();
+    }
+
     private void Flip()
     {
         // Switch the way the player is labelled as facing.
@@ -189,10 +197,10 @@ public class Character2D : MonoBehaviour
     // Kill the character
     public void Kill()
     {
-        // Animation?
-        // Fall off?
-        currentSpeed = 0;
-        Debug.Log("Dead");
+        paused = true;
+        anim.enabled = false;
+        body.isKinematic = true;
+        body.Sleep();
     }
 
     #region Debuff
