@@ -31,7 +31,6 @@ public class GameEvents : MonoBehaviour
             }
             else if (effect == Effects.GraveDebuff)
             {
-                Debug.Log("Tombstone Debuff");
                 // Apply or Add or Replenish debuff
                 Character2D.instance.AddDebuff();
                 triggered = true;

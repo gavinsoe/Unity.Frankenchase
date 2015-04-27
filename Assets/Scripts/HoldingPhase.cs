@@ -53,7 +53,6 @@ public class HoldingPhase : MonoBehaviour {
                     frankTransform.anchoredPosition.y
                 );
 
-
             if (frankTransform.anchoredPosition.x >= frankEndPosition)
             {
                 EndEvent();

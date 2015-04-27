@@ -21,12 +21,20 @@ public class Game : MonoBehaviour
     public GameObject GUIHighscore; // A reference to the GUI object to update the interface
     public Text GUIHighscoreText; // A direct reference to the Text object of the Highscore GUI
 
-    private float distanceTraveled; // Keeps track on how far the professor has travelled.
     private Vector3 lastPosition; // used to calculate the distance the professor has traveled
+    private float distanceScore; // Keeps track on how far the professor has travelled.
     public float distanceScoreMultiplier = 1f; // To be multiplied by the distance to calculate score
-
-    private float holdPhaseBonus; // Bonus score obtained in the holding phase
+    private float holdPhaseScore; // Bonus score obtained in the holding phase
     public float holdPhaseScoreMultiplier = 50f; // To be multiplied by the holding time to calculate score.
+
+    public Direction currentDirection; // The direction the character is travelling
+    public Environment currentEnvironment; // The current environment the character is in
+    public float currentLocation; // current location of the character (different from distance travelled)
+    public float locationCastleEnd; 
+    public float locationGraveyardEnd;
+    public float locationTownEnd;
+    
+
 
     public float score; // The total score of current playthrough
 
@@ -51,7 +59,7 @@ public class Game : MonoBehaviour
     void Start()
     {
         // Initialise game
-        Initialise();
+        InitializeWorld();
 
         // Retrieve highscore
         GUIHighscoreText.text =
@@ -66,24 +74,86 @@ public class Game : MonoBehaviour
         if (currentState == GameState.ChasingPhase ||
             currentState == GameState.HoldingPhase)
         {
-            // Calculate the distance travelled by professor.
+            // Distance travelled within the last frame.
             var deltaDistance = Mathf.Abs(Character2D.instance.transform.position.x - lastPosition.x);
-            distanceTraveled += deltaDistance * distanceScoreMultiplier;
-            lastPosition = Character2D.instance.transform.position;
 
-            if (currentState == GameState.HoldingPhase)
+            UpdateScore(deltaDistance);
+
+            UpdateEnvironment(deltaDistance);
+
+            // Store location of last position 
+            lastPosition = Character2D.instance.transform.position;
+        }
+
+    }
+
+    private void UpdateScore(float deltaDistance)
+    {
+        // Calculate the score obtained by distance travelled
+        distanceScore += deltaDistance * distanceScoreMultiplier;
+
+        // Calculate holding phase score
+        if (currentState == GameState.HoldingPhase)
+        {
+            holdPhaseScore += Time.deltaTime * holdPhaseScoreMultiplier;
+        }
+
+        // Update score and GUI
+        score = distanceScore + holdPhaseScore;
+        GUIScoreText.text = score.ToString("0");
+    }
+
+    private void UpdateEnvironment(float deltaDistance)
+    {
+        if (currentDirection == Direction.Right)
+        {
+            currentLocation += deltaDistance;
+            // Cannot go above the last environment
+            if (currentLocation > locationTownEnd)
             {
-                holdPhaseBonus += Time.deltaTime * holdPhaseScoreMultiplier;
+                currentLocation = locationTownEnd;
             }
+        }
+        else
+        {
+            currentLocation -= deltaDistance;
+            // Cannot go lower than 0
+            if (currentLocation < 0)
+            {
+                currentLocation = 0;
+            }
+        }
+
+        // Determine the current location
+        if (currentLocation < locationCastleEnd)
+        {
+            currentEnvironment = Environment.Castle;
+        }
+        else if (currentLocation < locationGraveyardEnd)
+        {
+            currentEnvironment = Environment.Graveyard;
+        }
+        else
+        {
+            currentEnvironment = Environment.Town;
         }
     }
 
-    void FixedUpdate()
+    // This is called after the end of a holding phase to determine which direction to go to.
+    public void SetDirection()
     {
-        score = distanceTraveled + holdPhaseBonus;
-        // Update the score on the GUI
-        GUIScoreText.text = score.ToString("0");
-        
+        // Determine which direction to move to
+        var rand = UnityEngine.Random.Range(0, locationTownEnd);
+        if (rand < currentLocation)
+        {
+            Debug.Log("Set Direction [" + rand + "] Left");
+            currentDirection = Direction.Left;
+        }
+        else
+        {
+            Debug.Log("Set Direction [" + rand + "] Right");
+            currentDirection = Direction.Right;
+        }
     }
 
     public void GameOver()
@@ -97,18 +167,25 @@ public class Game : MonoBehaviour
         SoomlaLevelUp.GetLevel(Constants.lvlup_level_main).GetSingleScore().Record.ToString("0");
     }
 
-    public void Reinitialise()
+    // Initialise game state
+    public void InitializeStats()
     {
-        lastPosition = transform.position;
-        distanceTraveled = 0;
-        holdPhaseBonus = 0;
+        distanceScore = 0;
+        holdPhaseScore = 0;
         score = 0;
+
         // Update the score on the GUI
         GUIScoreText.text = score.ToString("0");
+
+        // Initialise location
+        currentDirection = Direction.Right;
+        currentEnvironment = Environment.Castle;
+        currentLocation = 0;
     }
 
+
     // Initialise the world?
-    private void Initialise()
+    private void InitializeWorld()
     {
         // Initialise Soomla Highway (online statistics)
         //SoomlaHighway.Initialize();
@@ -131,4 +208,6 @@ public class Game : MonoBehaviour
         world.AddInnerWorld(level);
         SoomlaLevelUp.Initialize(world);
     }
+
+    
 }

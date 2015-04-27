@@ -72,7 +72,7 @@ public class NavigationManager : MonoBehaviour
 
         // Update the state of the game
         Game.instance.currentState = GameState.ChasingPhase;
-        Game.instance.Reinitialise();
+        Game.instance.InitializeStats();
 
         // Show and hide GUIs
         GUIGameOver.SetActive(false);
@@ -93,7 +93,7 @@ public class NavigationManager : MonoBehaviour
     {
         // Update the state of the game
         Game.instance.currentState = GameState.ChasingPhase;
-        Game.instance.Reinitialise();
+        //Game.instance.Reinitialise();
 
         // Show and hide GUIs
         GUIGameOver.SetActive(false);
@@ -104,6 +104,7 @@ public class NavigationManager : MonoBehaviour
         GUITitleScreen.SetActive(false);
 
         Application.LoadLevel("Game");
+        Game.instance.InitializeStats();
 
         // Update SoomlaLevelUp State
         SoomlaLevelUp.GetLevel(Constants.lvlup_level_main).Start();
@@ -156,6 +157,8 @@ public class NavigationManager : MonoBehaviour
     {
         // Update the state of the game
         Game.instance.currentState = GameState.HoldingPhase;
+        // Set the direction the professor is to run to
+        Game.instance.SetDirection();
 
         // Show and hide GUIs
         GUIGameOver.SetActive(false);
