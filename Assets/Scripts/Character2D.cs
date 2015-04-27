@@ -219,6 +219,7 @@ public class Character2D : MonoBehaviour
         if (debuffStacks == 3)
         {
             doomed = true;
+            CancelInvoke("ClearDebuff");
             timeToDeath = debuffDeathTimer;
         }
         else
