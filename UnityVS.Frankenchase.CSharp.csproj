@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\Core\Enumerations.cs" />
     <Compile Include="Assets\Scripts\Core\Game.cs" />
     <Compile Include="Assets\Scripts\Core\NavigationManager.cs" />
+    <Compile Include="Assets\Scripts\Core\Spawner.cs" />
     <Compile Include="Assets\Scripts\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
     <Compile Include="Assets\Scripts\CrossPlatformInput\Scripts\ButtonHandler.cs" />
     <Compile Include="Assets\Scripts\CrossPlatformInput\Scripts\CameraSwitch.cs" />
@@ -84,7 +85,6 @@
     <Compile Include="Assets\Scripts\Destroyer.cs" />
     <Compile Include="Assets\Scripts\Frankenstein.cs" />
     <Compile Include="Assets\Scripts\HoldingPhase.cs" />
-    <Compile Include="Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\Scripts\Triggers\GameEvents.cs" />
   </ItemGroup>
   <ItemGroup>

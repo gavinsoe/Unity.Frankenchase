@@ -38,6 +38,11 @@ public class Game : MonoBehaviour
 
     public float score; // The total score of current playthrough
 
+    // Collection of stages
+    public GameObject[] SectionsCastle;
+    public GameObject[] SectionsGraveyard;
+    public GameObject[] SectionsTown;
+
     void Awake()
     {
         // Make sure there is only 1 instance of this class.
@@ -208,6 +213,27 @@ public class Game : MonoBehaviour
 
         world.AddInnerWorld(level);
         SoomlaLevelUp.Initialize(world);
+    }
+
+    public GameObject GetSection()
+    {
+        if (currentEnvironment == Environment.Castle)
+        {
+            return SectionsCastle[UnityEngine.Random.Range(0, SectionsCastle.Length)];
+        }
+        else if (currentEnvironment == Environment.Graveyard)
+        {
+            return SectionsGraveyard[UnityEngine.Random.Range(0, SectionsGraveyard.Length)];
+        }
+        else if (currentEnvironment == Environment.Town)
+        {
+            return SectionsTown[UnityEngine.Random.Range(0, SectionsTown.Length)];
+        }
+        else
+        {
+            // Default to graveyard (should never end up here)
+            return SectionsGraveyard[UnityEngine.Random.Range(0, SectionsGraveyard.Length)];
+        }
     }
 
     private void LoadSettings()
