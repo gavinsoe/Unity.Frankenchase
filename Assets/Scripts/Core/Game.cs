@@ -17,9 +17,11 @@ public class Game : MonoBehaviour
     public GameState currentState = GameState.TitleScreen; // Stores the state of the game.
 
     public GameObject GUIScore; // A reference to the GUI object to update the interface
-    private Text GUIScoreText; //  A direct reference to the Text object of the Score GUI
+    private Text GUIScoreText; //  A direct reference to the Text Component of the Score GUI
     public GameObject GUIHighscore; // A reference to the GUI object to update the interface
-    public Text GUIHighscoreText; // A direct reference to the Text object of the Highscore GUI
+    private Text GUIHighscoreText; // A direct reference to the Text Component of the Highscore GUI
+    public GameObject GUISoundToggle; // A reference to the GUI object to update the interface
+    private Toggle GUISoundToggleBtn; // A direct reference to the Toggle Component of the GUI object
 
     private Vector3 lastPosition; // used to calculate the distance the professor has traveled
     private float distanceScore; // Keeps track on how far the professor has travelled.
@@ -33,8 +35,6 @@ public class Game : MonoBehaviour
     public float locationCastleEnd; 
     public float locationGraveyardEnd;
     public float locationTownEnd;
-    
-
 
     public float score; // The total score of current playthrough
 
@@ -54,12 +54,14 @@ public class Game : MonoBehaviour
         // Retrieve object references
         GUIScoreText = GUIScore.GetComponent<Text>();
         GUIHighscoreText = GUIHighscore.GetComponent<Text>();
+        GUISoundToggleBtn = GUISoundToggle.GetComponent<Toggle>();
     }
 
     void Start()
     {
         // Initialise game
         InitializeWorld();
+        LoadSettings();
 
         // Retrieve highscore
         GUIHighscoreText.text =
@@ -183,7 +185,6 @@ public class Game : MonoBehaviour
         currentLocation = 0;
     }
 
-
     // Initialise the world?
     private void InitializeWorld()
     {
@@ -209,5 +210,33 @@ public class Game : MonoBehaviour
         SoomlaLevelUp.Initialize(world);
     }
 
-    
+    private void LoadSettings()
+    {
+        // Sound
+        if (PlayerPrefs.GetInt(Constants.settings_sound) == 1)
+        {
+            GUISoundToggleBtn.isOn = true;
+            AudioListener.volume = 1;
+        }
+        else
+        {
+            GUISoundToggleBtn.isOn = false;
+            AudioListener.volume = 0;
+        }
+    }
+
+    public void ToggleSound()
+    {
+        if (GUISoundToggleBtn.isOn)
+        {
+            AudioListener.volume = 1;
+            PlayerPrefs.SetInt(Constants.settings_sound, 1);
+        }
+        else
+        {
+            AudioListener.volume = 0;
+            PlayerPrefs.SetInt(Constants.settings_sound, 0);
+        }
+    }
+
 }
