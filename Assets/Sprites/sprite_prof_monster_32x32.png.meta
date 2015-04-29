@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: ff19d06b03de3ed4c95b038b3708c62c
-timeCreated: 1426733913
+timeCreated: 1430107356
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -12,6 +12,14 @@ TextureImporter:
     21300010: professor_run02
     21300012: professor_jump01
     21300014: professor_jump02
+    21300016: Professor_Idle_01
+    21300018: Professor_Idle_02
+    21300020: Frankenstein_Run_01
+    21300022: Frankenstein_Run_02
+    21300024: Professor_Running_01
+    21300026: Professor_Running_02
+    21300028: Professor_Jump_01
+    21300030: Professor_Jump_02
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -57,83 +65,83 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: professor_idle01
+    - name: Professor_Idle_01
       rect:
         serializedVersion: 2
-        x: 4
+        x: 0
         y: 64
-        width: 23
-        height: 29
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: professor_idle02
+    - name: Professor_Idle_02
       rect:
         serializedVersion: 2
-        x: 36
+        x: 32
         y: 64
-        width: 23
-        height: 29
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: frankenstein_run01
+    - name: Frankenstein_Run_01
       rect:
         serializedVersion: 2
-        x: 104
-        y: 66
-        width: 17
-        height: 26
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: frankenstein_run02
-      rect:
-        serializedVersion: 2
-        x: 135
+        x: 96
         y: 64
-        width: 20
-        height: 27
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: professor_run01
+    - name: Frankenstein_Run_02
       rect:
         serializedVersion: 2
-        x: 5
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Professor_Running_01
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 32
-        width: 23
-        height: 29
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: professor_run02
+    - name: Professor_Running_02
       rect:
         serializedVersion: 2
-        x: 36
+        x: 32
         y: 32
-        width: 23
-        height: 29
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: professor_jump01
+    - name: Professor_Jump_01
       rect:
         serializedVersion: 2
-        x: 5
+        x: 0
         y: 0
-        width: 23
-        height: 27
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: professor_jump02
+    - name: Professor_Jump_02
       rect:
         serializedVersion: 2
-        x: 36
-        y: 5
-        width: 25
-        height: 24
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
