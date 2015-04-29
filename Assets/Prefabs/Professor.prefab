@@ -11,7 +11,7 @@ GameObject:
   - 222: {fileID: 22261068}
   - 114: {fileID: 11475430}
   m_Layer: 11
-  m_Name: Text
+  m_Name: Timer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +29,7 @@ GameObject:
   - 114: {fileID: 11447224}
   - 114: {fileID: 11435028}
   m_Layer: 11
-  m_Name: Death Timer
+  m_Name: DeathTimer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -208,7 +208,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 172088}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -.298000008, z: 0}
+  m_LocalPosition: {x: 0, y: -.331999987, z: 0}
   m_LocalScale: {x: .564482868, y: .564483702, z: 1}
   m_Children: []
   m_Father: {fileID: 472092}
@@ -232,7 +232,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 172092}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4, y: -1.42999995, z: 0}
+  m_LocalPosition: {x: -4, y: -1.41199994, z: 0}
   m_LocalScale: {x: 1.77153289, y: 1.77153039, z: 1}
   m_Children:
   - {fileID: 472088}
@@ -266,7 +266,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 66b2ce71bbda47445869f10efbb09d62, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: -.100000001}
+  m_Offset: {x: 0, y: -.129999995}
   serializedVersion: 2
   m_Size: {x: .150000006, y: .400000006}
 --- !u!95 &9566104
@@ -376,7 +376,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 10
+  m_Text: 
 --- !u!114 &11486664
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -393,14 +393,13 @@ MonoBehaviour:
   currentSpeed: 0
   jumpForce: 500
   doubleJumpForce: 350
-  crouchSpeed: .25
   whatIsGround:
     serializedVersion: 2
     m_Bits: 512
   groundedRadius: .00999999978
   ceilingRadius: .00999999978
   debuffObj: {fileID: 144504}
-  deathTimer: {fileID: 113886}
+  deathTimer: {fileID: 108052}
   debuffDeathTimer: 10
   debuffResetTimer: 10
   debuffStacks: 0
@@ -506,7 +505,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -354108773
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ff19d06b03de3ed4c95b038b3708c62c, type: 3}
+  m_Sprite: {fileID: 21300016, guid: ff19d06b03de3ed4c95b038b3708c62c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!222 &22261068
 CanvasRenderer:
