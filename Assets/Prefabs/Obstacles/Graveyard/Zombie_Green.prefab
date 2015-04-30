@@ -8,27 +8,12 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 448424}
+  - 212: {fileID: 21277430}
+  - 95: {fileID: 9502176}
+  - 61: {fileID: 6164670}
+  - 114: {fileID: 11499692}
   m_Layer: 10
   m_Name: Zombie_Green
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &186386
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 488444}
-  - 212: {fileID: 21256052}
-  - 95: {fileID: 9507078}
-  - 61: {fileID: 6172586}
-  - 114: {fileID: 11470732}
-  m_Layer: 10
-  m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41,30 +26,17 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 126080}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.5, y: -1.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 488444}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
---- !u!4 &488444
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 186386}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 448424}
+  m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!61 &6172586
+--- !u!61 &6164670
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 186386}
+  m_GameObject: {fileID: 126080}
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -72,13 +44,13 @@ BoxCollider2D:
   m_Offset: {x: .0199999996, y: -.200000003}
   serializedVersion: 2
   m_Size: {x: .5, y: .620000005}
---- !u!95 &9507078
+--- !u!95 &9502176
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 186386}
+  m_GameObject: {fileID: 126080}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 4a7a74abbe960db4aba564da5f16eeef, type: 2}
@@ -89,26 +61,23 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11470732
+--- !u!114 &11499692
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 186386}
+  m_GameObject: {fileID: 126080}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd3328a5e2fc2ce40b0d2445c651705e, type: 3}
+  m_Script: {fileID: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  effect: 1
-  effectCoefficient: 3
-  effectDuration: 4
---- !u!212 &21256052
+--- !u!212 &21277430
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 186386}
+  m_GameObject: {fileID: 126080}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
