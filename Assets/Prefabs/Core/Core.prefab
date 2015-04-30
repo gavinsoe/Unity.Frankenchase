@@ -2426,6 +2426,9 @@ MonoBehaviour:
   locationGraveyardEnd: 0
   locationTownEnd: 0
   score: 0
+  SectionsCastle: []
+  SectionsGraveyard: []
+  SectionsTown: []
 --- !u!114 &11494788
 MonoBehaviour:
   m_ObjectHideFlags: 1
