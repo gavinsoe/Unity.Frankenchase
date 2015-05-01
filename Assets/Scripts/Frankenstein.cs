@@ -18,9 +18,6 @@ public class Frankenstein : MonoBehaviour
     private bool grounded = false; // Whether or not the player is grounded.
     private bool immune = false; // Whether or not Frankenstein is immune from the Professor
 
-    private Transform ceilingCheck; // A Position marking where to check for ceilings
-    public float ceilingRadius = 0.01f; // Radius of the overlap circle to determine if the player can stand up
-
     private Animator anim; // Reference to the player's animator component.
     private Rigidbody2D body; // A link to the rigidbody objecty of the character
     
@@ -33,7 +30,6 @@ public class Frankenstein : MonoBehaviour
     {
         // Setting up references
         groundCheck = transform.Find("GroundCheck");
-        ceilingCheck = transform.Find("CeilingCheck");
         anim = GetComponent<Animator>();
         body = GetComponent<Rigidbody2D>();
 
