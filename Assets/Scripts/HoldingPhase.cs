@@ -12,30 +12,23 @@ public class HoldingPhase : MonoBehaviour {
     public float endurance;
     public float secondaryEndurance;
     
-    private bool active; // When the holding phase is active
-
-    
-    public GameObject prof;
-    private RectTransform profTransform;
-    public float profStartPosition;
-    public float profEndPosition;
-
-    public GameObject frank;
-    private RectTransform frankTransform;
-    public float frankStartPosition;
-    public float frankEndPosition;
+    public bool active; // When the holding phase is active
 
     public float frankSpeedupAfterHold;
     public float frankSpeedupDuration;
 
     void Awake()
     {
-        // set the static variable so that other classes can easily use this class
-        instance = this;
-
-        // Retrieve the Transform components
-        profTransform = prof.GetComponent<RectTransform>();
-        frankTransform = frank.GetComponent<RectTransform>();
+        // make sure there is only 1 instance of this class.
+        if (instance == null)
+        {
+            DontDestroyOnLoad(gameObject);
+            instance = this;
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
     }
 
 	// Update is called once per frame
@@ -46,14 +39,10 @@ public class HoldingPhase : MonoBehaviour {
             secondaryEndurance -= Time.deltaTime * 10;
             if (secondaryEndurance >= 50) secondaryEndurance = 50;
 
-            float xPositionOffset  = (frankEndPosition - frankStartPosition)*(endurance + secondaryEndurance) / 100;
+            var progress = (endurance + secondaryEndurance) / 100;
+            GUIHoldingPhase.instance.UpdatePositions(progress);
 
-            frankTransform.anchoredPosition = new Vector2(
-                    frankEndPosition - xPositionOffset,
-                    frankTransform.anchoredPosition.y
-                );
-
-            if (frankTransform.anchoredPosition.x >= frankEndPosition)
+            if (progress < 0)
             {
                 EndEvent();
             }
@@ -62,17 +51,6 @@ public class HoldingPhase : MonoBehaviour {
 
     public void TriggerEvent()
     {
-        // Reinitialise the position of Frankenstein and the Professor
-        profTransform.anchoredPosition = new Vector2(
-                profStartPosition,
-                profTransform.anchoredPosition.y
-            );
-
-        frankTransform.anchoredPosition = new Vector2(
-                frankStartPosition,
-                frankTransform.anchoredPosition.y
-            );
-
         // Initialise the endurance
         endurance = 50;
         secondaryEndurance = 50;

@@ -6,7 +6,6 @@ using Soomla.Profile;
 using System;
 using System.Collections;
 
-
 // Script used to store the core game data such as the score
 // State of the game
 
