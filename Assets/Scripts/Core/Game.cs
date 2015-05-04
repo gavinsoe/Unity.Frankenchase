@@ -16,25 +16,20 @@ public class Game : MonoBehaviour
 
     public GameState currentState = GameState.TitleScreen; // Stores the state of the game.
 
-    public GameObject GUIScore; // A reference to the GUI object to update the interface
-    private Text GUIScoreText; //  A direct reference to the Text Component of the Score GUI
-    public GameObject GUIHighscore; // A reference to the GUI object to update the interface
-    private Text GUIHighscoreText; // A direct reference to the Text Component of the Highscore GUI
-    public GameObject GUISoundToggle; // A reference to the GUI object to update the interface
-    private Toggle GUISoundToggleBtn; // A direct reference to the Toggle Component of the GUI object
-
     private Vector3 lastPosition; // used to calculate the distance the professor has traveled
     private float distanceScore; // Keeps track on how far the professor has travelled.
     public float distanceScoreMultiplier = 1f; // To be multiplied by the distance to calculate score
     private float holdPhaseScore; // Bonus score obtained in the holding phase
     public float holdPhaseScoreMultiplier = 50f; // To be multiplied by the holding time to calculate score.
 
+    private float distanceFromFrankenstein;
+
     public Direction currentDirection; // The direction the character is travelling
     public Environment currentEnvironment; // The current environment the character is in
     public float currentLocation; // current location of the character (different from distance travelled)
-    public float locationCastleEnd; 
-    public float locationGraveyardEnd;
-    public float locationTownEnd;
+    public float locationCastleEnd; // location where the Castle Environment ends
+    public float locationGraveyardEnd; // location where the Graveyard Environment ends
+    public float locationTownEnd; // location where the TownEnvironment ends
 
     public float score; // The total score of current playthrough
 
@@ -55,11 +50,6 @@ public class Game : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
-        // Retrieve object references
-        GUIScoreText = GUIScore.GetComponent<Text>();
-        GUIHighscoreText = GUIHighscore.GetComponent<Text>();
-        GUISoundToggleBtn = GUISoundToggle.GetComponent<Toggle>();
     }
 
     void Start()
@@ -68,9 +58,8 @@ public class Game : MonoBehaviour
         InitializeWorld();
         LoadSettings();
 
-        // Retrieve highscore
-        GUIHighscoreText.text =
-        SoomlaLevelUp.GetLevel(Constants.lvlup_level_main).GetSingleScore().Record.ToString("0");
+        // Retreive / Update highscore
+        GUITitleScreen.instance.UpdateHighscore();
 
         // Default to Title Screen
         NavigationManager.instance.TitleScreen();
@@ -107,7 +96,7 @@ public class Game : MonoBehaviour
 
         // Update score and GUI
         score = distanceScore + holdPhaseScore;
-        GUIScoreText.text = score.ToString("0");
+        GUIScore.instance.SetScore(score);
     }
 
     private void UpdateEnvironment(float deltaDistance)
@@ -146,6 +135,15 @@ public class Game : MonoBehaviour
         }
     }
 
+    private void UpdateDistanceFromTarget()
+    {
+        distanceFromFrankenstein = Mathf.Abs(Character2D.instance.transform.position.x -
+                                             Frankenstein.instance.transform.position.y);
+
+        // Depending on how far apart they are, display certain messages
+
+    }
+
     // This is called after the end of a holding phase to determine which direction to go to.
     public void SetDirection()
     {
@@ -169,9 +167,8 @@ public class Game : MonoBehaviour
 
         SoomlaLevelUp.GetLevel(Constants.lvlup_level_main).SetSingleScoreValue(score);
         SoomlaLevelUp.GetLevel(Constants.lvlup_level_main).End(true);
-        
-        GUIHighscoreText.text = 
-        SoomlaLevelUp.GetLevel(Constants.lvlup_level_main).GetSingleScore().Record.ToString("0");
+
+        GUITitleScreen.instance.UpdateHighscore();
     }
 
     // Initialise game state
@@ -182,7 +179,7 @@ public class Game : MonoBehaviour
         score = 0;
 
         // Update the score on the GUI
-        GUIScoreText.text = score.ToString("0");
+        GUIScore.instance.SetScore(score);
 
         // Initialise location
         currentDirection = Direction.Right;
@@ -241,19 +238,19 @@ public class Game : MonoBehaviour
         // Sound
         if (PlayerPrefs.GetInt(Constants.settings_sound) == 1)
         {
-            GUISoundToggleBtn.isOn = true;
+            GUITitleScreen.instance.SetSoundBtnState(true);
             AudioListener.volume = 1;
         }
         else
         {
-            GUISoundToggleBtn.isOn = false;
+            GUITitleScreen.instance.SetSoundBtnState(false);
             AudioListener.volume = 0;
         }
     }
 
     public void ToggleSound()
     {
-        if (GUISoundToggleBtn.isOn)
+        if (GUITitleScreen.instance.GetSoundBtnState())
         {
             AudioListener.volume = 1;
             PlayerPrefs.SetInt(Constants.settings_sound, 1);

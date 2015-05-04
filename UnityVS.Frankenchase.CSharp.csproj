@@ -84,6 +84,13 @@
     <Compile Include="Assets\Scripts\CrossPlatformInput\Scripts\VirtualInput.cs" />
     <Compile Include="Assets\Scripts\Destroyer.cs" />
     <Compile Include="Assets\Scripts\Frankenstein.cs" />
+    <Compile Include="Assets\Scripts\GUI\GUIBaseClass.cs" />
+    <Compile Include="Assets\Scripts\GUI\GUIGameOver.cs" />
+    <Compile Include="Assets\Scripts\GUI\GUIHoldingPhase.cs" />
+    <Compile Include="Assets\Scripts\GUI\GUIPause.cs" />
+    <Compile Include="Assets\Scripts\GUI\GUIPlayMode.cs" />
+    <Compile Include="Assets\Scripts\GUI\GUIScore.cs" />
+    <Compile Include="Assets\Scripts\GUI\GUITitleScreen.cs" />
     <Compile Include="Assets\Scripts\HoldingPhase.cs" />
     <Compile Include="Assets\Scripts\Triggers\GameEvents.cs" />
   </ItemGroup>

@@ -8,13 +8,6 @@ public class NavigationManager : MonoBehaviour
 {
     public static NavigationManager instance;
 
-    public GameObject GUIGameOver;
-    public GameObject GUIHoldingPhase;
-    public GameObject GUIPause;
-    public GameObject GUIPlayMode;
-    public GameObject GUIScore;
-    public GameObject GUITitleScreen;
-
     void Awake()
     {
         // Make sure there is only 1 instance of this class.
@@ -35,12 +28,12 @@ public class NavigationManager : MonoBehaviour
         Game.instance.GameOver();
 
         // Show and hide GUIs
-        GUIGameOver.SetActive(true);
-        GUIHoldingPhase.SetActive(false);
-        GUIPause.SetActive(false);
-        GUIPlayMode.SetActive(false);
-        GUIScore.SetActive(true);
-        GUITitleScreen.SetActive(false);
+        GUIGameOver.instance.Show();
+        GUIHoldingPhase.instance.Hide();
+        GUIPause.instance.Hide();
+        GUIPlayMode.instance.Hide();
+        GUIScore.instance.Show();
+        GUITitleScreen.instance.Hide();
 
         // Set character states
         Character2D.instance.Kill();
@@ -55,12 +48,12 @@ public class NavigationManager : MonoBehaviour
         Application.LoadLevel("Title Screen");
 
         // Show and hide GUIs
-        GUIGameOver.SetActive(false);
-        GUIHoldingPhase.SetActive(false);
-        GUIPause.SetActive(false);
-        GUIPlayMode.SetActive(false);
-        GUIScore.SetActive(false);
-        GUITitleScreen.SetActive(true);
+        GUIGameOver.instance.Hide();
+        GUIHoldingPhase.instance.Hide();
+        GUIPause.instance.Hide();
+        GUIPlayMode.instance.Hide();
+        GUIScore.instance.Hide();
+        GUITitleScreen.instance.Show();
     }
 
     public void Retry()
@@ -75,12 +68,12 @@ public class NavigationManager : MonoBehaviour
         Game.instance.InitializeStats();
 
         // Show and hide GUIs
-        GUIGameOver.SetActive(false);
-        GUIHoldingPhase.SetActive(false);
-        GUIPause.SetActive(false);
-        GUIPlayMode.SetActive(true);
-        GUIScore.SetActive(true);
-        GUITitleScreen.SetActive(false);
+        GUIGameOver.instance.Hide();
+        GUIHoldingPhase.instance.Hide();
+        GUIPause.instance.Hide();
+        GUIPlayMode.instance.Show();
+        GUIScore.instance.Show();
+        GUITitleScreen.instance.Hide();
 
         Application.LoadLevel("Game");
 
@@ -96,12 +89,12 @@ public class NavigationManager : MonoBehaviour
         //Game.instance.Reinitialise();
 
         // Show and hide GUIs
-        GUIGameOver.SetActive(false);
-        GUIHoldingPhase.SetActive(false);
-        GUIPause.SetActive(false);
-        GUIPlayMode.SetActive(true);
-        GUIScore.SetActive(true);
-        GUITitleScreen.SetActive(false);
+        GUIGameOver.instance.Hide();
+        GUIHoldingPhase.instance.Hide();
+        GUIPause.instance.Hide();
+        GUIPlayMode.instance.Show();
+        GUIScore.instance.Show();
+        GUITitleScreen.instance.Hide();
 
         Application.LoadLevel("Game");
         Game.instance.InitializeStats();
@@ -116,13 +109,12 @@ public class NavigationManager : MonoBehaviour
         Game.instance.currentState = GameState.Paused;
 
         // Show and hide GUIs
-
-        GUIGameOver.SetActive(false);
-        GUIHoldingPhase.SetActive(false);
-        GUIPause.SetActive(true);
-        GUIPlayMode.SetActive(false);
-        GUIScore.SetActive(true);
-        GUITitleScreen.SetActive(false);
+        GUIGameOver.instance.Hide();
+        GUIHoldingPhase.instance.Hide();
+        GUIPause.instance.Show();
+        GUIPlayMode.instance.Hide();
+        GUIScore.instance.Show();
+        GUITitleScreen.instance.Hide();
 
         // Set character states
         Character2D.instance.Pause();
@@ -138,12 +130,12 @@ public class NavigationManager : MonoBehaviour
         Game.instance.currentState = GameState.ChasingPhase;
 
         // Show and hide GUIs
-        GUIGameOver.SetActive(false);
-        GUIHoldingPhase.SetActive(false);
-        GUIPause.SetActive(false);
-        GUIPlayMode.SetActive(true);
-        GUIScore.SetActive(true);
-        GUITitleScreen.SetActive(false);
+        GUIGameOver.instance.Hide();
+        GUIHoldingPhase.instance.Hide();
+        GUIPause.instance.Hide();
+        GUIPlayMode.instance.Show();
+        GUIScore.instance.Show();
+        GUITitleScreen.instance.Hide();
 
         // Set character states
         Character2D.instance.Resume();
@@ -161,12 +153,12 @@ public class NavigationManager : MonoBehaviour
         Game.instance.SetDirection();
 
         // Show and hide GUIs
-        GUIGameOver.SetActive(false);
-        GUIHoldingPhase.SetActive(true);
-        GUIPause.SetActive(false);
-        GUIPlayMode.SetActive(false);
-        GUIScore.SetActive(true);
-        GUITitleScreen.SetActive(false);
+        GUIGameOver.instance.Hide();
+        GUIHoldingPhase.instance.Show();
+        GUIPause.instance.Hide();
+        GUIPlayMode.instance.Hide();
+        GUIScore.instance.Show();
+        GUITitleScreen.instance.Hide();
 
         // Set character states
         Character2D.instance.Pause();
@@ -182,12 +174,12 @@ public class NavigationManager : MonoBehaviour
         Game.instance.currentState = GameState.ChasingPhase;
 
         // Show and hide GUIs
-        GUIGameOver.SetActive(false);
-        GUIHoldingPhase.SetActive(false);
-        GUIPause.SetActive(false);
-        GUIPlayMode.SetActive(true);
-        GUIScore.SetActive(true);
-        GUITitleScreen.SetActive(false);
+        GUIGameOver.instance.Hide();
+        GUIHoldingPhase.instance.Hide();
+        GUIPause.instance.Hide();
+        GUIPlayMode.instance.Show();
+        GUIScore.instance.Show();
+        GUITitleScreen.instance.Hide();
 
         // Set character states
         Character2D.instance.Resume();
