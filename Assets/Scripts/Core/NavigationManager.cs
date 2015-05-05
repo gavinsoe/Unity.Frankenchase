@@ -24,9 +24,6 @@ public class NavigationManager : MonoBehaviour
     
     public void GameOver()
     {
-        // Update the state of the game
-        Game.instance.GameOver();
-
         // Show and hide GUIs
         GUIGameOver.instance.Show();
         GUIHoldingPhase.instance.Hide();
@@ -35,6 +32,9 @@ public class NavigationManager : MonoBehaviour
         GUIScore.instance.Show();
         GUITitleScreen.instance.Hide();
 
+        // Update the state of the game
+        Game.instance.GameOver();
+
         // Set character states
         Character2D.instance.Kill();
         Frankenstein.instance.Kill();
@@ -42,11 +42,6 @@ public class NavigationManager : MonoBehaviour
 
     public void TitleScreen()
     {
-        // Update the state of the game
-        Game.instance.currentState = GameState.TitleScreen;
-
-        Application.LoadLevel("Title Screen");
-
         // Show and hide GUIs
         GUIGameOver.instance.Hide();
         GUIHoldingPhase.instance.Hide();
@@ -54,19 +49,22 @@ public class NavigationManager : MonoBehaviour
         GUIPlayMode.instance.Hide();
         GUIScore.instance.Hide();
         GUITitleScreen.instance.Show();
+
+        // Load the Scene
+        Application.LoadLevel("Title Screen");
+
+        // Update the state of the game
+        Game.instance.currentState = GameState.TitleScreen;
     }
 
     public void Retry()
     {
+        // Let soomla know that a stage has ended
         if (Game.instance.currentState != GameState.GameOver)
         {
             SoomlaLevelUp.GetLevel(Constants.lvlup_level_main).End(false);
         }
 
-        // Update the state of the game
-        Game.instance.currentState = GameState.ChasingPhase;
-        Game.instance.InitializeStats();
-
         // Show and hide GUIs
         GUIGameOver.instance.Hide();
         GUIHoldingPhase.instance.Hide();
@@ -75,18 +73,19 @@ public class NavigationManager : MonoBehaviour
         GUIScore.instance.Show();
         GUITitleScreen.instance.Hide();
 
+        // Load the Scene
         Application.LoadLevel("Game");
 
+        // Update the state of the game
+        Game.instance.currentState = GameState.ChasingPhase;
+        Game.instance.InitializeStats();
+
         // Update SoomlaLevelUp State
-        //SoomlaLevelUp.GetLevel(Constants.lvlup_level_main).Restart(true);        
         SoomlaLevelUp.GetLevel(Constants.lvlup_level_main).Start();
     }
 
     public void Play()
     {
-        // Update the state of the game
-        Game.instance.currentState = GameState.ChasingPhase;
-        //Game.instance.Reinitialise();
 
         // Show and hide GUIs
         GUIGameOver.instance.Hide();
@@ -96,7 +95,11 @@ public class NavigationManager : MonoBehaviour
         GUIScore.instance.Show();
         GUITitleScreen.instance.Hide();
 
+        // Load the scene
         Application.LoadLevel("Game");
+
+        // Update the state of the game
+        Game.instance.currentState = GameState.ChasingPhase;
         Game.instance.InitializeStats();
 
         // Update SoomlaLevelUp State
@@ -105,9 +108,6 @@ public class NavigationManager : MonoBehaviour
 
     public void Paused()
     {
-        // Update the state of the game
-        Game.instance.currentState = GameState.Paused;
-
         // Show and hide GUIs
         GUIGameOver.instance.Hide();
         GUIHoldingPhase.instance.Hide();
@@ -115,6 +115,9 @@ public class NavigationManager : MonoBehaviour
         GUIPlayMode.instance.Hide();
         GUIScore.instance.Show();
         GUITitleScreen.instance.Hide();
+
+        // Update the state of the game
+        Game.instance.currentState = GameState.Paused;
 
         // Set character states
         Character2D.instance.Pause();
@@ -126,9 +129,6 @@ public class NavigationManager : MonoBehaviour
 
     public void Resume()
     {
-        // Update the state of the game
-        Game.instance.currentState = GameState.ChasingPhase;
-
         // Show and hide GUIs
         GUIGameOver.instance.Hide();
         GUIHoldingPhase.instance.Hide();
@@ -136,6 +136,9 @@ public class NavigationManager : MonoBehaviour
         GUIPlayMode.instance.Show();
         GUIScore.instance.Show();
         GUITitleScreen.instance.Hide();
+
+        // Update the state of the game
+        Game.instance.currentState = GameState.ChasingPhase;
 
         // Set character states
         Character2D.instance.Resume();
@@ -147,11 +150,6 @@ public class NavigationManager : MonoBehaviour
 
     public void HoldingPhaseStart()
     {
-        // Update the state of the game
-        Game.instance.currentState = GameState.HoldingPhase;
-        // Set the direction the professor is to run to
-        Game.instance.SetDirection();
-
         // Show and hide GUIs
         GUIGameOver.instance.Hide();
         GUIHoldingPhase.instance.Show();
@@ -159,6 +157,11 @@ public class NavigationManager : MonoBehaviour
         GUIPlayMode.instance.Hide();
         GUIScore.instance.Show();
         GUITitleScreen.instance.Hide();
+
+        // Update the state of the game
+        Game.instance.currentState = GameState.HoldingPhase;
+        // Set the direction the professor is to run to
+        Game.instance.SetDirection();
 
         // Set character states
         Character2D.instance.Pause();
@@ -170,9 +173,6 @@ public class NavigationManager : MonoBehaviour
 
     public void HoldingPhaseEnd()
     {
-        // Update the state of the game
-        Game.instance.currentState = GameState.ChasingPhase;
-
         // Show and hide GUIs
         GUIGameOver.instance.Hide();
         GUIHoldingPhase.instance.Hide();
@@ -180,6 +180,9 @@ public class NavigationManager : MonoBehaviour
         GUIPlayMode.instance.Show();
         GUIScore.instance.Show();
         GUITitleScreen.instance.Hide();
+
+        // Update the state of the game
+        Game.instance.currentState = GameState.ChasingPhase;
 
         // Set character states
         Character2D.instance.Resume();

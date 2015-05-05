@@ -21,7 +21,8 @@ public class Game : MonoBehaviour
     private float holdPhaseScore; // Bonus score obtained in the holding phase
     public float holdPhaseScoreMultiplier = 50f; // To be multiplied by the holding time to calculate score.
 
-    private float distanceFromFrankenstein;
+    public float distanceFromFrankenstein;
+    public float maxDistanceFromFrankenstein;
 
     public Direction currentDirection; // The direction the character is travelling
     public Environment currentEnvironment; // The current environment the character is in
@@ -66,6 +67,11 @@ public class Game : MonoBehaviour
     
     void Update()
     {
+        if (currentState == GameState.ChasingPhase)
+        {
+            UpdateDistanceFromTarget();
+        }
+
         if (currentState == GameState.ChasingPhase ||
             currentState == GameState.HoldingPhase)
         {
@@ -136,11 +142,54 @@ public class Game : MonoBehaviour
 
     private void UpdateDistanceFromTarget()
     {
-        distanceFromFrankenstein = Mathf.Abs(Character2D.instance.transform.position.x -
-                                             Frankenstein.instance.transform.position.y);
+        if (Character2D.instance != null && Frankenstein.instance != null)
+        {
+            distanceFromFrankenstein = Mathf.Abs(Character2D.instance.transform.position.x -
+                                                 Frankenstein.instance.transform.position.x);
 
-        // Depending on how far apart they are, display certain messages
+            // Depending on how far apart they are, display certain messages
+            if (distanceFromFrankenstein > maxDistanceFromFrankenstein)
+            {
+                // Game Over
+                NavigationManager.instance.GameOver();
+            }
+            else if (distanceFromFrankenstein > maxDistanceFromFrankenstein * 0.8)
+            {
+                if (Character2D.instance.currentSpeed > Frankenstein.instance.currentSpeed)
+                {
+                    GUIPlayMode.instance.TriggerDistanceIndicator("Catching up! 0.8");
+                }
+                else
+                {
+                    GUIPlayMode.instance.TriggerDistanceIndicator("He's getting away! 0.8");
+                }
+            }
+            else if (distanceFromFrankenstein > maxDistanceFromFrankenstein * 0.6)
+            {
+                if (Character2D.instance.currentSpeed > Frankenstein.instance.currentSpeed)
+                {
+                    GUIPlayMode.instance.TriggerDistanceIndicator("Catching up! 0.6");
+                }
+                else
+                {
+                    GUIPlayMode.instance.TriggerDistanceIndicator("He's getting away! 0.6");
+                }
+                
+            }
+            else if (distanceFromFrankenstein > maxDistanceFromFrankenstein * 0.4)
+            {
+                if (Character2D.instance.currentSpeed > Frankenstein.instance.currentSpeed)
+                {
+                    GUIPlayMode.instance.TriggerDistanceIndicator("Catching up! 0.4");
+                }
+                else
+                {
+                    GUIPlayMode.instance.TriggerDistanceIndicator("He's getting away! 0.4");
+                }
+                
+            }
 
+        }
     }
 
     // This is called after the end of a holding phase to determine which direction to go to.
