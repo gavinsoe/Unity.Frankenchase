@@ -93,6 +93,7 @@
     <Compile Include="Assets\Scripts\GUI\GUITitleScreen.cs" />
     <Compile Include="Assets\Scripts\HoldingPhase.cs" />
     <Compile Include="Assets\Scripts\Triggers\GameEvents.cs" />
+    <Compile Include="Assets\Scripts\Triggers\TrapTrigger.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />

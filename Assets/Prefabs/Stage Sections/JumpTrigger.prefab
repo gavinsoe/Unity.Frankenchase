@@ -53,9 +53,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc0c6a206640c438bb144f3db87069, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effect: 3
-  effectCoefficient: 0
-  effectDuration: 0
+  effectPrimary:
+    type: 3
+    coefficient: 0
+    duration: 0
+  effectSecondary:
+    type: 0
+    coefficient: 0
+    duration: 0
+  activateSecondaryEffect: 0
+  destroyOnTrigger: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

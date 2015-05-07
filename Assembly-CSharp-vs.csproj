@@ -79,6 +79,7 @@
      <Compile Include="Assets\Scripts\GUI\GUITitleScreen.cs" />
      <Compile Include="Assets\Scripts\HoldingPhase.cs" />
      <Compile Include="Assets\Scripts\Triggers\GameEvents.cs" />
+     <Compile Include="Assets\Scripts\Triggers\TrapTrigger.cs" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-iw\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values\version.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-zh-rCN\common_strings.xml" />

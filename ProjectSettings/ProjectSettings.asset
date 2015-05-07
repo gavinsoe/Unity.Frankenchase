@@ -258,12 +258,12 @@ PlayerSettings:
     7: CROSS_PLATFORM_INPUT;MOBILE_INPUT
     15: CROSS_PLATFORM_INPUT;MOBILE_INPUT
     16: CROSS_PLATFORM_INPUT;MOBILE_INPUT
-  metroPackageName: 2013_10 - Sample Assets
+  metroPackageName: 201310-SampleAssets
   metroPackageLogo: 
   metroPackageLogo140: 
   metroPackageLogo180: 
   metroPackageLogo240: 
-  metroPackageVersion: 
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -308,7 +308,7 @@ PlayerSettings:
   metroPhoneSplashScreenImage: 
   metroPhoneSplashScreenImage140: 
   metroPhoneSplashScreenImage240: 
-  metroTileShortName: 
+  metroTileShortName: 2013_10 - Sam
   metroCommandLineArgsFile: 
   metroTileShowName: 0
   metroMediumTileShowName: 0

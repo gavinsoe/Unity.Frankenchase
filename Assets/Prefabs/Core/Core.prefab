@@ -1114,7 +1114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727d3e7cecbd1a14aaf3202fa1aa3112, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DistanceIndicatorObject: {fileID: 0}
+  DistanceIndicatorObject: {fileID: 186246}
 --- !u!114 &11409160
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2610,7 +2610,7 @@ MonoBehaviour:
   distanceScoreMultiplier: 1
   holdPhaseScoreMultiplier: 50
   distanceFromFrankenstein: 0
-  maxDistanceFromFrankenstein: 0
+  maxDistanceFromFrankenstein: 16
   currentDirection: 0
   currentEnvironment: 0
   currentLocation: 0
@@ -2619,7 +2619,7 @@ MonoBehaviour:
   locationTownEnd: 300
   score: 0
   SectionsCastle:
-  - {fileID: 196600, guid: 49501f10364e62f4dad172f904825715, type: 2}
+  - {fileID: 166142, guid: 9764467fc84476d40947cf9469c4c036, type: 2}
   SectionsGraveyard:
   - {fileID: 107432, guid: 13db01032a8923344a9a1f3e45300115, type: 2}
   SectionsTown:

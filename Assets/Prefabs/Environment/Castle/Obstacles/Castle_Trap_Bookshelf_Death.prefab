@@ -1,5 +1,22 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &129960
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 481584}
+  - 61: {fileID: 6157864}
+  - 114: {fileID: 11476072}
+  m_Layer: 14
+  m_Name: Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &156586
 GameObject:
   m_ObjectHideFlags: 0
@@ -12,7 +29,7 @@ GameObject:
   - 95: {fileID: 9578762}
   - 61: {fileID: 6128270}
   - 114: {fileID: 11448270}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Castle_Trap_Bookshelf_Death
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,10 +43,23 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 156586}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.01999998, y: -.99000001, z: 0}
+  m_LocalPosition: {x: 9.5, y: -1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 481584}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &481584
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 129960}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.5, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 442916}
   m_RootOrder: 0
 --- !u!61 &6128270
 BoxCollider2D:
@@ -39,11 +69,24 @@ BoxCollider2D:
   m_GameObject: {fileID: 156586}
   m_Enabled: 0
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: .5, y: .5}
+--- !u!61 &6157864
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 129960}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: .100000001, y: 5}
 --- !u!95 &9578762
 Animator:
   serializedVersion: 3
@@ -72,9 +115,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc0c6a206640c438bb144f3db87069, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effect: 1
-  effectCoefficient: 0
-  effectDuration: 0
+  effectPrimary:
+    type: 1
+    coefficient: 0
+    duration: 0
+  effectSecondary:
+    type: 0
+    coefficient: 3
+    duration: 3
+  activateSecondaryEffect: 0
+  destroyOnTrigger: 0
+--- !u!114 &11476072
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 129960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c25c92f51b5b304b877e7e3855d947b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &21283516
 SpriteRenderer:
   m_ObjectHideFlags: 1
