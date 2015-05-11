@@ -2619,7 +2619,7 @@ MonoBehaviour:
   locationTownEnd: 300
   score: 0
   SectionsCastle:
-  - {fileID: 166142, guid: 9764467fc84476d40947cf9469c4c036, type: 2}
+  - {fileID: 143472, guid: 626eeb66628340d4dbb4181d30511917, type: 2}
   SectionsGraveyard:
   - {fileID: 107432, guid: 13db01032a8923344a9a1f3e45300115, type: 2}
   SectionsTown:

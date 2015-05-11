@@ -194,9 +194,12 @@ public class Character2D : MonoBehaviour
     public void Kill()
     {
         paused = true;
-        anim.enabled = false;
         body.isKinematic = true;
         body.Sleep();
+
+        // Animate death
+        anim.SetBool("Ground", true);
+        anim.SetTrigger("Death");
     }
 
     #region Debuff
