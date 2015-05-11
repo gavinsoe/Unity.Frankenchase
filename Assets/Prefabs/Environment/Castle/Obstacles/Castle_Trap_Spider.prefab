@@ -12,7 +12,7 @@ GameObject:
   - 95: {fileID: 9579158}
   - 61: {fileID: 6110554}
   - 114: {fileID: 11406714}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Castle_Trap_Spider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 117790}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.51999998, y: 1.25999999, z: 0}
+  m_LocalPosition: {x: 11.2200003, y: 1.76999998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -39,11 +39,11 @@ BoxCollider2D:
   m_GameObject: {fileID: 117790}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 1.54999995}
+  m_Offset: {x: .00999999978, y: .100000001}
   serializedVersion: 2
-  m_Size: {x: .349999994, y: .699999988}
+  m_Size: {x: .319999993, y: .579999983}
 --- !u!95 &9579158
 Animator:
   serializedVersion: 3
@@ -72,9 +72,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc0c6a206640c438bb144f3db87069, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effect: 1
-  effectCoefficient: 0
-  effectDuration: 0
+  effectPrimary:
+    type: 1
+    coefficient: 0
+    duration: 0
+  effectSecondary:
+    type: 0
+    coefficient: 0
+    duration: 0
+  activateSecondaryEffect: 0
+  destroyOnTrigger: 0
 --- !u!212 &21216152
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -99,7 +106,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ac8d5db5c3991434ab37e139e6921078, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e7b26820526bb6c48b8d05a99b66d1c9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

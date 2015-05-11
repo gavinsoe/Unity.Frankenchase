@@ -1,23 +1,23 @@
 fileFormatVersion: 2
-guid: d4bb593b50452bc47bda4ac9461d0554
-timeCreated: 1430447529
+guid: e7b26820526bb6c48b8d05a99b66d1c9
+timeCreated: 1431329891
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: sprites_animated_SPIDER_32x96_0
-    21300002: sprites_animated_SPIDER_32x96_1
-    21300004: sprites_animated_SPIDER_32x96_2
-    21300006: sprites_animated_SPIDER_32x96_3
-    21300008: sprites_animated_SPIDER_32x96_4
-    21300010: sprites_animated_SPIDER_32x96_5
-    21300012: sprites_animated_SPIDER_32x96_6
-    21300014: sprites_animated_SPIDER_32x96_7
-    21300016: sprites_animated_SPIDER_32x96_8
-    21300018: sprites_animated_SPIDER_32x96_9
-    21300020: sprites_animated_SPIDER_32x96_10
-    21300022: sprites_animated_SPIDER_32x96_11
-    21300024: sprites_animated_SPIDER_32x96_12
-    21300026: sprites_animated_SPIDER_32x96_13
+    21300000: sprites_animated_spider_0
+    21300002: sprites_animated_spider_1
+    21300004: sprites_animated_spider_2
+    21300006: sprites_animated_spider_3
+    21300008: sprites_animated_spider_4
+    21300010: sprites_animated_spider_5
+    21300012: sprites_animated_spider_6
+    21300014: sprites_animated_spider_7
+    21300016: sprites_animated_spider_8
+    21300018: sprites_animated_spider_9
+    21300020: sprites_animated_spider_10
+    21300022: sprites_animated_spider_11
+    21300024: sprites_animated_spider_12
+    21300026: sprites_animated_spider_13
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -63,143 +63,143 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: sprites_animated_SPIDER_32x96_0
+    - name: sprites_animated_spider_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 96
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: sprites_animated_SPIDER_32x96_1
+    - name: sprites_animated_spider_1
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 96
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: sprites_animated_SPIDER_32x96_2
+    - name: sprites_animated_spider_2
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 96
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: sprites_animated_SPIDER_32x96_3
+    - name: sprites_animated_spider_3
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 96
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: sprites_animated_SPIDER_32x96_4
+    - name: sprites_animated_spider_4
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 96
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: sprites_animated_SPIDER_32x96_5
+    - name: sprites_animated_spider_5
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 96
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: sprites_animated_SPIDER_32x96_6
+    - name: sprites_animated_spider_6
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 96
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: sprites_animated_SPIDER_32x96_7
+    - name: sprites_animated_spider_7
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 96
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: sprites_animated_SPIDER_32x96_8
+    - name: sprites_animated_spider_8
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 96
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: sprites_animated_SPIDER_32x96_9
+    - name: sprites_animated_spider_9
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 96
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: sprites_animated_SPIDER_32x96_10
+    - name: sprites_animated_spider_10
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 96
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: sprites_animated_SPIDER_32x96_11
+    - name: sprites_animated_spider_11
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 96
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: sprites_animated_SPIDER_32x96_12
+    - name: sprites_animated_spider_12
       rect:
         serializedVersion: 2
         x: 384
         y: 0
         width: 32
-        height: 96
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: sprites_animated_SPIDER_32x96_13
+    - name: sprites_animated_spider_13
       rect:
         serializedVersion: 2
         x: 416
         y: 0
         width: 32
-        height: 96
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
