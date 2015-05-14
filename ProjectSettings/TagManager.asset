@@ -12,6 +12,9 @@ TagManager:
   - SectionEnd
   - JumpTrigger
   - Frankenstein
+  - CreepBatTop
+  - CreepBatMid
+  - CreepBatBot
   layers:
   - Default
   - TransparentFX
@@ -54,6 +57,9 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 1859086223
+    locked: 0
+  - name: Creeps
+    uniqueID: 3361615485
     locked: 0
   - name: Characters
     uniqueID: 3940858523
