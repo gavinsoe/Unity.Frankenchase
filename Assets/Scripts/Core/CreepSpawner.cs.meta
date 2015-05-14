@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8ecec48cb1b76d64cb24d48887980337
+timeCreated: 1431499558
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - batTop: {fileID: 179426, guid: c10206a1f481ed846b36783031342d57, type: 2}
+  - batMid: {fileID: 111218, guid: 9f3ef8f6b3d3d9a4fa6a27eab24058a7, type: 2}
+  - batBot: {fileID: 102566, guid: 3b331e13bd9b28b438ecd526f2f36c1f, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
