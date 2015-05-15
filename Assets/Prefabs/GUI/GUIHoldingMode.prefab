@@ -46,6 +46,7 @@ GameObject:
   - 223: {fileID: 22350426}
   - 114: {fileID: 11464972}
   - 114: {fileID: 11472962}
+  - 114: {fileID: 11410794}
   - 114: {fileID: 11493916}
   m_Layer: 0
   m_Name: GUIHoldingMode
@@ -145,6 +146,23 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &11410794
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 146aaec6bb20f8c4fa0145dc52681527, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prof: {fileID: 182060}
+  profStartPosition: -151
+  profEndPosition: -151
+  frank: {fileID: 118588}
+  frankStartPosition: -109
+  frankEndPosition: 145
 --- !u!114 &11422060
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -211,9 +229,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 21300008, guid: ff19d06b03de3ed4c95b038b3708c62c, type: 3}
+  m_Sprite: {fileID: 21300024, guid: ff19d06b03de3ed4c95b038b3708c62c, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -232,9 +250,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 21300004, guid: ff19d06b03de3ed4c95b038b3708c62c, type: 3}
+  m_Sprite: {fileID: 21300020, guid: ff19d06b03de3ed4c95b038b3708c62c, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -272,7 +290,7 @@ MonoBehaviour:
   m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
+  m_IgnoreReversedGraphics: 0
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
@@ -312,14 +330,9 @@ MonoBehaviour:
   tapStrength: 0
   endurance: 0
   secondaryEndurance: 0
-  prof: {fileID: 182060}
-  profStartPosition: -151
-  profEndPosition: -151
-  frank: {fileID: 118588}
-  frankStartPosition: -109
-  frankEndPosition: 145
-  frankSpeedupAfterHold: 6
-  frankSpeedupDuration: 4
+  active: 0
+  frankSpeedupAfterHold: 7
+  frankSpeedupDuration: 5
 --- !u!222 &22214468
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -414,7 +427,7 @@ RectTransform:
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: -151.300003, y: -6.5999999}
-  m_SizeDelta: {x: 47.9166679, y: 60.4166679}
+  m_SizeDelta: {x: 66.6666718, y: 66.6666718}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22444202
 RectTransform:
@@ -448,7 +461,7 @@ RectTransform:
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: -108.900002, y: -9.80000019}
-  m_SizeDelta: {x: 35.4166679, y: 54.1666679}
+  m_SizeDelta: {x: 66.6666718, y: 66.6666718}
   m_Pivot: {x: .5, y: .5}
 --- !u!1001 &100100000
 Prefab:
