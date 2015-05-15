@@ -91,6 +91,7 @@ public class Character2D : MonoBehaviour
             deathTimerText.text = timeToDeath.ToString("#");
             if (timeToDeath <= 0)
             {
+                doomed = false;
                 NavigationManager.instance.GameOver();
             }
         }
