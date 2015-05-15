@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 8ecec48cb1b76d64cb24d48887980337
-timeCreated: 1431499558
+timeCreated: 1431687819
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
@@ -8,6 +8,9 @@ MonoImporter:
   - batTop: {fileID: 179426, guid: c10206a1f481ed846b36783031342d57, type: 2}
   - batMid: {fileID: 111218, guid: 9f3ef8f6b3d3d9a4fa6a27eab24058a7, type: 2}
   - batBot: {fileID: 102566, guid: 3b331e13bd9b28b438ecd526f2f36c1f, type: 2}
+  - witchTop: {fileID: 119204, guid: 452dc8a7738f6674c8a76abc37d70a8e, type: 2}
+  - witchMid: {fileID: 112270, guid: ccaa8e571354fb941b626ba268e8934f, type: 2}
+  - witchBot: {fileID: 161798, guid: e217fe7cb547ffd408b598e73036f3f5, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
