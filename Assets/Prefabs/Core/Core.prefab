@@ -1050,7 +1050,7 @@ MonoBehaviour:
     m_BestFit: 1
     m_MinSize: 30
     m_MaxSize: 90
-    m_Alignment: 8
+    m_Alignment: 4
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
@@ -2698,8 +2698,8 @@ MonoBehaviour:
   locationTownEnd: 300
   score: 0
   SectionsCastle:
-  - {fileID: 166142, guid: 9764467fc84476d40947cf9469c4c036, type: 2}
-  - {fileID: 143472, guid: 626eeb66628340d4dbb4181d30511917, type: 2}
+  - {fileID: 140342, guid: c85b9a4704048f6448afcd15cd2346c3, type: 2}
+  - {fileID: 140342, guid: c85b9a4704048f6448afcd15cd2346c3, type: 2}
   SectionsGraveyard:
   - {fileID: 107432, guid: 13db01032a8923344a9a1f3e45300115, type: 2}
   SectionsTown:
