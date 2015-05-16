@@ -633,6 +633,10 @@ Prefab:
       propertyPath: SectionsCastle.Array.data[0]
       value: 
       objectReference: {fileID: 143472, guid: 626eeb66628340d4dbb4181d30511917, type: 2}
+    - target: {fileID: 11402398, guid: 2b24d60eb63c7d643a407cd3cac85bce, type: 2}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2b24d60eb63c7d643a407cd3cac85bce, type: 2}
   m_IsPrefabParent: 0
