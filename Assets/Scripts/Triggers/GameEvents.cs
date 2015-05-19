@@ -61,23 +61,28 @@ public class GameEvents : MonoBehaviour
             triggered = true;
             if (destroyOnTrigger) Destroy(gameObject);
         }
+        else if (effect.type == EffectType.HoldingPhase)
+        {
+            // Trigger the holding phase
+            NavigationManager.instance.HoldingPhaseStart();
+            triggered = true;
+            if (destroyOnTrigger) Destroy(gameObject);
+        }
     }
 
     void FrankensteinEvents(Effect effect)
     {
-        if (effect.type == EffectType.JumpFromLeft &&
+        if (effect.type == EffectType.Jump &&
             Frankenstein.instance.facingRight)
         {
             Frankenstein.instance.jump = true;
             triggered = true;
             if (destroyOnTrigger) Destroy(gameObject);
         }
-        else if (effect.type == EffectType.JumpFromRight &&
-                 Frankenstein.instance.facingRight)
-        {
-            Frankenstein.instance.jump = true;
-            triggered = true;
-            if (destroyOnTrigger) Destroy(gameObject);
-        }
+    }
+
+    public void ResetTrigger()
+    {
+        triggered = false;
     }
 }

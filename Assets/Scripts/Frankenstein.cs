@@ -16,10 +16,10 @@ public class Frankenstein : MonoBehaviour
     private Transform groundCheck; // A position marking where to check if the player is grounded.
     public float groundedRadius = 0.2f; // Radius of the overlap circle to determine if grounded
     private bool grounded = false; // Whether or not the player is grounded.
-    private bool immune = false; // Whether or not Frankenstein is immune from the Professor
 
     private Animator anim; // Reference to the player's animator component.
     private Rigidbody2D body; // A link to the rigidbody objecty of the character
+    private GameEvents trigger; // A link to the trigger that will initiate the holding phase
     
     // Pause variables
     private bool paused;
@@ -32,21 +32,13 @@ public class Frankenstein : MonoBehaviour
         groundCheck = transform.Find("GroundCheck");
         anim = GetComponent<Animator>();
         body = GetComponent<Rigidbody2D>();
+        trigger = GetComponentInChildren<GameEvents>();
 
         // Set default speed
         currentSpeed = defaultSpeed;
 
         // Allow other classes to access this class
         instance = this;
-    }
-
-    void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.tag == "Player" &&
-            !immune)
-        {
-            NavigationManager.instance.HoldingPhaseStart();
-        }
     }
 
     private void FixedUpdate()
@@ -173,7 +165,6 @@ public class Frankenstein : MonoBehaviour
     public void SetSpeed(float velocity, float duration)
     {
         currentSpeed = velocity;
-        immune = true;
         CancelInvoke("ResetSpeed");
         Invoke("ResetSpeed", duration);
     }
@@ -181,7 +172,7 @@ public class Frankenstein : MonoBehaviour
     private void ResetSpeed()
     {
         currentSpeed = defaultSpeed;
-        immune = false;
+        trigger.ResetTrigger();
     }
 
     #endregion
