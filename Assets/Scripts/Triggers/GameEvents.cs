@@ -81,11 +81,3 @@ public class GameEvents : MonoBehaviour
         }
     }
 }
-
-[System.Serializable]
-public class Effect : System.Object
-{
-    public EffectType type;
-    public float coefficient;
-    public float duration;
-}
