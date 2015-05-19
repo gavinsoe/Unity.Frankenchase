@@ -2491,8 +2491,8 @@ EdgeCollider2D:
   m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0}
   m_Points:
-  - {x: -.0880327225, y: -.489697158}
-  - {x: .4961133, y: -.10493505}
+  - {x: -.0900268555, y: -.49369812}
+  - {x: .49810791, y: -.15284729}
 --- !u!68 &6809336
 EdgeCollider2D:
   m_ObjectHideFlags: 1

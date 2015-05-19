@@ -2689,21 +2689,32 @@ MonoBehaviour:
   distanceScoreMultiplier: 1
   holdPhaseScoreMultiplier: 50
   distanceFromFrankenstein: 0
-  maxDistanceFromFrankenstein: 16
+  maxDistanceFromFrankenstein: 25
   currentDirection: 0
   currentEnvironment: 0
   currentLocation: 0
-  locationCastleEnd: 100
-  locationGraveyardEnd: 200
-  locationTownEnd: 300
+  locationCastleEnd: 1000
+  locationGraveyardEnd: 2000
+  locationTownEnd: 3000
   score: 0
   SectionsCastle:
-  - {fileID: 140342, guid: c85b9a4704048f6448afcd15cd2346c3, type: 2}
-  - {fileID: 140342, guid: c85b9a4704048f6448afcd15cd2346c3, type: 2}
+  - prefab: {fileID: 166142, guid: 9764467fc84476d40947cf9469c4c036, type: 2}
+    startDistance: 0
+    endDistance: 0
+  - prefab: {fileID: 143472, guid: 626eeb66628340d4dbb4181d30511917, type: 2}
+    startDistance: 0
+    endDistance: 0
+  - prefab: {fileID: 140342, guid: c85b9a4704048f6448afcd15cd2346c3, type: 2}
+    startDistance: 0
+    endDistance: 0
   SectionsGraveyard:
-  - {fileID: 107432, guid: 13db01032a8923344a9a1f3e45300115, type: 2}
+  - prefab: {fileID: 0}
+    startDistance: 0
+    endDistance: 0
   SectionsTown:
-  - {fileID: 172688, guid: 97bef2273f5030d4d86721e3f8239cc8, type: 2}
+  - prefab: {fileID: 0}
+    startDistance: 0
+    endDistance: 0
 --- !u!114 &11493532
 MonoBehaviour:
   m_ObjectHideFlags: 1
