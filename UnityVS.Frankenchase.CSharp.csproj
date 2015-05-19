@@ -93,6 +93,8 @@
     <Compile Include="Assets\Scripts\GUI\GUIScore.cs" />
     <Compile Include="Assets\Scripts\GUI\GUITitleScreen.cs" />
     <Compile Include="Assets\Scripts\HoldingPhase.cs" />
+    <Compile Include="Assets\Scripts\Objects\Effect.cs" />
+    <Compile Include="Assets\Scripts\Objects\StageSection.cs" />
     <Compile Include="Assets\Scripts\Triggers\DestroyAfterAnimation.cs" />
     <Compile Include="Assets\Scripts\Triggers\GameEvents.cs" />
     <Compile Include="Assets\Scripts\Triggers\TrapTrigger.cs" />

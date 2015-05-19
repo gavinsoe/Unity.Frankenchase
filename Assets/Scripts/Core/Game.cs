@@ -5,6 +5,8 @@ using Soomla.Levelup;
 using Soomla.Profile;
 using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 
 // Script used to store the core game data such as the score
 // State of the game
@@ -16,7 +18,8 @@ public class Game : MonoBehaviour
     public GameState currentState = GameState.TitleScreen; // Stores the state of the game.
 
     private Vector3 lastPosition; // used to calculate the distance the professor has traveled
-    private float distanceScore; // Keeps track on how far the professor has travelled.
+    private float distanceTraveled; // Keeps track on how far the professor has travelled.
+    private float distanceScore; // Score obtained based on how far professor has travelled
     public float distanceScoreMultiplier = 1f; // To be multiplied by the distance to calculate score
     private float holdPhaseScore; // Bonus score obtained in the holding phase
     public float holdPhaseScoreMultiplier = 50f; // To be multiplied by the holding time to calculate score.
@@ -34,9 +37,9 @@ public class Game : MonoBehaviour
     public float score; // The total score of current playthrough
 
     // Collection of stages
-    public GameObject[] SectionsCastle;
-    public GameObject[] SectionsGraveyard;
-    public GameObject[] SectionsTown;
+    public StageSection[] SectionsCastle;
+    public StageSection[] SectionsGraveyard;
+    public StageSection[] SectionsTown;
 
     void Awake()
     {
@@ -78,6 +81,8 @@ public class Game : MonoBehaviour
             // Distance travelled within the last frame.
             var deltaDistance = Mathf.Abs(Character2D.instance.transform.position.x - lastPosition.x);
 
+            distanceTraveled += deltaDistance;
+
             UpdateScore(deltaDistance);
 
             UpdateEnvironment(deltaDistance);
@@ -91,7 +96,7 @@ public class Game : MonoBehaviour
     private void UpdateScore(float deltaDistance)
     {
         // Calculate the score obtained by distance travelled
-        distanceScore += deltaDistance * distanceScoreMultiplier;
+        distanceScore = distanceTraveled * distanceScoreMultiplier;
 
         // Calculate holding phase score
         if (currentState == GameState.HoldingPhase)
@@ -222,6 +227,7 @@ public class Game : MonoBehaviour
     // Initialise game state
     public void InitializeStats()
     {
+        distanceTraveled = 0;
         distanceScore = 0;
         holdPhaseScore = 0;
         score = 0;
@@ -229,7 +235,7 @@ public class Game : MonoBehaviour
         // Update the score on the GUI
         GUIScore.instance.SetScore(score);
 
-        // Initialise location
+        // Initialise location        
         currentDirection = Direction.Right;
         currentEnvironment = Environment.Castle;
         currentLocation = 0;
@@ -264,21 +270,29 @@ public class Game : MonoBehaviour
     {
         if (currentEnvironment == Environment.Castle)
         {
-            return SectionsCastle[UnityEngine.Random.Range(0, SectionsCastle.Length)];
+            var sections = SectionsCastle
+                           .Where(s => s.startDistance < distanceTraveled &&
+                                      (s.endDistance < distanceTraveled || s.endDistance == 0)).ToArray();
+
+            return sections[UnityEngine.Random.Range(0, sections.Length)].prefab;   
         }
         else if (currentEnvironment == Environment.Graveyard)
         {
-            return SectionsGraveyard[UnityEngine.Random.Range(0, SectionsGraveyard.Length)];
+            var sections = SectionsGraveyard
+                           .Where(s => s.startDistance < distanceTraveled &&
+                                      (s.endDistance < distanceTraveled || s.endDistance == 0)).ToArray();
+
+            return sections[UnityEngine.Random.Range(0, sections.Length)].prefab;   
         }
-        else if (currentEnvironment == Environment.Town)
+        else // if (currentEnvironment == Environment.Town)
         {
-            return SectionsTown[UnityEngine.Random.Range(0, SectionsTown.Length)];
+            var sections = SectionsTown
+                           .Where(s => s.startDistance < distanceTraveled &&
+                                      (s.endDistance < distanceTraveled || s.endDistance == 0)).ToArray();
+
+            return sections[UnityEngine.Random.Range(0, sections.Length)].prefab;             
         }
-        else
-        {
-            // Default to graveyard (should never end up here)
-            return SectionsGraveyard[UnityEngine.Random.Range(0, SectionsGraveyard.Length)];
-        }
+        
     }
 
     private void LoadSettings()
