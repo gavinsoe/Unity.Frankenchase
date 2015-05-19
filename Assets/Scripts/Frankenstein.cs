@@ -68,6 +68,12 @@ public class Frankenstein : MonoBehaviour
 
         // Move the character
         Move();
+
+        // Make sure frankenstein never goes behind the professor.
+        if (Character2D.instance.transform.position.x > transform.position.x)
+        {
+            SetSpeed(Character2D.instance.currentSpeed + 1, 2);
+        }
     }
 
     public void Move()
