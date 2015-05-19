@@ -235,7 +235,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 172088}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -.331999987, z: 0}
+  m_LocalPosition: {x: 0, y: -.492000014, z: 0}
   m_LocalScale: {x: .564482868, y: .564483702, z: 1}
   m_Children: []
   m_Father: {fileID: 472092}
@@ -260,7 +260,7 @@ Transform:
   m_GameObject: {fileID: 172092}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 15, y: -150.399994, z: 0}
-  m_LocalScale: {x: 1.77153289, y: 1.77153039, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 472088}
   - {fileID: 472090}
@@ -294,9 +294,9 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 66b2ce71bbda47445869f10efbb09d62, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: -.129999995}
+  m_Offset: {x: 0, y: -.200000003}
   serializedVersion: 2
-  m_Size: {x: .150000006, y: .400000006}
+  m_Size: {x: .150000006, y: .589999974}
 --- !u!95 &9566104
 Animator:
   serializedVersion: 3
@@ -424,7 +424,7 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 512
-  groundedRadius: .00999999978
+  groundedRadius: .100000001
   debuffObj: {fileID: 144504}
   deathTimer: {fileID: 108052}
   debuffDeathTimer: 10
