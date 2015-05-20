@@ -64,7 +64,11 @@ public class Frankenstein : MonoBehaviour
         // Make sure frankenstein never goes behind the professor.
         if (Character2D.instance.transform.position.x > transform.position.x)
         {
-            SetSpeed(Character2D.instance.currentSpeed + 1, 2);
+            // Only do this when frankenstein is not immune
+            if (currentSpeed != defaultSpeed)
+            {
+                SetSpeed(Character2D.instance.currentSpeed + 1, 2);
+            }
         }
     }
 
