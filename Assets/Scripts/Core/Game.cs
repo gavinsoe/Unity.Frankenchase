@@ -204,12 +204,10 @@ public class Game : MonoBehaviour
         var rand = UnityEngine.Random.Range(0, locationTownEnd);
         if (rand < currentLocation)
         {
-            Debug.Log("Set Direction [" + rand + "] Left");
             currentDirection = Direction.Left;
         }
         else
         {
-            Debug.Log("Set Direction [" + rand + "] Right");
             currentDirection = Direction.Right;
         }
     }
