@@ -68,6 +68,7 @@ public class HoldingPhase : MonoBehaviour {
 
         // Boost Frankenstein's speed
         Frankenstein.instance.SetSpeed(frankSpeedupAfterHold, frankSpeedupDuration);
+        Frankenstein.instance.EnableInvincibility(frankSpeedupDuration);
     }
 
     public void Tapped()

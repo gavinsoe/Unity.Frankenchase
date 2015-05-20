@@ -23,6 +23,7 @@ public class Frankenstein : MonoBehaviour
     
     // Pause variables
     private bool paused;
+    private bool immune;
     private Vector2 pausedVelocity;
     private float pausedAngularVelocity;
 
@@ -62,10 +63,11 @@ public class Frankenstein : MonoBehaviour
         Move();
 
         // Make sure frankenstein never goes behind the professor.
-        if (Character2D.instance.transform.position.x > transform.position.x)
+        if (Game.instance.currentState != GameState.HoldingPhase &&
+            Character2D.instance.transform.position.x > transform.position.x)
         {
             // Only do this when frankenstein is not immune
-            if (currentSpeed != defaultSpeed)
+            if (!trigger.triggered)
             {
                 SetSpeed(Character2D.instance.currentSpeed + 1, 2);
             }
@@ -176,9 +178,19 @@ public class Frankenstein : MonoBehaviour
     private void ResetSpeed()
     {
         currentSpeed = defaultSpeed;
-        trigger.ResetTrigger();
     }
 
+    public void EnableInvincibility(float duration)
+    {
+        trigger.triggered = true;
+        CancelInvoke("RemoveInvincibility");
+        Invoke("RemoveInvincibility",duration);
+    }
+
+    public void DisableInvincibility()
+    {
+        trigger.triggered = false;
+    }
     #endregion
 
 }

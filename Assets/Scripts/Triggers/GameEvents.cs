@@ -8,7 +8,7 @@ public class GameEvents : MonoBehaviour
     public bool activateSecondaryEffect;
     public bool destroyOnTrigger; // Whether or not to destroy the object after it has triggered
 
-    private bool triggered = false; // Variable to make sure event is only triggered once.
+    public bool triggered = false; // Variable to make sure event is only triggered once.
     
     void OnTriggerEnter2D(Collider2D other)
     {
