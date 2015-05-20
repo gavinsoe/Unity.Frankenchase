@@ -3,13 +3,14 @@ using System.Collections;
 
 public class CreepSpawner : MonoBehaviour 
 {
-    public GameObject batTop;
-    public GameObject batMid;
-    public GameObject batBot;
-    public GameObject witchTop;
-    public GameObject witchMid;
-    public GameObject witchBot;
-
+    [SerializeField] private GameObject batTop;
+    [SerializeField] private GameObject batMid;
+    [SerializeField] private GameObject batBot;
+    [SerializeField] private GameObject witchTop;
+    [SerializeField] private GameObject witchMid;
+    [SerializeField] private GameObject witchBot;
+    [SerializeField] private GameObject ram;
+    
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag.Equals("CreepBatTop"))
@@ -74,6 +75,17 @@ public class CreepSpawner : MonoBehaviour
             var bat = Instantiate(witchBot);
             bat.transform.parent = Camera.main.transform;
             bat.transform.localPosition = spawnPosition;
+
+            // Destroy trigger to prevent event from triggering multiple times
+            Destroy(other.gameObject);
+        }
+        else if (other.tag.Equals("CreepRam"))
+        {
+            // Set the spawn position (should be zero)
+            var spawnPosition = new Vector3(0, 0, 10);
+            var spawn = Instantiate(ram);
+            spawn.transform.parent = Camera.main.transform;
+            spawn.transform.localPosition = spawnPosition;
 
             // Destroy trigger to prevent event from triggering multiple times
             Destroy(other.gameObject);

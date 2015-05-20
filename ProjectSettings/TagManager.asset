@@ -18,6 +18,7 @@ TagManager:
   - CreepWitchTop
   - CreepWitchMid
   - CreepWitchBot
+  - CreepRam
   layers:
   - Default
   - TransparentFX
