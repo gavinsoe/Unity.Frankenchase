@@ -85,7 +85,7 @@ public class Character2D : MonoBehaviour
         }
 
         // Countdown death timer (when applicable)
-        if (doomed)
+        if (doomed && !paused)
         {
             timeToDeath -= Time.fixedDeltaTime;
             deathTimerText.text = timeToDeath.ToString("#");
