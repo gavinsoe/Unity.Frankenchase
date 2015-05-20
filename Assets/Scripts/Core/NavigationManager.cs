@@ -125,6 +125,8 @@ public class NavigationManager : MonoBehaviour
 
         // Update SoomlaLevelUp State
         SoomlaLevelUp.GetLevel(Constants.lvlup_level_main).Pause();
+
+        Time.timeScale = 0;
     }
 
     public void Resume()
@@ -146,6 +148,8 @@ public class NavigationManager : MonoBehaviour
 
         // Update SoomlaLevelUp State
         SoomlaLevelUp.GetLevel(Constants.lvlup_level_main).Start();
+
+        Time.timeScale = 1;
     }
 
     public void HoldingPhaseStart()
