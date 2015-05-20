@@ -44,8 +44,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 473808}
   - 95: {fileID: 9541784}
-  - 114: {fileID: 11444080}
-  - 212: {fileID: 21233980}
   m_Layer: 0
   m_Name: Creep_Witch_Bot
   m_TagString: Untagged
@@ -174,17 +172,6 @@ MonoBehaviour:
     duration: 0
   activateSecondaryEffect: 0
   destroyOnTrigger: 0
---- !u!114 &11444080
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 161798}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a416c835bd9c5e4995143551ae9821e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11486960
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -222,32 +209,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!212 &21233980
-SpriteRenderer:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 161798}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
-  m_ProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_ImportantGI: 0
-  m_AutoUVMaxDistance: .5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21237162
 SpriteRenderer:
   m_ObjectHideFlags: 1

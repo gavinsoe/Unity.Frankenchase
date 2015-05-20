@@ -61,8 +61,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BackgroundParallax.cs" />
+    <Compile Include="Assets\Scripts\Behaviours\Character2D.cs" />
+    <Compile Include="Assets\Scripts\Behaviours\Frankenstein.cs" />
+    <Compile Include="Assets\Scripts\Behaviours\Ram.cs" />
     <Compile Include="Assets\Scripts\CameraRunner.cs" />
-    <Compile Include="Assets\Scripts\Character2D.cs" />
     <Compile Include="Assets\Scripts\Character2DController.cs" />
     <Compile Include="Assets\Scripts\Core\Constants.cs" />
     <Compile Include="Assets\Scripts\Core\CreepSpawner.cs" />
@@ -84,7 +86,6 @@
     <Compile Include="Assets\Scripts\CrossPlatformInput\Scripts\TouchPad.cs" />
     <Compile Include="Assets\Scripts\CrossPlatformInput\Scripts\VirtualInput.cs" />
     <Compile Include="Assets\Scripts\Destroyer.cs" />
-    <Compile Include="Assets\Scripts\Frankenstein.cs" />
     <Compile Include="Assets\Scripts\GUI\GUIBaseClass.cs" />
     <Compile Include="Assets\Scripts\GUI\GUIGameOver.cs" />
     <Compile Include="Assets\Scripts\GUI\GUIHoldingPhase.cs" />
@@ -95,7 +96,9 @@
     <Compile Include="Assets\Scripts\HoldingPhase.cs" />
     <Compile Include="Assets\Scripts\Objects\Effect.cs" />
     <Compile Include="Assets\Scripts\Objects\StageSection.cs" />
-    <Compile Include="Assets\Scripts\Triggers\DestroyAfterAnimation.cs" />
+    <Compile Include="Assets\Scripts\StateMachineBehavior\AnimationEndDestroy.cs" />
+    <Compile Include="Assets\Scripts\StateMachineBehavior\SpawnRam.cs" />
+    <Compile Include="Assets\Scripts\Triggers\DestroyOnHoldPhase.cs" />
     <Compile Include="Assets\Scripts\Triggers\GameEvents.cs" />
     <Compile Include="Assets\Scripts\Triggers\TrapTrigger.cs" />
   </ItemGroup>
