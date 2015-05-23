@@ -22,9 +22,25 @@ public class Character2DController : MonoBehaviour {
 
     private void Update()
     {
+        var count = Input.touchCount;
+ 
         if (!jump)
+        {
             // Read the jump input in Update so button presses aren't missed.
-            jump = CrossPlatformInputManager.GetButtonDown("Jump");
+            jump = Input.GetButtonDown("Jump");
+
+            // Touch input
+            foreach (Touch touch in Input.touches)
+            {
+                //if (Debug.isDebugBuild) Debug.Log("[" + touch.fingerId + "] NextCommand : " + nextCommand.ToString());
+                //if (Debug.isDebugBuild) Debug.Log("[" + touch.fingerId + "] Phase : " + touch.phase.ToString() + " | Time : " + (Time.time - touchStartTime[touch.fingerId]));
+                // When a finger touches the screen...
+                if (touch.phase == TouchPhase.Began)
+                {
+                    jump = true;
+                }
+            }
+        }
     }
 
     private void FixedUpdate()
