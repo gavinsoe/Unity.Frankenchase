@@ -22,8 +22,6 @@ public class Character2DController : MonoBehaviour {
 
     private void Update()
     {
-        var count = Input.touchCount;
- 
         if (!jump)
         {
             // Read the jump input in Update so button presses aren't missed.
