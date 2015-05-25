@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 472518}
   - 95: {fileID: 9559844}
+  - 114: {fileID: 11461168}
   m_Layer: 10
   m_Name: Creep_Bat_Mid
   m_TagString: Untagged
@@ -163,6 +164,17 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &11461168
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 111218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a092f7c0b5c441b468360e0ada6048ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11464676
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -179,7 +191,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
