@@ -183,8 +183,8 @@ public class Frankenstein : MonoBehaviour
     public void EnableInvincibility(float duration)
     {
         trigger.triggered = true;
-        CancelInvoke("RemoveInvincibility");
-        Invoke("RemoveInvincibility",duration);
+        CancelInvoke("DisableInvincibility");
+        Invoke("DisableInvincibility", duration);
     }
 
     public void DisableInvincibility()
