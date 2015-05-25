@@ -29,7 +29,7 @@ GameObject:
   - 223: {fileID: 22318926}
   - 114: {fileID: 11463674}
   - 114: {fileID: 11479716}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,7 +46,7 @@ GameObject:
   - 224: {fileID: 22450476}
   - 222: {fileID: 22295766}
   - 114: {fileID: 11446288}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62,7 +62,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 497134}
   - 95: {fileID: 9546644}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Creep_Bat_Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -209,6 +209,7 @@ MonoBehaviour:
     duration: 0
   activateSecondaryEffect: 0
   destroyOnTrigger: 0
+  triggered: 0
 --- !u!212 &21237528
 SpriteRenderer:
   m_ObjectHideFlags: 1

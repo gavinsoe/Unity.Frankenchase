@@ -125,6 +125,7 @@ MonoBehaviour:
     duration: 1
   activateSecondaryEffect: 0
   destroyOnTrigger: 0
+  triggered: 0
 --- !u!114 &11432312
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -158,8 +159,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -933351811
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: bb5029db2b10fb0449fdb8de9ce4e05d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000

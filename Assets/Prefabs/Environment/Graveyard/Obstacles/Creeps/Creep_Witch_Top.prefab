@@ -11,7 +11,7 @@ GameObject:
   - 223: {fileID: 22390064}
   - 114: {fileID: 11459788}
   - 114: {fileID: 11416532}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ GameObject:
   - 224: {fileID: 22444036}
   - 222: {fileID: 22255172}
   - 114: {fileID: 11408938}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 427614}
   - 95: {fileID: 9567792}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Creep_Witch_Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -209,6 +209,7 @@ MonoBehaviour:
     duration: 0
   activateSecondaryEffect: 0
   destroyOnTrigger: 0
+  triggered: 0
 --- !u!212 &21262492
 SpriteRenderer:
   m_ObjectHideFlags: 1
