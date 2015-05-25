@@ -18,18 +18,18 @@ AnimationClip:
       m_Curve:
       - time: 0
         value: {x: 6.3499999, y: -2.07999992, z: 0}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
+        inSlope: {x: .0133333206, y: .246666595, z: 0}
+        outSlope: {x: .0133333206, y: .246666595, z: 0}
         tangentMode: 0
       - time: 1.5
-        value: {x: 6.3499999, y: -2.07999992, z: 0}
-        inSlope: {x: -4.78999996, y: 2.58999991, z: 0}
-        outSlope: {x: -4.78999996, y: 2.58999991, z: 0}
+        value: {x: 6.36999989, y: -1.71000004, z: 0}
+        inSlope: {x: -4.80333328, y: 2.34333324, z: 0}
+        outSlope: {x: -4.80333328, y: 2.34333324, z: 0}
         tangentMode: 0
       - time: 2
         value: {x: 1.55999994, y: .50999999, z: 0}
-        inSlope: {x: -11.2766666, y: 1.92999983, z: 0}
-        outSlope: {x: -11.2766666, y: 1.92999983, z: 0}
+        inSlope: {x: -11.2966661, y: 1.55999994, z: 0}
+        outSlope: {x: -11.2966661, y: 1.55999994, z: 0}
         tangentMode: 0
       - time: 2.75
         value: {x: -8.17000008, y: -.479999989, z: 0}
@@ -39,47 +39,24 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
     path: Castle_Bat_Bot
-  m_ScaleCurves: []
-  m_FloatCurves:
   - curve:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 200
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: .25
-        value: 200
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: .5
-        value: 200
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: .75
-        value: 200
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 1
-        value: 200
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 1.25
-        value: 200
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
+        value: {x: 0, y: 0, z: 10}
+        inSlope: {x: -.560000002, y: .13142857, z: 0}
+        outSlope: {x: -.560000002, y: .13142857, z: 0}
+        tangentMode: 0
+      - time: 1.75
+        value: {x: -.980000019, y: .230000004, z: 10}
+        inSlope: {x: -.560000002, y: .13142857, z: 0}
+        outSlope: {x: -.560000002, y: .13142857, z: 0}
+        tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
-    attribute: m_SizeDelta.x
-    path: Canvas/Text
-    classID: 224
-    script: {fileID: 0}
+    path: 
+  m_ScaleCurves: []
+  m_FloatCurves:
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -246,6 +223,12 @@ AnimationClip:
       classID: 4
       customType: 0
       isPPtrCurve: 0
+    - path: 0
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
     - path: 3180147811
       attribute: 38095219
       script: {fileID: 0}
@@ -264,12 +247,6 @@ AnimationClip:
       classID: 212
       customType: 23
       isPPtrCurve: 1
-    - path: 3180147811
-      attribute: 1967290853
-      script: {fileID: 0}
-      classID: 224
-      customType: 0
-      isPPtrCurve: 0
     - path: 3180147811
       attribute: 2526845255
       script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
@@ -313,45 +290,6 @@ AnimationClip:
     m_HeightFromFeet: 0
     m_Mirror: 0
   m_EditorCurves:
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 200
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: .25
-        value: 200
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: .5
-        value: 200
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: .75
-        value: 200
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 1
-        value: 200
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 1.25
-        value: 200
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_SizeDelta.x
-    path: Canvas/Text
-    classID: 224
-    script: {fileID: 0}
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -492,18 +430,18 @@ AnimationClip:
       m_Curve:
       - time: 0
         value: 6.3499999
-        inSlope: 0
-        outSlope: 0
+        inSlope: .0133333206
+        outSlope: .0133333206
         tangentMode: 10
       - time: 1.5
-        value: 6.3499999
-        inSlope: -4.78999996
-        outSlope: -4.78999996
+        value: 6.36999989
+        inSlope: -4.80333328
+        outSlope: -4.80333328
         tangentMode: 10
       - time: 2
         value: 1.55999994
-        inSlope: -11.2766666
-        outSlope: -11.2766666
+        inSlope: -11.2966661
+        outSlope: -11.2966661
         tangentMode: 10
       - time: 2.75
         value: -8.17000008
@@ -521,18 +459,18 @@ AnimationClip:
       m_Curve:
       - time: 0
         value: -2.07999992
-        inSlope: 0
-        outSlope: 0
+        inSlope: .246666595
+        outSlope: .246666595
         tangentMode: 10
       - time: 1.5
-        value: -2.07999992
-        inSlope: 2.58999991
-        outSlope: 2.58999991
+        value: -1.71000004
+        inSlope: 2.34333324
+        outSlope: 2.34333324
         tangentMode: 10
       - time: 2
         value: .50999999
-        inSlope: 1.92999983
-        outSlope: 1.92999983
+        inSlope: 1.55999994
+        outSlope: 1.55999994
         tangentMode: 10
       - time: 2.75
         value: -.479999989
@@ -545,8 +483,84 @@ AnimationClip:
     path: Castle_Bat_Bot
     classID: 4
     script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: -.560000002
+        outSlope: -.560000002
+        tangentMode: 10
+      - time: 1.75
+        value: -.980000019
+        inSlope: -.560000002
+        outSlope: -.560000002
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: 
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: .13142857
+        outSlope: .13142857
+        tangentMode: 10
+      - time: 1.75
+        value: .230000004
+        inSlope: .13142857
+        outSlope: .13142857
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: 
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 10
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1.75
+        value: 10
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: 
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1.5
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: Castle_Bat_Bot
+    classID: 4
+    script: {fileID: 0}
   m_EulerEditorCurves: []
-  m_HasGenericRootTransform: 0
+  m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
   m_GenerateMotionCurves: 0
   m_Events: []
