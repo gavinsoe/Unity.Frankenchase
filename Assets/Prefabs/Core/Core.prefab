@@ -2634,36 +2634,37 @@ MonoBehaviour:
   locationGraveyardEnd: 2000
   locationTownEnd: 3000
   score: 0
-  SectionsCastle:
+  sectionsCastle:
   - prefab: {fileID: 185438, guid: f723167604c87ec439bd51f352ffccd3, type: 2}
     startDistance: 0
     endDistance: 0
+    environment: 0
   - prefab: {fileID: 171166, guid: b93988559eed1e748a2e6c95dfe71246, type: 2}
     startDistance: 0
     endDistance: 0
+    environment: 0
   - prefab: {fileID: 125868, guid: e136e2117a1f01c459d23d72759b3a56, type: 2}
     startDistance: 0
     endDistance: 0
+    environment: 0
   - prefab: {fileID: 183070, guid: 482e57fca53f37f43ad358c8a01bd697, type: 2}
     startDistance: 0
     endDistance: 0
+    environment: 0
   - prefab: {fileID: 132616, guid: 266479dd0d39b714199ceb9c94133dfb, type: 2}
     startDistance: 0
     endDistance: 0
+    environment: 0
   - prefab: {fileID: 166580, guid: 73e93842c2ffffe44a5c0974920392f3, type: 2}
     startDistance: 0
     endDistance: 0
+    environment: 0
   - prefab: {fileID: 151972, guid: 262064e6a215c204ba75571a30d8b9be, type: 2}
     startDistance: 0
     endDistance: 0
-  SectionsGraveyard:
-  - prefab: {fileID: 143472, guid: 626eeb66628340d4dbb4181d30511917, type: 2}
-    startDistance: 0
-    endDistance: 0
-  SectionsTown:
-  - prefab: {fileID: 140342, guid: c85b9a4704048f6448afcd15cd2346c3, type: 2}
-    startDistance: 0
-    endDistance: 0
+    environment: 0
+  sectionsGraveyard: []
+  sectionsTown: []
 --- !u!114 &11493532
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3236,8 +3237,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -5}
-  m_SizeDelta: {x: 0, y: -10}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22424388
 RectTransform:
@@ -3477,7 +3478,7 @@ RectTransform:
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: -3.05175781e-05, y: 50}
-  m_SizeDelta: {x: 200, y: 60}
+  m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22451098
 RectTransform:
@@ -3545,8 +3546,8 @@ RectTransform:
   m_RootOrder: 3
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 0, y: -10}
-  m_SizeDelta: {x: 200, y: 60}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22462356
 RectTransform:

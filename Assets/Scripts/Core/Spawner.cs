@@ -8,7 +8,9 @@ public class Spawner : MonoBehaviour {
         {
             // Get spawn position
             var spawnPosition = new Vector3(other.transform.position.x, transform.position.y, transform.position.z);
-            Instantiate(Game.instance.GetSection(), spawnPosition, Quaternion.identity);
+            var stageSection = Game.instance.GetSection();
+            var spawnedObj = Instantiate(stageSection.prefab, spawnPosition, Quaternion.identity);
+            Game.instance.PlaceSectionInActiveList(spawnedObj.name, stageSection);
         }
     }
 

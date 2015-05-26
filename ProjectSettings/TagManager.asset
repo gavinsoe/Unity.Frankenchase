@@ -19,6 +19,7 @@ TagManager:
   - CreepWitchMid
   - CreepWitchBot
   - CreepRam
+  - StageSection
   layers:
   - Default
   - TransparentFX
@@ -37,7 +38,7 @@ TagManager:
   - Triggers
   - Creep Spawner
   - Bottom Floor
-  - 
+  - Destroyer
   - 
   - 
   - 

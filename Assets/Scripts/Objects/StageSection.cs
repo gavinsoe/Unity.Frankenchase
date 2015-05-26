@@ -17,4 +17,10 @@ public class StageSection : System.Object
     /// Location where this section will stop spawning
     /// </summary>
     public float endDistance;
+
+    /// <summary>
+    /// Environment this stage section belongs to
+    /// </summary>
+    [HideInInspector]
+    public Environment environment; 
 }

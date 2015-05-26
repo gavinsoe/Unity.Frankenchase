@@ -17,10 +17,18 @@ public class Destroyer : MonoBehaviour {
         if (other.gameObject.transform.parent)
         {
             Destroy(other.gameObject.transform.parent.gameObject);
+            if (other.gameObject.transform.parent.tag == "StageSection")
+            {
+                Game.instance.ReturnSection(other.gameObject.transform.parent.name);
+            }
         }
         else
         {
             Destroy(other.gameObject);
+            if (other.gameObject.tag == "StageSection")
+            {
+                Game.instance.ReturnSection(other.gameObject.name);
+            }
         }
     }
 }
