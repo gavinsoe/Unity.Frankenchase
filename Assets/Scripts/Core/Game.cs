@@ -37,9 +37,12 @@ public class Game : MonoBehaviour
     public float score; // The total score of current playthrough
 
     // Collection of stages
-    public StageSection[] SectionsCastle;
-    public StageSection[] SectionsGraveyard;
-    public StageSection[] SectionsTown;
+    public List<StageSection> sectionsCastle;
+    public List<StageSection> sectionsGraveyard;
+    public List<StageSection> sectionsTown;
+
+    // Stage sections that are currently active
+    private Dictionary<string, StageSection> sectionsActive;
 
     void Awake()
     {
@@ -237,6 +240,8 @@ public class Game : MonoBehaviour
         currentDirection = Direction.Right;
         currentEnvironment = Environment.Castle;
         currentLocation = 0;
+
+        ResetStageSections();
     }
 
     // Initialise the world?
@@ -262,35 +267,6 @@ public class Game : MonoBehaviour
 
         world.AddInnerWorld(level);
         SoomlaLevelUp.Initialize(world);
-    }
-
-    public GameObject GetSection()
-    {
-        if (currentEnvironment == Environment.Castle)
-        {
-            var sections = SectionsCastle
-                           .Where(s => s.startDistance < distanceTraveled &&
-                                      (s.endDistance < distanceTraveled || s.endDistance == 0)).ToArray();
-
-            return sections[UnityEngine.Random.Range(0, sections.Length)].prefab;   
-        }
-        else if (currentEnvironment == Environment.Graveyard)
-        {
-            var sections = SectionsGraveyard
-                           .Where(s => s.startDistance < distanceTraveled &&
-                                      (s.endDistance < distanceTraveled || s.endDistance == 0)).ToArray();
-
-            return sections[UnityEngine.Random.Range(0, sections.Length)].prefab;   
-        }
-        else // if (currentEnvironment == Environment.Town)
-        {
-            var sections = SectionsTown
-                           .Where(s => s.startDistance < distanceTraveled &&
-                                      (s.endDistance < distanceTraveled || s.endDistance == 0)).ToArray();
-
-            return sections[UnityEngine.Random.Range(0, sections.Length)].prefab;             
-        }
-        
     }
 
     private void LoadSettings()
@@ -322,4 +298,113 @@ public class Game : MonoBehaviour
         }
     }
 
+    #region Stage Sections
+
+    public StageSection GetSection()
+    {
+        if (currentEnvironment == Environment.Castle)
+        {
+            var sections = sectionsCastle
+                           .Where(s => s.startDistance < distanceTraveled &&
+                                      (s.endDistance < distanceTraveled || s.endDistance == 0)).ToArray();
+            
+            // Randomise which section to retrieve
+            var rand = UnityEngine.Random.Range(0, sections.Length);
+
+            // Remove specific section from list.
+            sectionsCastle.RemoveAt(rand);
+
+            // Return the section
+            return sections[rand];
+        }
+        else if (currentEnvironment == Environment.Graveyard)
+        {
+            var sections = sectionsGraveyard
+                           .Where(s => s.startDistance < distanceTraveled &&
+                                      (s.endDistance < distanceTraveled || s.endDistance == 0)).ToArray();
+
+            // Randomise which section to retrieve
+            var rand = UnityEngine.Random.Range(0, sections.Length);
+
+            // Remove specific section from list.
+            sectionsGraveyard.RemoveAt(rand);
+
+            // Return the section
+            return sections[rand];
+        }
+        else // if (currentEnvironment == Environment.Town)
+        {
+            var sections = sectionsTown
+                           .Where(s => s.startDistance < distanceTraveled &&
+                                      (s.endDistance < distanceTraveled || s.endDistance == 0)).ToArray();
+
+            // Randomise which section to retrieve
+            var rand = UnityEngine.Random.Range(0, sections.Length);
+
+            // Remove specific section from list.
+            sectionsTown.RemoveAt(rand);
+
+            // Return the section
+            return sections[rand];
+        }
+    }
+
+    public void PlaceSectionInActiveList(string key, StageSection section)
+    {
+        sectionsActive.Add(key, section);
+    }
+
+    public void ReturnSection(string name)
+    {
+        if (sectionsActive.ContainsKey(name))
+        {
+            if (sectionsActive[name].environment == Environment.Castle)
+            {
+                sectionsCastle.Add(sectionsActive[name]);
+                sectionsActive.Remove(name);
+            }
+            else if (sectionsActive[name].environment == Environment.Graveyard)
+            {
+                sectionsGraveyard.Add(sectionsActive[name]);
+                sectionsActive.Remove(name);
+            }
+            else if (sectionsActive[name].environment == Environment.Town)
+            {
+                sectionsTown.Add(sectionsActive[name]);
+                sectionsActive.Remove(name);
+            }
+        }
+    }
+
+    public void ResetStageSections()
+    {
+        // Initialise (or reset) Stage Sections
+        if (sectionsActive != null)
+        {
+            foreach (var section in sectionsActive.Values)
+            {
+                if (section.environment == Environment.Castle)
+                {
+                    sectionsCastle.Add(section);
+                }
+                else if (section.environment == Environment.Graveyard)
+                {
+                    sectionsGraveyard.Add(section);
+                }
+                else if (section.environment == Environment.Town)
+                {
+                    sectionsTown.Add(section);
+                }
+            }
+        }
+
+        sectionsActive = new Dictionary<string, StageSection>();
+
+        // Make sure the 'environment' variable on each stage section is set properly
+        sectionsCastle.Select(s => s.environment = Environment.Castle);
+        sectionsGraveyard.Select(s => s.environment = Environment.Graveyard);
+        sectionsTown.Select(s => s.environment = Environment.Town);
+    }
+    
+    #endregion
 }
