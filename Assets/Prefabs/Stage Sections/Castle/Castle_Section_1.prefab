@@ -401,7 +401,7 @@ GameObject:
   - 4: {fileID: 496944}
   m_Layer: 0
   m_Name: Castle_Section_1
-  m_TagString: Untagged
+  m_TagString: StageSection
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

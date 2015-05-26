@@ -633,7 +633,7 @@ GameObject:
   - 4: {fileID: 486712}
   m_Layer: 0
   m_Name: Town_Test
-  m_TagString: Untagged
+  m_TagString: StageSection
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3122,6 +3122,7 @@ MonoBehaviour:
     duration: 0
   activateSecondaryEffect: 0
   destroyOnTrigger: 0
+  triggered: 0
 --- !u!114 &11471878
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3143,6 +3144,7 @@ MonoBehaviour:
     duration: 0
   activateSecondaryEffect: 0
   destroyOnTrigger: 0
+  triggered: 0
 --- !u!212 &21200230
 SpriteRenderer:
   m_ObjectHideFlags: 1

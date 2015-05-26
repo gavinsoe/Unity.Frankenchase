@@ -547,7 +547,7 @@ GameObject:
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &143472
 GameObject:
   m_ObjectHideFlags: 0
@@ -558,7 +558,7 @@ GameObject:
   - 4: {fileID: 407130}
   m_Layer: 0
   m_Name: Graveyard_Test
-  m_TagString: Untagged
+  m_TagString: StageSection
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -631,7 +631,7 @@ GameObject:
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &148844
 GameObject:
   m_ObjectHideFlags: 1
@@ -1365,7 +1365,7 @@ GameObject:
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &196784
 GameObject:
   m_ObjectHideFlags: 1
@@ -1552,7 +1552,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 194294}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.1399994, y: -.479999989, z: 0}
+  m_LocalPosition: {x: 17.6399994, y: .0199999996, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 407130}
@@ -1600,7 +1600,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 174290}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17, y: -1.76999998, z: 0}
+  m_LocalPosition: {x: 20, y: -1.76999998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 409656}
@@ -3420,6 +3420,7 @@ MonoBehaviour:
     duration: 0
   activateSecondaryEffect: 0
   destroyOnTrigger: 0
+  triggered: 0
 --- !u!114 &11452264
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3441,6 +3442,7 @@ MonoBehaviour:
     duration: 0
   activateSecondaryEffect: 0
   destroyOnTrigger: 0
+  triggered: 0
 --- !u!114 &11453930
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3462,6 +3464,7 @@ MonoBehaviour:
     duration: 0
   activateSecondaryEffect: 0
   destroyOnTrigger: 0
+  triggered: 0
 --- !u!114 &11454750
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3483,6 +3486,7 @@ MonoBehaviour:
     duration: 0
   activateSecondaryEffect: 0
   destroyOnTrigger: 0
+  triggered: 0
 --- !u!114 &11456364
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3504,6 +3508,7 @@ MonoBehaviour:
     duration: 0
   activateSecondaryEffect: 0
   destroyOnTrigger: 0
+  triggered: 0
 --- !u!114 &11467798
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3525,6 +3530,7 @@ MonoBehaviour:
     duration: 0
   activateSecondaryEffect: 0
   destroyOnTrigger: 0
+  triggered: 0
 --- !u!114 &11482674
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3546,6 +3552,7 @@ MonoBehaviour:
     duration: 0
   activateSecondaryEffect: 0
   destroyOnTrigger: 0
+  triggered: 0
 --- !u!114 &11485928
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3567,6 +3574,7 @@ MonoBehaviour:
     duration: 0
   activateSecondaryEffect: 0
   destroyOnTrigger: 0
+  triggered: 0
 --- !u!114 &11486546
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3588,6 +3596,7 @@ MonoBehaviour:
     duration: 0
   activateSecondaryEffect: 0
   destroyOnTrigger: 0
+  triggered: 0
 --- !u!114 &11494438
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3609,6 +3618,7 @@ MonoBehaviour:
     duration: 0
   activateSecondaryEffect: 0
   destroyOnTrigger: 0
+  triggered: 0
 --- !u!114 &11494562
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3630,6 +3640,7 @@ MonoBehaviour:
     duration: 0
   activateSecondaryEffect: 0
   destroyOnTrigger: 0
+  triggered: 0
 --- !u!212 &21200158
 SpriteRenderer:
   m_ObjectHideFlags: 1
