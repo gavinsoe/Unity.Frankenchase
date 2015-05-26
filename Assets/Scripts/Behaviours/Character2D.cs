@@ -24,8 +24,8 @@ public class Character2D : MonoBehaviour
 
     #region Death Orb related variables
 
-    [SerializeField] 
-    private GameObject debuffObj;
+    [SerializeField]
+    private GameObject deathOrb;
     private Animator animOrb; // Reference to tha animation object that animates the orbs
     [SerializeField]
     private GameObject deathTimer; // A reference to the canvas holding the death timer
@@ -37,8 +37,18 @@ public class Character2D : MonoBehaviour
     private float timeToDeath;
 
     #endregion
+    #region Slow debuff related variable
+
+    [SerializeField]
+    private GameObject debuffSlow;
+    private Animator animSlow; // Reference to the animator object to animate the slow component
+    [SerializeField]
+    private GameObject profSprite; // The gameobject containing the professor sprite
+    private SpriteRenderer profSpriteRenderer; // Reference to the sprite component of the professor
+
+    #endregion
     #region Pause related variables
-    
+
     // Pause variables
     private bool paused; // default to paused
     private Vector2 pausedVelocity;
@@ -52,7 +62,10 @@ public class Character2D : MonoBehaviour
         groundCheck = transform.Find("GroundCheck");
         anim = GetComponent<Animator>();
         body = GetComponent<Rigidbody2D>();
-        animOrb = debuffObj.GetComponent<Animator>();
+        animOrb = deathOrb.GetComponent<Animator>();
+        animSlow = debuffSlow.GetComponent<Animator>();
+        profSpriteRenderer = profSprite.GetComponent<SpriteRenderer>();
+
         deathTimerText = deathTimer.GetComponent<Text>();
 
         // Set default speed
@@ -243,13 +256,38 @@ public class Character2D : MonoBehaviour
         currentSpeed = velocity;
         CancelInvoke("ResetSpeed");
         Invoke("ResetSpeed", duration);
+
+        // Update animation
+        if (currentSpeed < defaultSpeed)
+        {
+            ToggleSlowDebuff(true);
+        }
+        else
+        {
+            ToggleSlowDebuff(false);
+        }
     }
 
     private void ResetSpeed()
     {
         currentSpeed = defaultSpeed;
+        ToggleSlowDebuff(false);
     }
 
+    private void ToggleSlowDebuff(bool active)
+    {
+        if (active)
+        {
+            animSlow.SetBool("Slowed", true);
+            profSpriteRenderer.material.SetColor("_Color",new Color(0.5f, 0.74f, 0.47f, 1f));
+        }
+        else
+        {
+            animSlow.SetBool("Slowed", false);
+            profSpriteRenderer.material.SetColor("_Color", new Color(1f, 1f, 1f, 1f));
+        }            
+        
+    }
     #endregion
 
 }
