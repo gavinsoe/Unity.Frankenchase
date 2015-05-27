@@ -2663,6 +2663,14 @@ MonoBehaviour:
     startDistance: 0
     endDistance: 0
     environment: 0
+  - prefab: {fileID: 115686, guid: 6e0195d69b3cc9043b000fb8d309ff20, type: 2}
+    startDistance: 0
+    endDistance: 0
+    environment: 0
+  - prefab: {fileID: 172418, guid: b08b796624a2e464cb90c749f50ed029, type: 2}
+    startDistance: 0
+    endDistance: 0
+    environment: 0
   sectionsGraveyard: []
   sectionsTown: []
 --- !u!114 &11493532
