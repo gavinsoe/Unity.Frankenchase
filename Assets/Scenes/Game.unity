@@ -396,10 +396,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 143926, guid: 2b24d60eb63c7d643a407cd3cac85bce, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2b24d60eb63c7d643a407cd3cac85bce, type: 2}
   m_IsPrefabParent: 0
@@ -1877,8 +1873,6 @@ Transform:
   - {fileID: 48794246}
   - {fileID: 1259795396}
   - {fileID: 219120440}
-  - {fileID: 1602931098}
-  - {fileID: 1897702831}
   - {fileID: 655310063}
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -2329,7 +2323,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 472092, guid: b106fdbb374af2e4ab45771285cd744b, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.40999997
+      value: -1.5
       objectReference: {fileID: 0}
     - target: {fileID: 472092, guid: b106fdbb374af2e4ab45771285cd744b, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2353,7 +2347,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 472092, guid: b106fdbb374af2e4ab45771285cd744b, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b106fdbb374af2e4ab45771285cd744b, type: 2}
@@ -2443,11 +2437,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 426236, guid: a8b59f43cde04be4db2b757e44245f26, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2.01900005
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 426236, guid: a8b59f43cde04be4db2b757e44245f26, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.41400003
+      value: -1.5
       objectReference: {fileID: 0}
     - target: {fileID: 426236, guid: a8b59f43cde04be4db2b757e44245f26, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2471,7 +2465,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 426236, guid: a8b59f43cde04be4db2b757e44245f26, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a8b59f43cde04be4db2b757e44245f26, type: 2}
@@ -3620,48 +3614,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1597839395}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1602931097
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 137018, guid: 9764467fc84476d40947cf9469c4c036, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1602931098}
-  - 58: {fileID: 1602931099}
-  m_Layer: 15
-  m_Name: Castle_Trigger_Bat_Top
-  m_TagString: CreepBatTop
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
---- !u!4 &1602931098
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 484026, guid: 9764467fc84476d40947cf9469c4c036, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1602931097}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.1400003, y: 2.01999998, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 740015616}
-  m_RootOrder: 4
---- !u!58 &1602931099
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5801308, guid: 9764467fc84476d40947cf9469c4c036,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1602931097}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: .200000003
 --- !u!1 &1628077211
 GameObject:
   m_ObjectHideFlags: 0
@@ -4312,51 +4264,17 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 1147683408}
+    - target: {fileID: 441842, guid: a37a31d09218f364fadef19972f72429, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -10.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 194006, guid: a37a31d09218f364fadef19972f72429, type: 2}
+      propertyPath: m_Layer
+      value: 17
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a37a31d09218f364fadef19972f72429, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1897702830
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 184416, guid: 9764467fc84476d40947cf9469c4c036, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1897702831}
-  - 58: {fileID: 1897702832}
-  m_Layer: 15
-  m_Name: Castle_Trigger_Bat_Mid
-  m_TagString: CreepBatMid
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
---- !u!4 &1897702831
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 426450, guid: 9764467fc84476d40947cf9469c4c036, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1897702830}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.6399994, y: .519999981, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 740015616}
-  m_RootOrder: 5
---- !u!58 &1897702832
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5883726, guid: 9764467fc84476d40947cf9469c4c036,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1897702830}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: .200000003
 --- !u!1 &1909077474
 GameObject:
   m_ObjectHideFlags: 0
