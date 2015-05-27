@@ -84,18 +84,23 @@ public class Game : MonoBehaviour
             // Distance travelled within the last frame.
             var deltaDistance = Mathf.Abs(Character2D.instance.transform.position.x - lastPosition.x);
 
-            distanceTraveled += deltaDistance;
+            // Make sure the value for deltaDistance makes sense
+            // In this case it makes sure that the change in distance within a frame cannot be more than 1
+            if (deltaDistance < 1)
+            {
+                distanceTraveled += deltaDistance;
 
-            UpdateScore(deltaDistance);
+                UpdateScore(deltaDistance);
 
-            UpdateEnvironment(deltaDistance);
+                UpdateEnvironment(deltaDistance);
+            }
 
             // Store location of last position 
             lastPosition = Character2D.instance.transform.position;
         }
 
     }
-
+    
     private void UpdateScore(float deltaDistance)
     {
         // Calculate the score obtained by distance travelled
