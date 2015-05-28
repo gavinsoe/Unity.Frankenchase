@@ -66,13 +66,13 @@
     <Compile Include="Assets\Scripts\Behaviours\Ram.cs" />
     <Compile Include="Assets\Scripts\CameraRunner.cs" />
     <Compile Include="Assets\Scripts\Character2DController.cs" />
-    <Compile Include="Assets\Scripts\Core\Constants.cs" />
-    <Compile Include="Assets\Scripts\Core\CreepSpawner.cs" />
-    <Compile Include="Assets\Scripts\Core\Destroyer.cs" />
-    <Compile Include="Assets\Scripts\Core\Enumerations.cs" />
+    <Compile Include="Assets\Scripts\Common\Constants.cs" />
+    <Compile Include="Assets\Scripts\Common\Effect.cs" />
+    <Compile Include="Assets\Scripts\Common\Enumerations.cs" />
+    <Compile Include="Assets\Scripts\Common\StageSection.cs" />
     <Compile Include="Assets\Scripts\Core\Game.cs" />
+    <Compile Include="Assets\Scripts\Core\HoldingPhase.cs" />
     <Compile Include="Assets\Scripts\Core\NavigationManager.cs" />
-    <Compile Include="Assets\Scripts\Core\Spawner.cs" />
     <Compile Include="Assets\Scripts\GUI\GUIBaseClass.cs" />
     <Compile Include="Assets\Scripts\GUI\GUIGameOver.cs" />
     <Compile Include="Assets\Scripts\GUI\GUIHoldingPhase.cs" />
@@ -80,13 +80,13 @@
     <Compile Include="Assets\Scripts\GUI\GUIPlayMode.cs" />
     <Compile Include="Assets\Scripts\GUI\GUIScore.cs" />
     <Compile Include="Assets\Scripts\GUI\GUITitleScreen.cs" />
-    <Compile Include="Assets\Scripts\HoldingPhase.cs" />
-    <Compile Include="Assets\Scripts\Objects\Effect.cs" />
-    <Compile Include="Assets\Scripts\Objects\StageSection.cs" />
     <Compile Include="Assets\Scripts\StateMachineBehavior\AnimationEndDestroy.cs" />
     <Compile Include="Assets\Scripts\StateMachineBehavior\SpawnRam.cs" />
+    <Compile Include="Assets\Scripts\Triggers\CreepSpawner.cs" />
     <Compile Include="Assets\Scripts\Triggers\DestroyOnHoldPhase.cs" />
+    <Compile Include="Assets\Scripts\Triggers\Destroyer.cs" />
     <Compile Include="Assets\Scripts\Triggers\GameEvents.cs" />
+    <Compile Include="Assets\Scripts\Triggers\Spawner.cs" />
     <Compile Include="Assets\Scripts\Triggers\TrapTrigger.cs" />
   </ItemGroup>
   <ItemGroup>
