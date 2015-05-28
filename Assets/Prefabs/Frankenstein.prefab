@@ -214,7 +214,7 @@ MonoBehaviour:
   jump: 0
   defaultSpeed: 4.5
   currentSpeed: 0
-  jumpForce: 500
+  jumpForce: 600
   whatIsGround:
     serializedVersion: 2
     m_Bits: 66048
