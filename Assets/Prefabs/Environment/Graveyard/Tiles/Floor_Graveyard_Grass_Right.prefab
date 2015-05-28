@@ -11,8 +11,8 @@ GameObject:
   - 212: {fileID: 21291082}
   - 251: {fileID: 25166622}
   - 68: {fileID: 6818850}
-  m_Layer: 9
-  m_Name: Graveyard_Grass_Right
+  m_Layer: 16
+  m_Name: Floor_Graveyard_Grass_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79,7 +79,7 @@ PlatformEffector2D:
   m_Enabled: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 2048
+    m_Bits: 6144
   m_OneWay: 1
   m_SideFriction: 0
   m_SideBounce: 0

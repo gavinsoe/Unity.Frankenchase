@@ -80,7 +80,7 @@ PlatformEffector2D:
   m_Enabled: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 6144
+    m_Bits: 2048
   m_OneWay: 1
   m_SideFriction: 0
   m_SideBounce: 0
