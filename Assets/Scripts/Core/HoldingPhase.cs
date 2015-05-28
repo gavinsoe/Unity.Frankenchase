@@ -9,13 +9,17 @@ public class HoldingPhase : MonoBehaviour {
     private int counter = 0;
 
     public float tapStrength;
-    public float endurance;
-    public float secondaryEndurance;
-    
-    public bool active; // When the holding phase is active
+    public float maxEndurance;
+    public float reductionCoefficient_1;
+    public float reductionCoefficient_2;
 
-    public float frankSpeedupAfterHold;
-    public float frankSpeedupDuration;
+    private float endurance;
+    private float secondaryEndurance;
+    
+    private bool active; // When the holding phase is active
+
+    public float frankSpeedupAfterHold; // Frankenstein's speed after holding phase
+    public float frankSpeedupDuration; // Duration of the speed buff
 
     void Awake()
     {
@@ -35,9 +39,10 @@ public class HoldingPhase : MonoBehaviour {
 	void Update () {
 	    if (active)
         {
-            endurance -= Time.deltaTime * 10;
-            secondaryEndurance -= Time.deltaTime * 10;
-            if (secondaryEndurance >= 50) secondaryEndurance = 50;
+            endurance -= Time.deltaTime * reductionCoefficient_1;
+            secondaryEndurance -= Time.deltaTime * reductionCoefficient_2;
+
+            if (secondaryEndurance >= endurance) secondaryEndurance = endurance;
 
             var progress = (endurance + secondaryEndurance) / 100;
             GUIHoldingPhase.instance.UpdatePositions(progress);
@@ -52,12 +57,9 @@ public class HoldingPhase : MonoBehaviour {
     public void TriggerEvent()
     {
         // Initialise the endurance
-        endurance = 50;
-        secondaryEndurance = 50;
+        endurance = maxEndurance;
+        secondaryEndurance = maxEndurance;
         active = true;
-
-        tapStrength = 5 - counter;
-        if (tapStrength == 0) tapStrength = 1;
     }
 
     public void EndEvent()

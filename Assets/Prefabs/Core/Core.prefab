@@ -1556,11 +1556,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efb46ba55d45bf8408fedb1adf3c25d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tapStrength: 0
-  endurance: 0
-  secondaryEndurance: 0
-  active: 0
-  frankSpeedupAfterHold: 7
+  tapStrength: 2
+  maxEndurance: 50
+  reductionCoefficient_1: 10
+  reductionCoefficient_2: 20
+  frankSpeedupAfterHold: 8
   frankSpeedupDuration: 5
 --- !u!114 &11428262
 MonoBehaviour:
