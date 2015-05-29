@@ -10,6 +10,7 @@ public class TrapTrigger : MonoBehaviour {
     {
         animator = gameObject.GetComponentInParent<Animator>();
     }
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Frankenstein" && !triggered)
@@ -17,4 +18,10 @@ public class TrapTrigger : MonoBehaviour {
             animator.SetTrigger("Trigger");
         }
     }
+
+    void OnDisable()
+    {
+        animator.SetTrigger("Reset");
+    }
+
 }

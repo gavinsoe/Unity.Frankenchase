@@ -16,7 +16,8 @@ public class Destroyer : MonoBehaviour {
         // If object has parent destroy parent
         if (other.gameObject.transform.parent)
         {
-            Destroy(other.gameObject.transform.parent.gameObject);
+            //Destroy(other.gameObject.transform.parent.gameObject);
+            ObjectPool.instance.PoolObject(other.gameObject.transform.parent.gameObject);
             if (other.gameObject.transform.parent.tag == "StageSection")
             {
                 Game.instance.ReturnSection(other.gameObject.transform.parent.name);
@@ -24,7 +25,8 @@ public class Destroyer : MonoBehaviour {
         }
         else
         {
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
+            ObjectPool.instance.PoolObject(other.gameObject);
             if (other.gameObject.tag == "StageSection")
             {
                 Game.instance.ReturnSection(other.gameObject.name);

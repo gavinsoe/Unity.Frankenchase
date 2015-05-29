@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &195792
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 459376}
+  - 114: {fileID: 11453730}
+  m_Layer: 0
+  m_Name: ObjectPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &459376
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195792}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11453730
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a59a6f215bfb9a4db67726d4de886cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Entries:
+  - name: Castle_Section_1
+    Prefab: {fileID: 185438, guid: f723167604c87ec439bd51f352ffccd3, type: 2}
+    Count: 1
+  - name: Castle_Section_2
+    Prefab: {fileID: 171166, guid: b93988559eed1e748a2e6c95dfe71246, type: 2}
+    Count: 1
+  - name: Castle_Section_3
+    Prefab: {fileID: 125868, guid: e136e2117a1f01c459d23d72759b3a56, type: 2}
+    Count: 1
+  - name: Castle_Section_4
+    Prefab: {fileID: 183070, guid: 482e57fca53f37f43ad358c8a01bd697, type: 2}
+    Count: 1
+  - name: Castle_Section_5
+    Prefab: {fileID: 132616, guid: 266479dd0d39b714199ceb9c94133dfb, type: 2}
+    Count: 1
+  - name: Castle_Section_6
+    Prefab: {fileID: 166580, guid: 73e93842c2ffffe44a5c0974920392f3, type: 2}
+    Count: 1
+  - name: Castle_Section_7
+    Prefab: {fileID: 151972, guid: 262064e6a215c204ba75571a30d8b9be, type: 2}
+    Count: 1
+  - name: Castle_Section_8
+    Prefab: {fileID: 115686, guid: 6e0195d69b3cc9043b000fb8d309ff20, type: 2}
+    Count: 1
+  - name: Castle_Section_9
+    Prefab: {fileID: 172418, guid: b08b796624a2e464cb90c749f50ed029, type: 2}
+    Count: 1
+  - name: Castle_Section_10
+    Prefab: {fileID: 132544, guid: cbd432d239b59484ea53299923611bd5, type: 2}
+    Count: 1
+  - name: Castle_Section_11
+    Prefab: {fileID: 103840, guid: 5568cd6751991b74b99c99b66b95857d, type: 2}
+    Count: 1
+  - name: Castle_Section_12
+    Prefab: {fileID: 173516, guid: 69ac6a4699f7448468ba596c4659f710, type: 2}
+    Count: 1
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 195792}
+  m_IsPrefabParent: 1

@@ -7,9 +7,13 @@ public class GameEvents : MonoBehaviour
     [SerializeField] public Effect effectSecondary;
     public bool activateSecondaryEffect;
     public bool destroyOnTrigger; // Whether or not to destroy the object after it has triggered
-
     public bool triggered = false; // Variable to make sure event is only triggered once.
     
+    void OnEnable()
+    {
+        triggered = false;
+    }
+
     void OnTriggerEnter2D(Collider2D other)
     {
         // When in contact with player
