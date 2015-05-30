@@ -247,7 +247,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 456960}
   - 61: {fileID: 6122476}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: SectionEnd
   m_TagString: SectionEnd
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}

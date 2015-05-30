@@ -24,7 +24,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 456834}
   - 61: {fileID: 6172598}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: SectionEnd
   m_TagString: SectionEnd
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
@@ -175,7 +175,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 151972}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.5699997, y: -157.130005, z: 0}
+  m_LocalPosition: {x: 15.5699997, y: -167.630005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 413940}

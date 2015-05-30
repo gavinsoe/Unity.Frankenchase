@@ -12,25 +12,12 @@ public class Destroyer : MonoBehaviour {
             return;
         }
         
-        // If anything else, remove the component
-        // If object has parent destroy parent
-        if (other.gameObject.transform.parent)
+        if (other.transform.root.tag.Equals("StageSection"))
         {
-            //Destroy(other.gameObject.transform.parent.gameObject);
-            ObjectPool.instance.PoolObject(other.gameObject.transform.parent.gameObject);
-            if (other.gameObject.transform.parent.tag == "StageSection")
-            {
-                Game.instance.ReturnSection(other.gameObject.transform.parent.name);
-            }
+            Game.instance.ReturnSection(other.transform.root.name);
         }
-        else
-        {
-            //Destroy(other.gameObject);
-            ObjectPool.instance.PoolObject(other.gameObject);
-            if (other.gameObject.tag == "StageSection")
-            {
-                Game.instance.ReturnSection(other.gameObject.name);
-            }
-        }
+
+        // Pool the component.
+        ObjectPool.instance.PoolObject(other.transform.root.gameObject);
     }
 }

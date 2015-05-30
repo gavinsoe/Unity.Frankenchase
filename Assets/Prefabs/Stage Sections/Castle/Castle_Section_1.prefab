@@ -267,7 +267,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 497812}
   - 61: {fileID: 6198152}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: SectionEnd
   m_TagString: SectionEnd
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
@@ -731,7 +731,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 185438}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.0699997, y: -150.130005, z: 0}
+  m_LocalPosition: {x: 11.5699997, y: -160.630005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 409260}
@@ -1203,6 +1203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c25c92f51b5b304b877e7e3855d947b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
 --- !u!114 &11471038
 MonoBehaviour:
   m_ObjectHideFlags: 1
