@@ -2,15 +2,20 @@
 using System.Collections;
 
 public class TrapTrigger : MonoBehaviour {
-    private Animator animator;
+    public Animator animator;
 
     private bool triggered = false; // Variable to make sure event is only triggered once.
 
-    void Start()
+    void Awake()
     {
         animator = gameObject.GetComponentInParent<Animator>();
     }
 
+    void OnDisable()
+    {
+        animator.SetTrigger("Reset");
+    }
+    
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Frankenstein" && !triggered)
@@ -18,10 +23,4 @@ public class TrapTrigger : MonoBehaviour {
             animator.SetTrigger("Trigger");
         }
     }
-
-    void OnDisable()
-    {
-        animator.SetTrigger("Reset");
-    }
-
 }

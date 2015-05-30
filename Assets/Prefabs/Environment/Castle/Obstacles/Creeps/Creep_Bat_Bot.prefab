@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 423542}
   - 95: {fileID: 9551306}
   - 114: {fileID: 11478012}
+  - 114: {fileID: 11491360}
   m_Layer: 10
   m_Name: Creep_Bat_Bot
   m_TagString: Untagged
@@ -220,6 +221,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a092f7c0b5c441b468360e0ada6048ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11491360
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 102566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c91e43def7a3f043859152221bc6486, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &21296052

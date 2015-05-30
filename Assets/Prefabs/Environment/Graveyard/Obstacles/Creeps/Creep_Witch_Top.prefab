@@ -44,6 +44,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 427614}
   - 95: {fileID: 9567792}
+  - 114: {fileID: 11422076}
   m_Layer: 10
   m_Name: Creep_Witch_Top
   m_TagString: Untagged
@@ -167,6 +168,17 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &11422076
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c91e43def7a3f043859152221bc6486, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11459788
 MonoBehaviour:
   m_ObjectHideFlags: 1

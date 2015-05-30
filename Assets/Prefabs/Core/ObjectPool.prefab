@@ -40,6 +40,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Entries:
+  - name: Creep_Bat_Bot
+    Prefab: {fileID: 102566, guid: 3b331e13bd9b28b438ecd526f2f36c1f, type: 2}
+    Count: 5
+  - name: Creep_Bat_Mid
+    Prefab: {fileID: 111218, guid: 9f3ef8f6b3d3d9a4fa6a27eab24058a7, type: 2}
+    Count: 5
+  - name: Creep_Bat_Top
+    Prefab: {fileID: 179426, guid: c10206a1f481ed846b36783031342d57, type: 2}
+    Count: 5
   - name: Castle_Section_1
     Prefab: {fileID: 185438, guid: f723167604c87ec439bd51f352ffccd3, type: 2}
     Count: 1
@@ -76,6 +85,21 @@ MonoBehaviour:
   - name: Castle_Section_12
     Prefab: {fileID: 173516, guid: 69ac6a4699f7448468ba596c4659f710, type: 2}
     Count: 1
+  - name: Creep_Witch_Bot
+    Prefab: {fileID: 161798, guid: e217fe7cb547ffd408b598e73036f3f5, type: 2}
+    Count: 5
+  - name: Creep_Witch_Mid
+    Prefab: {fileID: 112270, guid: ccaa8e571354fb941b626ba268e8934f, type: 2}
+    Count: 5
+  - name: Creep_Witch_Top
+    Prefab: {fileID: 119204, guid: 452dc8a7738f6674c8a76abc37d70a8e, type: 2}
+    Count: 5
+  - name: Creep_Ram
+    Prefab: {fileID: 187954, guid: 8d2539e35ca5e7245b4e933bd6eb1fcf, type: 2}
+    Count: 5
+  - name: Graveyard_Trap_Ram
+    Prefab: {fileID: 173558, guid: 1729cf569a886e143b7563699552e868, type: 2}
+    Count: 5
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

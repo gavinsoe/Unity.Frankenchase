@@ -17,7 +17,7 @@ public class CreepSpawner : MonoBehaviour
         {
             // Set the spawn position (should be zero)
             var spawnPosition = new Vector3(0, 0, 10);
-            var bat = Instantiate(batTop);
+            var bat = ObjectPool.instance.GetObjectForType(batTop.name, false);
             bat.transform.parent = Camera.main.transform;
             bat.transform.localPosition = spawnPosition;
 
@@ -28,7 +28,7 @@ public class CreepSpawner : MonoBehaviour
         {
             // Set the spawn position (should be zero)
             var spawnPosition = new Vector3(0, 0, 10);
-            var bat = Instantiate(batMid);
+            var bat = ObjectPool.instance.GetObjectForType(batMid.name, false);
             bat.transform.parent = Camera.main.transform;
             bat.transform.localPosition = spawnPosition;
 
@@ -39,7 +39,7 @@ public class CreepSpawner : MonoBehaviour
         {
             // Set the spawn position (should be zero)
             var spawnPosition = new Vector3(0, 0, 10);
-            var bat = Instantiate(batBot);
+            var bat = ObjectPool.instance.GetObjectForType(batBot.name, false);
             bat.transform.parent = Camera.main.transform;
             bat.transform.localPosition = spawnPosition;
 
@@ -50,9 +50,9 @@ public class CreepSpawner : MonoBehaviour
         {
             // Set the spawn position (should be zero)
             var spawnPosition = new Vector3(0, 0, 10);
-            var bat = Instantiate(witchTop);
-            bat.transform.parent = Camera.main.transform;
-            bat.transform.localPosition = spawnPosition;
+            var witch = ObjectPool.instance.GetObjectForType(witchTop.name, false);
+            witch.transform.parent = Camera.main.transform;
+            witch.transform.localPosition = spawnPosition;
 
             // Destroy trigger to prevent event from triggering multiple times
             Destroy(other.gameObject);
@@ -61,9 +61,9 @@ public class CreepSpawner : MonoBehaviour
         {
             // Set the spawn position (should be zero)
             var spawnPosition = new Vector3(0, 0, 10);
-            var bat = Instantiate(witchMid);
-            bat.transform.parent = Camera.main.transform;
-            bat.transform.localPosition = spawnPosition;
+            var witch = ObjectPool.instance.GetObjectForType(witchMid.name, false);
+            witch.transform.parent = Camera.main.transform;
+            witch.transform.localPosition = spawnPosition;
 
             // Destroy trigger to prevent event from triggering multiple times
             Destroy(other.gameObject);
@@ -72,9 +72,9 @@ public class CreepSpawner : MonoBehaviour
         {
             // Set the spawn position (should be zero)
             var spawnPosition = new Vector3(0, 0, 10);
-            var bat = Instantiate(witchBot);
-            bat.transform.parent = Camera.main.transform;
-            bat.transform.localPosition = spawnPosition;
+            var witch = ObjectPool.instance.GetObjectForType(witchBot.name, false);
+            witch.transform.parent = Camera.main.transform;
+            witch.transform.localPosition = spawnPosition;
 
             // Destroy trigger to prevent event from triggering multiple times
             Destroy(other.gameObject);
@@ -83,7 +83,7 @@ public class CreepSpawner : MonoBehaviour
         {
             // Set the spawn position (should be zero)
             var spawnPosition = new Vector3(0, 0, 10);
-            var spawn = Instantiate(ram);
+            var spawn = ObjectPool.instance.GetObjectForType(ram.name, false);
             spawn.transform.parent = Camera.main.transform;
             spawn.transform.localPosition = spawnPosition;
 

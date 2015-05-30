@@ -63,6 +63,7 @@ GameObject:
   - 4: {fileID: 497134}
   - 95: {fileID: 9546644}
   - 114: {fileID: 11476300}
+  - 114: {fileID: 11428382}
   m_Layer: 10
   m_Name: Creep_Bat_Top
   m_TagString: Untagged
@@ -126,6 +127,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11428382
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 179426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c91e43def7a3f043859152221bc6486, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11446288
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -18,7 +18,7 @@ public class SpawnRam : StateMachineBehaviour {
                     Character2D.instance.transform.position.y,
                     Character2D.instance.transform.position.z
                 );                
-            var ram = Instantiate(this.ram);
+            var ram = ObjectPool.instance.GetObjectForType(this.ram.name, false);
             ram.transform.position = spawnPosition;
         }
 	}

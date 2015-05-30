@@ -147,7 +147,6 @@ public class ObjectPool : MonoBehaviour
     /// </param>
     public void PoolObject(GameObject obj)
     {
-
         for (int i = 0; i < Entries.Length; i++)
         {
             if (Entries[i].Prefab.name != obj.name)
@@ -159,5 +158,8 @@ public class ObjectPool : MonoBehaviour
 
             return;
         }
+
+        // If object not found in pool, destroy it.
+        Destroy(obj);
     }
 }
