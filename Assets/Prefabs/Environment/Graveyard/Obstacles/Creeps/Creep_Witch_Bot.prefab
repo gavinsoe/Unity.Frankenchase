@@ -11,6 +11,7 @@ GameObject:
   - 223: {fileID: 22329250}
   - 114: {fileID: 11486960}
   - 114: {fileID: 11489554}
+  - 114: {fileID: 11435906}
   m_Layer: 10
   m_Name: Canvas
   m_TagString: Untagged
@@ -174,6 +175,17 @@ MonoBehaviour:
   activateSecondaryEffect: 0
   destroyOnTrigger: 0
   triggered: 0
+--- !u!114 &11435906
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 140754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f877cd548eb3bfd4a93c34368ab3dd69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11466672
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -262,9 +274,9 @@ Canvas:
   m_GameObject: {fileID: 140754}
   m_Enabled: 1
   serializedVersion: 2
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 10
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -304,7 +316,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -100, y: -300}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 200, y: 60}
   m_Pivot: {x: .5, y: .5}
 --- !u!1001 &100100000
 Prefab:

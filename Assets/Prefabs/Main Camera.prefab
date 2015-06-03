@@ -70,7 +70,7 @@ GameObject:
   - 61: {fileID: 6187990}
   - 50: {fileID: 5028234}
   - 114: {fileID: 11416952}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Destroyer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   - 61: {fileID: 6156922}
   - 50: {fileID: 5067530}
   - 114: {fileID: 11459902}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: .300000012
-  far clip plane: 1000
+  far clip plane: 50
   field of view: 60
   orthographic: 1
   orthographic size: 2.5

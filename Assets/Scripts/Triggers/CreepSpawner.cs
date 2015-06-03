@@ -22,7 +22,7 @@ public class CreepSpawner : MonoBehaviour
             bat.transform.localPosition = spawnPosition;
 
             // Destroy trigger to prevent event from triggering multiple times
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
         }
         else if (other.tag.Equals("CreepBatMid"))
         {
@@ -33,7 +33,7 @@ public class CreepSpawner : MonoBehaviour
             bat.transform.localPosition = spawnPosition;
 
             // Destroy trigger to prevent event from triggering multiple times
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
         }
         else if (other.tag.Equals("CreepBatBot"))
         {
@@ -44,7 +44,7 @@ public class CreepSpawner : MonoBehaviour
             bat.transform.localPosition = spawnPosition;
 
             // Destroy trigger to prevent event from triggering multiple times
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
         }
         else if (other.tag.Equals("CreepWitchTop"))
         {
@@ -55,7 +55,7 @@ public class CreepSpawner : MonoBehaviour
             witch.transform.localPosition = spawnPosition;
 
             // Destroy trigger to prevent event from triggering multiple times
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
         }
         else if (other.tag.Equals("CreepWitchMid"))
         {
@@ -66,7 +66,7 @@ public class CreepSpawner : MonoBehaviour
             witch.transform.localPosition = spawnPosition;
 
             // Destroy trigger to prevent event from triggering multiple times
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
         }
         else if (other.tag.Equals("CreepWitchBot"))
         {
@@ -77,7 +77,7 @@ public class CreepSpawner : MonoBehaviour
             witch.transform.localPosition = spawnPosition;
 
             // Destroy trigger to prevent event from triggering multiple times
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
         }
         else if (other.tag.Equals("CreepRam"))
         {
@@ -88,7 +88,7 @@ public class CreepSpawner : MonoBehaviour
             spawn.transform.localPosition = spawnPosition;
 
             // Destroy trigger to prevent event from triggering multiple times
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
         }
     }
 }
