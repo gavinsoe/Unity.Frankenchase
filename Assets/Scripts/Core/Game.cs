@@ -56,6 +56,8 @@ public class Game : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        Application.targetFrameRate = 60;
     }
 
     void Start()
@@ -170,22 +172,22 @@ public class Game : MonoBehaviour
             {
                 if (Character2D.instance.currentSpeed > Frankenstein.instance.currentSpeed)
                 {
-                    GUIPlayMode.instance.TriggerDistanceIndicator("Catching up! 0.8");
+                    //GUIPlayMode.instance.TriggerDistanceIndicator("Catching up! 0.8");
                 }
                 else
                 {
-                    GUIPlayMode.instance.TriggerDistanceIndicator("He's getting away! 0.8");
+                    //GUIPlayMode.instance.TriggerDistanceIndicator("He's getting away! 0.8");
                 }
             }
             else if (distanceFromFrankenstein > maxDistanceFromFrankenstein * 0.6)
             {
                 if (Character2D.instance.currentSpeed > Frankenstein.instance.currentSpeed)
                 {
-                    GUIPlayMode.instance.TriggerDistanceIndicator("Catching up! 0.6");
+                    //GUIPlayMode.instance.TriggerDistanceIndicator("Catching up! 0.6");
                 }
                 else
                 {
-                    GUIPlayMode.instance.TriggerDistanceIndicator("He's getting away! 0.6");
+                    //GUIPlayMode.instance.TriggerDistanceIndicator("He's getting away! 0.6");
                 }
                 
             }
@@ -193,11 +195,11 @@ public class Game : MonoBehaviour
             {
                 if (Character2D.instance.currentSpeed > Frankenstein.instance.currentSpeed)
                 {
-                    GUIPlayMode.instance.TriggerDistanceIndicator("Catching up! 0.4");
+                    //GUIPlayMode.instance.TriggerDistanceIndicator("Catching up! 0.4");
                 }
                 else
                 {
-                    GUIPlayMode.instance.TriggerDistanceIndicator("He's getting away! 0.4");
+                    //GUIPlayMode.instance.TriggerDistanceIndicator("He's getting away! 0.4");
                 }
                 
             }
