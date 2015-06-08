@@ -33,15 +33,11 @@ public class GUITitleScreen : GUIBaseClass
         SoundToggleBtn = SoundToggleBtnObject.GetComponent<Toggle>();
     }
 
-    public void SetHighscore(double score)
-    {
-        HighscoreText.text = score.ToString("0");
-    }
-    
     public void UpdateHighscore()
     {
-        HighscoreText.text = 
-        SoomlaLevelUp.GetLevel(Constants.lvlup_level_main).GetSingleScore().Record.ToString("0");
+        var score = SoomlaLevelUp.GetLevel(Constants.lvlup_level_main).GetSingleScore().Record;
+        if (score < 0 ) score = 0;
+        HighscoreText.text = score.ToString("0");
     }
 
     public void SetSoundBtnState(bool state)
