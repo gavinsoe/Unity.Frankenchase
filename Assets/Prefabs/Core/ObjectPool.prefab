@@ -100,6 +100,30 @@ MonoBehaviour:
   - name: Graveyard_Trap_Ram
     Prefab: {fileID: 173558, guid: 1729cf569a886e143b7563699552e868, type: 2}
     Count: 5
+  - name: Graveyard_Section_1
+    Prefab: {fileID: 142664, guid: 28ccfcfc4351fc44484eaed73358e3b1, type: 2}
+    Count: 5
+  - name: Graveyard_Section_2
+    Prefab: {fileID: 100116, guid: 33125ebf9c1253640b757a3858576311, type: 2}
+    Count: 5
+  - name: Graveyard_Section_3
+    Prefab: {fileID: 131550, guid: 2500d579f0caf0b4c86fd2b653c240fd, type: 2}
+    Count: 5
+  - name: Graveyard_Section_4
+    Prefab: {fileID: 159650, guid: b9bbe58bef3e1f04280c380b14e2b445, type: 2}
+    Count: 5
+  - name: Graveyard_Section_5
+    Prefab: {fileID: 147770, guid: afad9c799536da24eb19a7e2de3a1389, type: 2}
+    Count: 5
+  - name: Graveyard_Section_6
+    Prefab: {fileID: 126700, guid: aeb19643c888482408d3775c57260a5a, type: 2}
+    Count: 5
+  - name: Graveyard_Section_7
+    Prefab: {fileID: 115256, guid: d2c46cf2f2d77484f8058393a54b418a, type: 2}
+    Count: 5
+  - name: Graveyard_Section_8
+    Prefab: {fileID: 120110, guid: cf7fa3d6e8e3d4147a1e67de2476d919, type: 2}
+    Count: 5
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

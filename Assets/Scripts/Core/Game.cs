@@ -415,9 +415,9 @@ public class Game : MonoBehaviour
         sectionsActive = new Dictionary<string, StageSection>();
 
         // Make sure the 'environment' variable on each stage section is set properly
-        sectionsCastle.Select(s => s.environment = Environment.Castle);
-        sectionsGraveyard.Select(s => s.environment = Environment.Graveyard);
-        sectionsTown.Select(s => s.environment = Environment.Town);
+        foreach (var section in sectionsCastle) section.environment = Environment.Castle;
+        foreach (var section in sectionsGraveyard) section.environment = Environment.Graveyard;
+        foreach (var section in sectionsTown) section.environment = Environment.Town;
     }
     
     #endregion
