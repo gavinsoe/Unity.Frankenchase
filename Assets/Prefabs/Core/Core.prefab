@@ -2747,7 +2747,39 @@ MonoBehaviour:
     startDistance: 20000
     endDistance: 0
     environment: 0
-  sectionsGraveyard: []
+  sectionsGraveyard:
+  - prefab: {fileID: 142664, guid: 28ccfcfc4351fc44484eaed73358e3b1, type: 2}
+    startDistance: 0
+    endDistance: 0
+    environment: 0
+  - prefab: {fileID: 100116, guid: 33125ebf9c1253640b757a3858576311, type: 2}
+    startDistance: 0
+    endDistance: 0
+    environment: 0
+  - prefab: {fileID: 131550, guid: 2500d579f0caf0b4c86fd2b653c240fd, type: 2}
+    startDistance: 0
+    endDistance: 0
+    environment: 0
+  - prefab: {fileID: 159650, guid: b9bbe58bef3e1f04280c380b14e2b445, type: 2}
+    startDistance: 0
+    endDistance: 0
+    environment: 0
+  - prefab: {fileID: 147770, guid: afad9c799536da24eb19a7e2de3a1389, type: 2}
+    startDistance: 0
+    endDistance: 0
+    environment: 0
+  - prefab: {fileID: 126700, guid: aeb19643c888482408d3775c57260a5a, type: 2}
+    startDistance: 0
+    endDistance: 0
+    environment: 0
+  - prefab: {fileID: 115256, guid: d2c46cf2f2d77484f8058393a54b418a, type: 2}
+    startDistance: 0
+    endDistance: 0
+    environment: 0
+  - prefab: {fileID: 120110, guid: cf7fa3d6e8e3d4147a1e67de2476d919, type: 2}
+    startDistance: 0
+    endDistance: 0
+    environment: 0
   sectionsTown: []
 --- !u!114 &11493532
 MonoBehaviour:
