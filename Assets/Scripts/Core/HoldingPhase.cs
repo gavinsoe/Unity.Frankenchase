@@ -10,11 +10,9 @@ public class HoldingPhase : MonoBehaviour {
 
     public float tapStrength;
     public float maxEndurance;
-    public float reductionCoefficient_1;
-    public float reductionCoefficient_2;
-
     private float endurance;
-    private float secondaryEndurance;
+    public float holdingPhaseDuration;
+    private float remainingTime;
     
     private bool active; // When the holding phase is active
 
@@ -33,32 +31,61 @@ public class HoldingPhase : MonoBehaviour {
         {
             Destroy(gameObject);
         }
+
+        endurance = maxEndurance;
     }
 
 	// Update is called once per frame
 	void Update () {
 	    if (active)
         {
-            endurance -= Time.deltaTime * reductionCoefficient_1;
-            secondaryEndurance -= Time.deltaTime * reductionCoefficient_2;
+            remainingTime -= Time.deltaTime;
 
-            if (secondaryEndurance >= endurance) secondaryEndurance = endurance;
-
-            var progress = (endurance + secondaryEndurance) / 100;
+            var progress = remainingTime / holdingPhaseDuration;
+            var health = endurance / maxEndurance;
             GUIHoldingPhase.instance.UpdatePositions(progress);
+            GUIHoldingPhase.instance.UpdateHealth(health);
 
-            if (progress < 0)
+            /* End the phase when one of the following is true
+             *    - Duration ends
+             *    - Environment is Castle and Health < 66%
+             *    - Environment is Graveyard and Health < 33%
+             *    - Health runs out
+             */ 
+            if (remainingTime < 0)
             {
                 EndEvent();
+            } 
+            /*
+            else if (Game.instance.currentEnvironment == Environment.Castle 
+                     && health < 0.66)
+            {
+                // Change environment and end event
+                Game.instance.currentEnvironment = Environment.Graveyard;
+                EndEvent();
             }
+            else if (Game.instance.currentEnvironment == Environment.Graveyard
+                     && health < 0.33)
+            {
+                // Change environment and end event
+                Game.instance.currentEnvironment = Environment.Town;
+                EndEvent();
+            }
+            else if (health < 0)
+            {
+                EndEvent();
+                NavigationManager.instance.GameOver();
+            }
+                 * */
         }
 	}
 
     public void TriggerEvent()
     {
         // Initialise the endurance
-        endurance = maxEndurance;
-        secondaryEndurance = maxEndurance;
+        //endurance = maxEndurance;
+        //secondaryEndurance = maxEndurance;
+        remainingTime = holdingPhaseDuration;
         active = true;
     }
 
@@ -76,6 +103,7 @@ public class HoldingPhase : MonoBehaviour {
     public void Tapped()
     {
         //Debug.Log("tapped");
-        secondaryEndurance += tapStrength;
+        //secondaryEndurance += tapStrength;
+        endurance -= tapStrength;
     }
 }

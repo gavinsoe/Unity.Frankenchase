@@ -164,9 +164,7 @@ public class NavigationManager : MonoBehaviour
 
         // Update the state of the game
         Game.instance.currentState = GameState.HoldingPhase;
-        // Set the direction the professor is to run to
-        Game.instance.SetDirection();
-
+        
         // Set character states
         Character2D.instance.Pause();
         Frankenstein.instance.Pause();

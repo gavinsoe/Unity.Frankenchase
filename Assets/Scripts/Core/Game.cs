@@ -93,8 +93,9 @@ public class Game : MonoBehaviour
                 distanceTraveled += deltaDistance;
 
                 UpdateScore(deltaDistance);
-
-                UpdateEnvironment(deltaDistance);
+                
+                // Currently not used, environment will be based on Monster's health.
+                //UpdateEnvironment(deltaDistance);
             }
 
             // Store location of last position 
@@ -119,6 +120,10 @@ public class Game : MonoBehaviour
         GUIScore.instance.SetScore(score);
     }
 
+    /// <summary>
+    /// Currently not used, environment will be based on the Monster's health.
+    /// </summary>
+    /// <param name="deltaDistance"></param>
     private void UpdateEnvironment(float deltaDistance)
     {
         if (currentDirection == Direction.Right)
@@ -207,7 +212,9 @@ public class Game : MonoBehaviour
         }
     }
 
-    // This is called after the end of a holding phase to determine which direction to go to.
+    /// <summary>
+    /// No Longer used.
+    /// </summary>
     public void SetDirection()
     {
         // Determine which direction to move to

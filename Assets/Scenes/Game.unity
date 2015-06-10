@@ -437,12 +437,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 215096355}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!68 &215096358
 EdgeCollider2D:
@@ -682,12 +683,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 321360428}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!68 &321360431
 EdgeCollider2D:
@@ -811,12 +813,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 356781035}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!68 &356781038
 EdgeCollider2D:
@@ -953,12 +956,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 421406952}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!68 &421406955
 EdgeCollider2D:
@@ -1159,12 +1163,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 491650914}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!68 &491650916
 EdgeCollider2D:
@@ -1258,12 +1263,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 559122497}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!68 &559122500
 EdgeCollider2D:
@@ -1493,7 +1499,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 645644033}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &655310063
+--- !u!4 &655310063 stripped
 Transform:
   m_PrefabParentObject: {fileID: 485026, guid: 394f024e818ff2e4b8d3ff678b6727aa, type: 2}
   m_PrefabInternal: {fileID: 353708994}
@@ -1795,12 +1801,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 738080232}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!68 &738080235
 EdgeCollider2D:
@@ -2174,12 +2181,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 931934034}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!68 &931934037
 EdgeCollider2D:
@@ -2261,12 +2269,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 934595054}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!68 &934595057
 EdgeCollider2D:
@@ -2467,6 +2476,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 174152, guid: a8b59f43cde04be4db2b757e44245f26, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a8b59f43cde04be4db2b757e44245f26, type: 2}
   m_IsPrefabParent: 0
@@ -2569,7 +2582,7 @@ SpriteRenderer:
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 218e2737b97d84c4fae02ddf8eb3d2f9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!4 &1147683408
+--- !u!4 &1147683408 stripped
 Transform:
   m_PrefabParentObject: {fileID: 472092, guid: b106fdbb374af2e4ab45771285cd744b, type: 2}
   m_PrefabInternal: {fileID: 961127990}
@@ -2860,12 +2873,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1293809937}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!68 &1293809940
 EdgeCollider2D:
@@ -3002,12 +3016,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1346959903}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!68 &1346959906
 EdgeCollider2D:
@@ -3089,12 +3104,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1349198246}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!68 &1349198249
 EdgeCollider2D:
@@ -3176,12 +3192,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1354309591}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!68 &1354309594
 EdgeCollider2D:
@@ -3413,12 +3430,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1482924675}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!68 &1482924678
 EdgeCollider2D:
@@ -3996,12 +4014,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1688805229}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!68 &1688805232
 EdgeCollider2D:
@@ -4138,12 +4157,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1791616174}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!68 &1791616177
 EdgeCollider2D:
@@ -4486,12 +4506,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1920764279}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!68 &1920764282
 EdgeCollider2D:

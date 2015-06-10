@@ -55,6 +55,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &105044
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 22407104}
+  - 222: {fileID: 22213998}
+  - 114: {fileID: 11446816}
+  m_Layer: 0
+  m_Name: Health
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &105858
 GameObject:
   m_ObjectHideFlags: 1
@@ -1545,6 +1562,9 @@ MonoBehaviour:
   frank: {fileID: 182774}
   frankStartPosition: -109
   frankEndPosition: 145
+  healthObj: {fileID: 105044}
+  healthStartPos: 0
+  healthEndPos: -800
 --- !u!114 &11423956
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1557,9 +1577,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tapStrength: 2
-  maxEndurance: 50
-  reductionCoefficient_1: 10
-  reductionCoefficient_2: 20
+  maxEndurance: 1000
+  holdingPhaseDuration: 5
   frankSpeedupAfterHold: 8
   frankSpeedupDuration: 5
 --- !u!114 &11428262
@@ -1950,6 +1969,27 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &11446816
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 105044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 1, b: 0, a: 1}
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
 --- !u!114 &11446992
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2829,6 +2869,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 186476}
+--- !u!222 &22213998
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 105044}
 --- !u!222 &22218162
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -3199,6 +3245,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!224 &22407104
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 105044}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 22438126}
+  m_RootOrder: 4
+  m_AnchorMin: {x: .5, y: 1}
+  m_AnchorMax: {x: .5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -10}
+  m_SizeDelta: {x: 800, y: 20}
+  m_Pivot: {x: .5, y: .5}
 --- !u!224 &22409488
 RectTransform:
   m_ObjectHideFlags: 1
@@ -3439,6 +3502,7 @@ RectTransform:
   - {fileID: 22495148}
   - {fileID: 22463642}
   - {fileID: 22437462}
+  - {fileID: 22407104}
   m_Father: {fileID: 410338}
   m_RootOrder: 4
   m_AnchorMin: {x: 0, y: 0}
