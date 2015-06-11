@@ -124,6 +124,12 @@ MonoBehaviour:
   - name: Graveyard_Section_8
     Prefab: {fileID: 120110, guid: cf7fa3d6e8e3d4147a1e67de2476d919, type: 2}
     Count: 5
+  - name: Graveyard_Section_9
+    Prefab: {fileID: 147734, guid: 327ea8815767709499f7ae5b5159f8f2, type: 2}
+    Count: 5
+  - name: Graveyard_Section_10
+    Prefab: {fileID: 185534, guid: f8021332ff606354face249099be4c8e, type: 2}
+    Count: 5
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

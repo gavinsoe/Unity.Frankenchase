@@ -1577,7 +1577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tapStrength: 2
-  maxEndurance: 1000
+  maxEndurance: 100
   holdingPhaseDuration: 5
   frankSpeedupAfterHold: 8
   frankSpeedupDuration: 5
@@ -2777,6 +2777,14 @@ MonoBehaviour:
     endDistance: 0
     environment: 0
   - prefab: {fileID: 120110, guid: cf7fa3d6e8e3d4147a1e67de2476d919, type: 2}
+    startDistance: 0
+    endDistance: 0
+    environment: 0
+  - prefab: {fileID: 147734, guid: 327ea8815767709499f7ae5b5159f8f2, type: 2}
+    startDistance: 0
+    endDistance: 0
+    environment: 0
+  - prefab: {fileID: 185534, guid: f8021332ff606354face249099be4c8e, type: 2}
     startDistance: 0
     endDistance: 0
     environment: 0
