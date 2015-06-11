@@ -246,6 +246,7 @@ public class Game : MonoBehaviour
         distanceScore = 0;
         holdPhaseScore = 0;
         score = 0;
+        HoldingPhase.instance.ResetEndurance();
 
         // Update the score on the GUI
         GUIScore.instance.SetScore(score);
