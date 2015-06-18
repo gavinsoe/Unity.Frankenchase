@@ -1577,7 +1577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tapStrength: 2
-  maxEndurance: 100
+  maxEndurance: 1000
   holdingPhaseDuration: 5
   frankSpeedupAfterHold: 8
   frankSpeedupDuration: 5

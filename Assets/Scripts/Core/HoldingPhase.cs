@@ -56,7 +56,6 @@ public class HoldingPhase : MonoBehaviour {
             {
                 EndEvent();
             } 
-            /*
             else if (Game.instance.currentEnvironment == Environment.Castle 
                      && health < 0.66)
             {
@@ -64,6 +63,7 @@ public class HoldingPhase : MonoBehaviour {
                 Game.instance.currentEnvironment = Environment.Graveyard;
                 EndEvent();
             }
+            /*
             else if (Game.instance.currentEnvironment == Environment.Graveyard
                      && health < 0.33)
             {
@@ -98,6 +98,11 @@ public class HoldingPhase : MonoBehaviour {
         // Boost Frankenstein's speed
         Frankenstein.instance.SetSpeed(frankSpeedupAfterHold, frankSpeedupDuration);
         Frankenstein.instance.EnableInvincibility(frankSpeedupDuration);
+    }
+
+    public void ResetEndurance()
+    {
+        endurance = maxEndurance;
     }
 
     public void Tapped()
