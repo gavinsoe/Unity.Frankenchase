@@ -129,48 +129,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 262064e6a215c204ba75571a30d8b9be, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &210880951
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 415082, guid: 69ac6a4699f7448468ba596c4659f710, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 23.5699997
-      objectReference: {fileID: 0}
-    - target: {fileID: 415082, guid: 69ac6a4699f7448468ba596c4659f710, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -174.630005
-      objectReference: {fileID: 0}
-    - target: {fileID: 415082, guid: 69ac6a4699f7448468ba596c4659f710, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 415082, guid: 69ac6a4699f7448468ba596c4659f710, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 415082, guid: 69ac6a4699f7448468ba596c4659f710, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 415082, guid: 69ac6a4699f7448468ba596c4659f710, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 415082, guid: 69ac6a4699f7448468ba596c4659f710, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 415082, guid: 69ac6a4699f7448468ba596c4659f710, type: 2}
-      propertyPath: m_RootOrder
-      value: 17
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 69ac6a4699f7448468ba596c4659f710, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &267856723
 Prefab:
   m_ObjectHideFlags: 0
@@ -255,7 +213,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6e0195d69b3cc9043b000fb8d309ff20, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &605168399
+--- !u!1001 &884113360
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -557,6 +515,48 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9764467fc84476d40947cf9469c4c036, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1467719112
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 415082, guid: 69ac6a4699f7448468ba596c4659f710, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 23.5699997
+      objectReference: {fileID: 0}
+    - target: {fileID: 415082, guid: 69ac6a4699f7448468ba596c4659f710, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -174.630005
+      objectReference: {fileID: 0}
+    - target: {fileID: 415082, guid: 69ac6a4699f7448468ba596c4659f710, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 415082, guid: 69ac6a4699f7448468ba596c4659f710, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 415082, guid: 69ac6a4699f7448468ba596c4659f710, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 415082, guid: 69ac6a4699f7448468ba596c4659f710, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 415082, guid: 69ac6a4699f7448468ba596c4659f710, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 415082, guid: 69ac6a4699f7448468ba596c4659f710, type: 2}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 69ac6a4699f7448468ba596c4659f710, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1599631064
 Prefab:
