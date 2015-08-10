@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class Frankenstein : MonoBehaviour
@@ -21,6 +22,12 @@ public class Frankenstein : MonoBehaviour
     private Rigidbody2D body; // A link to the rigidbody objecty of the character
     private GameEvents trigger; // A link to the trigger that will initiate the holding phase
     
+    // Things related to frankenstein's health
+    public float maxHealth;
+    private float curHealth;
+    [SerializeField] 
+    private GameObject damageTxtObject;
+
     // Pause variables
     private bool paused;
     private bool immune;
@@ -37,6 +44,9 @@ public class Frankenstein : MonoBehaviour
 
         // Set default speed
         currentSpeed = defaultSpeed;
+
+        // set health
+        curHealth = maxHealth;
 
         // Allow other classes to access this class
         instance = this;
@@ -192,5 +202,36 @@ public class Frankenstein : MonoBehaviour
         trigger.triggered = false;
     }
     #endregion
+    
+    #region Damage
 
+    public void TakeDamage(int damage)
+    {
+        var text = Instantiate(damageTxtObject);
+        text.transform.parent = transform;
+        text.transform.localPosition = new Vector3(0, 0, 0);
+
+        text.GetComponentInChildren<Text>().text = damage.ToString();
+        curHealth -= damage;
+
+        if (curHealth <= 0)
+        {
+            Dead();
+        }
+    }
+
+    public void Dead()
+    {
+        // TODO: Ideally destroy and summon another monster
+        // Reset health
+        maxHealth += 100;
+        curHealth = maxHealth;
+        var nextPosition = transform.position;
+        nextPosition.x += 10;
+
+        transform.position = nextPosition;
+
+    }
+
+    #endregion
 }

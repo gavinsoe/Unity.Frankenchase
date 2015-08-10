@@ -263,7 +263,7 @@ public class Game : MonoBehaviour
     private void InitializeWorld()
     {
         // Initialise Soomla Highway (online statistics)
-        //SoomlaHighway.Initialize();
+        SoomlaHighway.Initialize();
         
         // Initialise Soomla Profile (Social media integrations)
         SoomlaProfile.Initialize();

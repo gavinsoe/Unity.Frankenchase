@@ -67,10 +67,15 @@ public class GameEvents : MonoBehaviour
         }
         else if (effect.type == EffectType.HoldingPhase)
         {
+            // Temporarily change to do damage
+            Frankenstein.instance.TakeDamage(100);
+
+            /*
             // Trigger the holding phase
             NavigationManager.instance.HoldingPhaseStart();
             triggered = true;
             if (destroyOnTrigger) Destroy(gameObject);
+             */
         }
     }
 
