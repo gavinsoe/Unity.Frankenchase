@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\Common\ObjectPool.cs" />
      <Compile Include="Assets\Scripts\Common\SetRenderMainCamera.cs" />
      <Compile Include="Assets\Scripts\Common\StageSection.cs" />
+     <Compile Include="Assets\Scripts\Core\BackgroundController.cs" />
      <Compile Include="Assets\Scripts\Core\Game.cs" />
      <Compile Include="Assets\Scripts\Core\HoldingPhase.cs" />
      <Compile Include="Assets\Scripts\Core\NavigationManager.cs" />

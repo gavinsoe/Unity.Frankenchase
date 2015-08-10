@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Brick Wall
+  m_Name: Concrete Floor
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -18,8 +18,8 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: 7c6e8d7de0241a947bc207b1bb940668, type: 3}
-          m_Scale: {x: 15, y: 8}
+          m_Texture: {fileID: 2800000, guid: 940ed29f063683049912160f7ae28583, type: 3}
+          m_Scale: {x: 10, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
@@ -82,10 +82,6 @@ Material:
         first:
           name: _Cutoff
         second: .5
-      data:
-        first:
-          name: PixelSnap
-        second: 0
       data:
         first:
           name: _SrcBlend
