@@ -5,15 +5,27 @@ public class BackgroundController : MonoBehaviour {
 
     public GameObject referencedObject;
     public float multiplier;
-    private Renderer background;
+    private Renderer bgRenderer;
+    public Background[] backgrounds;
 
 	// Use this for initialization
-	void Start () {
-        background = gameObject.GetComponent<Renderer>();
+	void Start ()
+    {
+        bgRenderer = gameObject.GetComponent<Renderer>();
+        foreach (var bg in backgrounds)
+        {
+            if (bg.environment == Game.instance.currentEnvironment)
+            {
+                bgRenderer.material = bg.material;
+                multiplier = bg.movementMultiplier;
+            }
+        }
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        background.material.mainTextureOffset = new Vector2(multiplier * referencedObject.transform.position.x, background.material.mainTextureOffset.y);
+        bgRenderer.material.mainTextureOffset = 
+            new Vector2(multiplier * referencedObject.transform.position.x,
+                        bgRenderer.material.mainTextureOffset.y);
 	}
 }
