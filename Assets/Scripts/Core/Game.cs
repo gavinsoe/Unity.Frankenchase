@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using Soomla.Store;
 using Soomla.Highway;
 using Soomla.Levelup;
 using Soomla.Profile;
@@ -24,8 +25,8 @@ public class Game : MonoBehaviour
     private float holdPhaseScore; // Bonus score obtained in the holding phase
     public float holdPhaseScoreMultiplier = 50f; // To be multiplied by the holding time to calculate score.
 
-    public float distanceFromFrankenstein;
-    public float maxDistanceFromFrankenstein;
+    public float distanceFromMonster;
+    public float maxDistanceFromMonster;
 
     public Direction currentDirection; // The direction the character is travelling
     public Environment currentEnvironment; // The current environment the character is in
@@ -58,6 +59,7 @@ public class Game : MonoBehaviour
         }
 
         Application.targetFrameRate = 60;
+        InitializeArsenal();
     }
 
     void Start()
@@ -162,20 +164,20 @@ public class Game : MonoBehaviour
 
     private void UpdateDistanceFromTarget()
     {
-        if (Character2D.instance != null && Frankenstein.instance != null)
+        if (Character2D.instance != null && MonsterController.instance != null)
         {
-            distanceFromFrankenstein = Mathf.Abs(Character2D.instance.transform.position.x -
-                                                 Frankenstein.instance.transform.position.x);
+            distanceFromMonster = Mathf.Abs(Character2D.instance.transform.position.x -
+                                                 MonsterController.instance.transform.position.x);
 
             // Depending on how far apart they are, display certain messages
-            if (distanceFromFrankenstein > maxDistanceFromFrankenstein)
+            if (distanceFromMonster > maxDistanceFromMonster)
             {
                 // Game Over
                 NavigationManager.instance.GameOver();
             }
-            else if (distanceFromFrankenstein > maxDistanceFromFrankenstein * 0.8)
+            else if (distanceFromMonster > maxDistanceFromMonster * 0.8)
             {
-                if (Character2D.instance.currentSpeed > Frankenstein.instance.currentSpeed)
+                if (Character2D.instance.currentSpeed > MonsterController.instance.currentSpeed)
                 {
                     //GUIPlayMode.instance.TriggerDistanceIndicator("Catching up! 0.8");
                 }
@@ -184,9 +186,9 @@ public class Game : MonoBehaviour
                     //GUIPlayMode.instance.TriggerDistanceIndicator("He's getting away! 0.8");
                 }
             }
-            else if (distanceFromFrankenstein > maxDistanceFromFrankenstein * 0.6)
+            else if (distanceFromMonster > maxDistanceFromMonster * 0.6)
             {
-                if (Character2D.instance.currentSpeed > Frankenstein.instance.currentSpeed)
+                if (Character2D.instance.currentSpeed > MonsterController.instance.currentSpeed)
                 {
                     //GUIPlayMode.instance.TriggerDistanceIndicator("Catching up! 0.6");
                 }
@@ -196,9 +198,9 @@ public class Game : MonoBehaviour
                 }
                 
             }
-            else if (distanceFromFrankenstein > maxDistanceFromFrankenstein * 0.4)
+            else if (distanceFromMonster > maxDistanceFromMonster * 0.4)
             {
-                if (Character2D.instance.currentSpeed > Frankenstein.instance.currentSpeed)
+                if (Character2D.instance.currentSpeed > MonsterController.instance.currentSpeed)
                 {
                     //GUIPlayMode.instance.TriggerDistanceIndicator("Catching up! 0.4");
                 }
@@ -209,23 +211,6 @@ public class Game : MonoBehaviour
                 
             }
 
-        }
-    }
-
-    /// <summary>
-    /// No Longer used.
-    /// </summary>
-    public void SetDirection()
-    {
-        // Determine which direction to move to
-        var rand = UnityEngine.Random.Range(0, locationTownEnd);
-        if (rand < currentLocation)
-        {
-            currentDirection = Direction.Left;
-        }
-        else
-        {
-            currentDirection = Direction.Right;
         }
     }
 

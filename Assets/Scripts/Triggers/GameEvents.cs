@@ -68,7 +68,7 @@ public class GameEvents : MonoBehaviour
         else if (effect.type == EffectType.HoldingPhase)
         {
             // Temporarily change to do damage
-            Frankenstein.instance.TakeDamage(100);
+            MonsterController.instance.TakeDamage(100);
 
             /*
             // Trigger the holding phase
