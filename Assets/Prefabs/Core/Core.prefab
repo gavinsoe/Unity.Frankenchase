@@ -2689,8 +2689,8 @@ MonoBehaviour:
   currentState: 0
   distanceScoreMultiplier: 1
   holdPhaseScoreMultiplier: 50
-  distanceFromFrankenstein: 0
-  maxDistanceFromFrankenstein: 25
+  distanceFromMonster: 0
+  maxDistanceFromMonster: 25
   currentDirection: 1
   currentEnvironment: 0
   currentLocation: 0
@@ -2789,6 +2789,7 @@ MonoBehaviour:
     endDistance: 0
     environment: 0
   sectionsTown: []
+  weaponArsenal: []
 --- !u!114 &11493532
 MonoBehaviour:
   m_ObjectHideFlags: 1

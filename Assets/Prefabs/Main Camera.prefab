@@ -169,7 +169,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 179792}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.1200008, y: -82, z: -40}
+  m_LocalPosition: {x: -.5, y: 0, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 441842}
@@ -319,7 +319,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 3a5740fefa6e9474dbba5383864afcc3, type: 2}
+  - {fileID: 2100000, guid: bb51feac34dfd8145957dd8ecfb897d4, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -551,7 +551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  cameraXOffset: 3
+  cameraXOffset: 4
   cameraYOffset: 0
   cameraZOffset: -10
 --- !u!114 &11416952
@@ -596,6 +596,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   referencedObject: {fileID: 0}
   multiplier: .670000017
+  backgrounds:
+  - environment: 0
+    material: {fileID: 2100000, guid: 3a5740fefa6e9474dbba5383864afcc3, type: 2}
+    movementMultiplier: .670000017
+  - environment: 1
+    material: {fileID: 2100000, guid: b018d60771f85564bb222c0c914a78fd, type: 2}
+    movementMultiplier: .670000017
+  - environment: 2
+    material: {fileID: 2100000, guid: bb51feac34dfd8145957dd8ecfb897d4, type: 2}
+    movementMultiplier: .670000017
 --- !u!114 &11459132
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -642,6 +652,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   referencedObject: {fileID: 0}
   multiplier: 1
+  backgrounds:
+  - environment: 0
+    material: {fileID: 2100000, guid: 1c9602fc27bf2694a83bc1372f38ad92, type: 2}
+    movementMultiplier: 1
+  - environment: 1
+    material: {fileID: 2100000, guid: 38b194ab750b0734c9091ba4d41d9851, type: 2}
+    movementMultiplier: .5
+  - environment: 2
+    material: {fileID: 2100000, guid: 38b194ab750b0734c9091ba4d41d9851, type: 2}
+    movementMultiplier: .5
 --- !u!124 &12482284
 Behaviour:
   m_ObjectHideFlags: 1
