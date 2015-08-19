@@ -155,7 +155,7 @@ BoxCollider2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 123888}
   m_Enabled: 1
-  m_Material: {fileID: 6200000, guid: bd8d38b5f62d865489a168a0ccafec56, type: 2}
+  m_Material: {fileID: 6200000, guid: 66b2ce71bbda47445869f10efbb09d62, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: .0149999997, y: -.170000002}
@@ -215,26 +215,26 @@ MonoBehaviour:
     environment: 0
   - name: Golem
     anim: {fileID: 9100000, guid: 18c76f010bf03704c93855e3660ca313, type: 2}
-    environment: 0
+    environment: 1
   - name: Hunter
     anim: {fileID: 9100000, guid: b2702a573861ad3489754ad99d4fe419, type: 2}
     environment: 0
   - name: Naga
     anim: {fileID: 9100000, guid: b63c493a0449e9f438e4e55bc26e3b5d, type: 2}
-    environment: 0
+    environment: 1
   - name: Phantom
     anim: {fileID: 9100000, guid: fcd140c1ca5a6b34da2a2157f4259148, type: 2}
-    environment: 0
+    environment: 1
   - name: Ram God
     anim: {fileID: 9100000, guid: 0dbee8d1fc5fa7342a05565c7876a919, type: 2}
-    environment: 0
+    environment: 1
   - name: Skelly
     anim: {fileID: 9100000, guid: 696860181599f1547be5f3f3c1d59434, type: 2}
     environment: 0
   - name: Sorcerer
     anim: {fileID: 9100000, guid: 2d80f34d00d967a4d9f7e9fc050b9bc9, type: 2}
     environment: 0
-  defaultSpeed: 4.30000019
+  defaultSpeed: 3.5999999
   currentSpeed: 0
   speedBoost: 1
   speedBoostDuration: 2

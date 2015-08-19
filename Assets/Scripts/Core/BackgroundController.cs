@@ -15,8 +15,16 @@ public class BackgroundController : MonoBehaviour {
         {
             if (bg.environment == Game.instance.currentEnvironment)
             {
-                bgRenderer.material = bg.material;
-                multiplier = bg.movementMultiplier;
+                if (bg.material == null)
+                {
+                    gameObject.SetActive(false);
+                }
+                else
+                {
+                    bgRenderer.material = bg.material;
+                    multiplier = bg.movementMultiplier;
+                    transform.localScale = new Vector3(bg.scaleX, bg.scaleY, 1);
+                }
             }
         }
 	}

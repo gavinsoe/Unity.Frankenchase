@@ -18,4 +18,9 @@ public class Background : System.Object
     /// </summary>
     public float movementMultiplier;
 
+    public float scaleX;
+
+    public float scaleY;
+
+
 }
