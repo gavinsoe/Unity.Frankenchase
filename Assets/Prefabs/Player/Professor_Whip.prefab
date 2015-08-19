@@ -461,6 +461,7 @@ MonoBehaviour:
   groundedRadius: .100000001
   equippedWeapon:
     type: 0
+  arrow: {fileID: 199476, guid: 92e5821d40d3b5f4eb7e635c444bba23, type: 2}
   deathOrb: {fileID: 123370}
   deathTimer: {fileID: 196248}
   debuffDeathTimer: 10

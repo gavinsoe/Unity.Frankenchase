@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: f66eacdfdcbb5d24783ebc65a1bb81b4
-timeCreated: 1439362414
+guid: a06cb5129b3757f4fb4a69403acaf83d
+timeCreated: 1439967081
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: sprite_weapon_revolver_fire_0
-    21300002: sprite_weapon_revolver_fire_1
-    21300004: sprite_weapon_revolver_fire_2
-    21300006: sprite_weapon_revolver_fire_3
+    21300000: sprite_weapon_crossbow_fire_0
+    21300002: sprite_weapon_crossbow_fire_1
+    21300004: sprite_weapon_crossbow_fire_2
+    21300006: sprite_weapon_crossbow_fire_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -53,7 +53,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: sprite_weapon_revolver_fire_0
+    - name: sprite_weapon_crossbow_fire_0
       rect:
         serializedVersion: 2
         x: 0
@@ -63,7 +63,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: sprite_weapon_revolver_fire_1
+    - name: sprite_weapon_crossbow_fire_1
       rect:
         serializedVersion: 2
         x: 192
@@ -73,7 +73,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: sprite_weapon_revolver_fire_2
+    - name: sprite_weapon_crossbow_fire_2
       rect:
         serializedVersion: 2
         x: 384
@@ -83,7 +83,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: sprite_weapon_revolver_fire_3
+    - name: sprite_weapon_crossbow_fire_3
       rect:
         serializedVersion: 2
         x: 576

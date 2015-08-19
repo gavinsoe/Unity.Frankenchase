@@ -94,9 +94,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 400432}
   - 212: {fileID: 21252480}
-  m_Layer: 11
+  - 58: {fileID: 5802990}
+  m_Layer: 14
   m_Name: Sprite
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -314,6 +315,19 @@ Rigidbody2D:
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!58 &5802990
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 157534}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: -.899999976, y: -.5}
+  serializedVersion: 2
+  m_Radius: 6
 --- !u!61 &6104098
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -445,6 +459,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 66048
   groundedRadius: .100000001
+  equippedWeapon:
+    type: 0
+  arrow: {fileID: 199476, guid: 92e5821d40d3b5f4eb7e635c444bba23, type: 2}
   deathOrb: {fileID: 123370}
   deathTimer: {fileID: 196248}
   debuffDeathTimer: 10

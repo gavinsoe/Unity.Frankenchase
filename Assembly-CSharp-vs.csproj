@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\BackgroundParallax.cs" />
+     <Compile Include="Assets\Scripts\Behaviours\ArrowController.cs" />
      <Compile Include="Assets\Scripts\Behaviours\Character2D.cs" />
      <Compile Include="Assets\Scripts\Behaviours\Frankenstein.cs" />
      <Compile Include="Assets\Scripts\Behaviours\MonsterController.cs" />

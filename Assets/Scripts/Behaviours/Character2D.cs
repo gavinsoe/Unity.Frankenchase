@@ -27,6 +27,9 @@ public class Character2D : MonoBehaviour
 
     public Weapon equippedWeapon;
     private bool weaponOnCooldown;
+    public GameObject arrow;
+    public float arrowSpawnXOffset = 0.2419f;
+    public float arrowSpawnYOffset = -0.177f;
 
     #endregion
 
@@ -199,16 +202,29 @@ public class Character2D : MonoBehaviour
            }
         }
         // Has aim time.
-        else if (equippedWeapon.type == WeaponType.Crossbow)
+        else if (equippedWeapon.type == WeaponType.Crossbow && !weaponOnCooldown)
         {
-
+            anim.SetTrigger("Attack");
+            Invoke("ShootProjectile", 0.25f);
+            weaponOnCooldown = true;
+            Invoke("ResetCooldown", equippedWeapon.cooldown);
         }
+    }
+
+    public void ShootProjectile()
+    {
+        Instantiate(arrow,
+                    new Vector3(transform.position.x + arrowSpawnXOffset,
+                                transform.position.y + arrowSpawnYOffset,
+                                transform.position.z),
+                    transform.rotation);
     }
 
     public void ResetCooldown()
     {
         weaponOnCooldown = false;
     }
+
     #endregion
 
     public void Pause()
