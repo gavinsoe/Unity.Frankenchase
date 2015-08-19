@@ -328,7 +328,7 @@ public class Game : MonoBehaviour
     public Weapon GetEquippedWeapon()
     {
         // Temporarilt equip whip (for testing)
-        StoreInventory.EquipVirtualGood(StoreAssets.WEAPON_CROSSBOW_ID);
+        StoreInventory.EquipVirtualGood(StoreAssets.WEAPON_WHIP_ID);
 
         foreach (var weapon in weaponArsenal.Values)
         {

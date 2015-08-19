@@ -190,10 +190,9 @@ public class Character2D : MonoBehaviour
             }
         }
         // Attacks everytime something is in range (has cooldown)
-        else if (equippedWeapon.type == WeaponType.Whip)
+        else if (equippedWeapon.type == WeaponType.Whip && !weaponOnCooldown)
         {
-           if (target.tag == "Monster" && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") &&
-               !weaponOnCooldown)
+           if (target.tag == "Monster")
            {
                anim.SetTrigger("Attack");
                MonsterController.instance.TakeDamageDelay(0.25f);
