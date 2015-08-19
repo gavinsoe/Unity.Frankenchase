@@ -204,15 +204,16 @@ public class Character2D : MonoBehaviour
         // Has aim time.
         else if (equippedWeapon.type == WeaponType.Crossbow && !weaponOnCooldown)
         {
-            anim.SetTrigger("Attack");
-            Invoke("ShootProjectile", 0.25f);
+            anim.SetTrigger("Aim");
             weaponOnCooldown = true;
+            MonsterController.instance.Targeted();
             Invoke("ResetCooldown", equippedWeapon.cooldown);
         }
     }
 
     public void ShootProjectile()
     {
+        anim.SetTrigger("Shoot");
         Instantiate(arrow,
                     new Vector3(transform.position.x + arrowSpawnXOffset,
                                 transform.position.y + arrowSpawnYOffset,

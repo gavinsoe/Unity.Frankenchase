@@ -22,8 +22,9 @@ public class MonsterController : MonoBehaviour {
     public float speedBoostDuration; // Duration of the speed buff
 
     #endregion
-    #region HP
+    #region HP/Damage related
 
+    [SerializeField] private GameObject scopeObject; // Reference to the scope animation
     [SerializeField]
     private float maxHealth; // Maximum health of the monster
     public float curHealth; // Current health of the monster
@@ -229,5 +230,10 @@ public class MonsterController : MonoBehaviour {
         SetSpeed(Character2D.instance.currentSpeed + speedBoost, 0.5f);
     }
 
+    public void Targeted()
+    {
+        var scope = Instantiate(scopeObject);
+        scope.transform.SetParent(transform, false);
+    }
     #endregion
 }

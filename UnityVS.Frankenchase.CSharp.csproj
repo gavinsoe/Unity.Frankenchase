@@ -95,6 +95,8 @@
     <Compile Include="Assets\Scripts\GUI\GUIScore.cs" />
     <Compile Include="Assets\Scripts\GUI\GUITitleScreen.cs" />
     <Compile Include="Assets\Scripts\StateMachineBehavior\AnimationEndDestroy.cs" />
+    <Compile Include="Assets\Scripts\StateMachineBehavior\AnimationEndShootProjectile.cs" />
+    <Compile Include="Assets\Scripts\StateMachineBehavior\SetAimToFalse.cs" />
     <Compile Include="Assets\Scripts\StateMachineBehavior\SpawnRam.cs" />
     <Compile Include="Assets\Scripts\Triggers\CreepSpawner.cs" />
     <Compile Include="Assets\Scripts\Triggers\DestroyAfterAnimation.cs" />

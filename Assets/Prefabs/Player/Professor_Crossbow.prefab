@@ -95,7 +95,7 @@ GameObject:
   - 4: {fileID: 400432}
   - 212: {fileID: 21252480}
   - 58: {fileID: 5802990}
-  m_Layer: 14
+  m_Layer: 11
   m_Name: Sprite
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -462,6 +462,8 @@ MonoBehaviour:
   equippedWeapon:
     type: 0
   arrow: {fileID: 199476, guid: 92e5821d40d3b5f4eb7e635c444bba23, type: 2}
+  arrowSpawnXOffset: .241899997
+  arrowSpawnYOffset: -.177000001
   deathOrb: {fileID: 123370}
   deathTimer: {fileID: 196248}
   debuffDeathTimer: 10
