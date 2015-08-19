@@ -11,7 +11,7 @@ TagManager:
   - Chaser
   - SectionEnd
   - JumpTrigger
-  - Frankenstein
+  - Monster
   - CreepBatTop
   - CreepBatMid
   - CreepBatBot
@@ -20,6 +20,7 @@ TagManager:
   - CreepWitchBot
   - CreepRam
   - StageSection
+  - Frankenstein
   layers:
   - Default
   - TransparentFX
@@ -33,7 +34,7 @@ TagManager:
   - Environment
   - Obstacle
   - Professor
-  - Frankenstein
+  - Monster
   - Powerup
   - Triggers
   - Creep Spawner

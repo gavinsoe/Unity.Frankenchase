@@ -26,7 +26,7 @@ public class MonsterController : MonoBehaviour {
 
     [SerializeField]
     private float maxHealth; // Maximum health of the monster
-    private float curHealth; // Current health of the monster
+    public float curHealth; // Current health of the monster
     [SerializeField]
     private GameObject damageTxtObject; // Reference to the damage text animation
 
@@ -47,7 +47,13 @@ public class MonsterController : MonoBehaviour {
     private bool grounded = false; // Whether or not the player is grounded
 
     #endregion
+    #region propelling force
 
+    public float xDir = 10f;
+    public float yDir = 10f;
+    public ForceMode2D forceMode = ForceMode2D.Force;
+
+    #endregion
     private void Awake()
     {
         // Setting up references
@@ -62,14 +68,18 @@ public class MonsterController : MonoBehaviour {
         // Set health
         curHealth = maxHealth;
 
+        // Allow other classes to access this class
+        instance = this;
+    }
+
+    private void Start()
+    {
         // Randomly select one monster to activate
-        var rand = Random.Range(0,monsters.Length);
+        var rand = Random.Range(0, monsters.Length);
         selectedMonster = monsters[rand];
         anim.runtimeAnimatorController = selectedMonster.anim;
         Game.instance.currentEnvironment = selectedMonster.environment;
 
-        // Allow other classes to access this class
-        instance = this;
     }
 
     private void FixedUpdate()
@@ -121,7 +131,16 @@ public class MonsterController : MonoBehaviour {
             body.velocity = new Vector2(currentSpeed, body.velocity.y);
         }
     }
-    
+
+    // Kill the character
+    public void Kill()
+    {
+        paused = true;
+        anim.enabled = false;
+        body.isKinematic = true;
+        body.Sleep();
+    }
+
     #region Game States
 
     public void Pause()
@@ -183,12 +202,18 @@ public class MonsterController : MonoBehaviour {
 
     #endregion
     #region Endurance / Health
-
-    public void TakeDamage(int damage)
+    public void TakeDamageDelay(float delay)
     {
+        Invoke("TakeDamage", delay);
+    }
+
+    public void TakeDamage()
+    {
+        var damage = Character2D.instance.equippedWeapon.damage;
+
+        CameraRunner.instance.Shake(0.1f);
         var text = Instantiate(damageTxtObject);
-        text.transform.parent = transform;
-        text.transform.localPosition = new Vector3(0, 0, 0);
+        text.transform.SetParent(transform, false);
 
         text.GetComponentInChildren<Text>().text = damage.ToString();
         curHealth -= damage;
@@ -196,8 +221,12 @@ public class MonsterController : MonoBehaviour {
         if (curHealth <= 0)
         {
             // Kill it somehow
-            NavigationManager.instance.GameOver();
+            //NavigationManager.instance.GameOver();
         }
+
+        // Slightly push/stagger monster away when attacked
+        body.AddForce(new Vector2(xDir, yDir), forceMode);
+        SetSpeed(Character2D.instance.currentSpeed + speedBoost, 0.5f);
     }
 
     #endregion

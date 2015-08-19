@@ -3,7 +3,6 @@ using System.Collections;
 
 public class BackgroundController : MonoBehaviour {
 
-    public GameObject referencedObject;
     public float multiplier;
     private Renderer bgRenderer;
     public Background[] backgrounds;
@@ -24,8 +23,12 @@ public class BackgroundController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        bgRenderer.material.mainTextureOffset = 
-            new Vector2(multiplier * referencedObject.transform.position.x,
-                        bgRenderer.material.mainTextureOffset.y);
+        if (Character2D.instance != null &&
+            Character2D.instance.transform != null)
+        {
+            bgRenderer.material.mainTextureOffset =
+            new Vector2(multiplier * Character2D.instance.transform.position.x,
+                        bgRenderer.material.mainTextureOffset.y);    
+        }
 	}
 }

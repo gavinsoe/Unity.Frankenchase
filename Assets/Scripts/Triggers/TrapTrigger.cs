@@ -18,7 +18,7 @@ public class TrapTrigger : MonoBehaviour {
     
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Frankenstein" && !triggered)
+        if (other.tag == "Monster" && !triggered)
         {
             animator.SetTrigger("Trigger");
         }

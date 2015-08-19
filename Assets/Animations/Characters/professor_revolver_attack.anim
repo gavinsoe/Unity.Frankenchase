@@ -5,7 +5,7 @@ AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: professor_run
+  m_Name: professor_revolver_attack
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -18,11 +18,13 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300024, guid: ff19d06b03de3ed4c95b038b3708c62c, type: 3}
+      value: {fileID: 21300000, guid: f66eacdfdcbb5d24783ebc65a1bb81b4, type: 3}
+    - time: .0833333358
+      value: {fileID: 21300002, guid: f66eacdfdcbb5d24783ebc65a1bb81b4, type: 3}
     - time: .166666672
-      value: {fileID: 21300026, guid: ff19d06b03de3ed4c95b038b3708c62c, type: 3}
-    - time: .333333343
-      value: {fileID: 21300024, guid: ff19d06b03de3ed4c95b038b3708c62c, type: 3}
+      value: {fileID: 21300004, guid: f66eacdfdcbb5d24783ebc65a1bb81b4, type: 3}
+    - time: .25
+      value: {fileID: 21300006, guid: f66eacdfdcbb5d24783ebc65a1bb81b4, type: 3}
     attribute: m_Sprite
     path: Sprite
     classID: 212
@@ -41,13 +43,14 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300024, guid: ff19d06b03de3ed4c95b038b3708c62c, type: 3}
-    - {fileID: 21300026, guid: ff19d06b03de3ed4c95b038b3708c62c, type: 3}
-    - {fileID: 21300024, guid: ff19d06b03de3ed4c95b038b3708c62c, type: 3}
+    - {fileID: 21300000, guid: f66eacdfdcbb5d24783ebc65a1bb81b4, type: 3}
+    - {fileID: 21300002, guid: f66eacdfdcbb5d24783ebc65a1bb81b4, type: 3}
+    - {fileID: 21300004, guid: f66eacdfdcbb5d24783ebc65a1bb81b4, type: 3}
+    - {fileID: 21300006, guid: f66eacdfdcbb5d24783ebc65a1bb81b4, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_StartTime: 0
-    m_StopTime: .416666687
+    m_StopTime: .333333343
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

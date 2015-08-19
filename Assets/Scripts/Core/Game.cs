@@ -42,6 +42,8 @@ public class Game : MonoBehaviour
     public List<StageSection> sectionsGraveyard;
     public List<StageSection> sectionsTown;
 
+    private Dictionary<string, Weapon> weaponArsenal; // List of available weapons (and upgrade Levels)
+
     // Stage sections that are currently active
     private Dictionary<string, StageSection> sectionsActive;
 
@@ -59,7 +61,6 @@ public class Game : MonoBehaviour
         }
 
         Application.targetFrameRate = 60;
-        InitializeArsenal();
     }
 
     void Start()
@@ -82,12 +83,13 @@ public class Game : MonoBehaviour
             UpdateDistanceFromTarget();
         }
 
-        if (currentState == GameState.ChasingPhase ||
-            currentState == GameState.HoldingPhase)
+        if ((currentState == GameState.ChasingPhase ||
+            currentState == GameState.HoldingPhase) &&
+            Character2D.instance != null)
         {
             // Distance travelled within the last frame.
             var deltaDistance = Mathf.Abs(Character2D.instance.transform.position.x - lastPosition.x);
-
+                        
             // Make sure the value for deltaDistance makes sense
             // In this case it makes sure that the change in distance within a frame cannot be more than 1
             if (deltaDistance < 1)
@@ -250,6 +252,9 @@ public class Game : MonoBehaviour
         // Initialise Soomla Highway (online statistics)
         SoomlaHighway.Initialize();
         
+        // Initialise Soomla Store (Items and stuff)
+        SoomlaStore.Initialize(new StoreAssets());
+
         // Initialise Soomla Profile (Social media integrations)
         SoomlaProfile.Initialize();
 
@@ -267,6 +272,8 @@ public class Game : MonoBehaviour
 
         world.AddInnerWorld(level);
         SoomlaLevelUp.Initialize(world);
+
+        InitializeArsenal();
     }
 
     private void LoadSettings()
@@ -298,6 +305,45 @@ public class Game : MonoBehaviour
         }
     }
 
+    #region Weapons
+
+    private void InitializeArsenal()
+    {
+        // Make sure player owns the weapons
+        if (StoreInventory.GetItemBalance(StoreAssets.WEAPON_SWORD_ID) <= 0)
+            StoreInventory.GiveItem(StoreAssets.WEAPON_SWORD_ID, 1);
+        if (StoreInventory.GetItemBalance(StoreAssets.WEAPON_WHIP_ID) <= 0)
+            StoreInventory.GiveItem(StoreAssets.WEAPON_WHIP_ID, 1);
+        if (StoreInventory.GetItemBalance(StoreAssets.WEAPON_CROSSBOW_ID) <= 0)
+            StoreInventory.GiveItem(StoreAssets.WEAPON_CROSSBOW_ID, 1);
+
+        weaponArsenal = new Dictionary<string,Weapon>();
+        var weaponIDs = StoreAssets.GetItemsInCategory(StoreAssets.CATEGORY_WEAPON_NAME);
+        foreach (var weaponID in weaponIDs)
+        {
+            weaponArsenal.Add(weaponID, new Weapon(weaponID));
+        }
+    }
+
+    public Weapon GetEquippedWeapon()
+    {
+        // Temporarilt equip whip (for testing)
+        StoreInventory.EquipVirtualGood(StoreAssets.WEAPON_WHIP_ID);
+
+        foreach (var weapon in weaponArsenal.Values)
+        {
+            if (weapon.equipped)
+            {
+                return weapon;
+            }
+        }
+        // Should never reach this point, but if it does, return first weapon and equip it
+        var first_weapon = weaponArsenal.Values.First();
+        StoreInventory.EquipVirtualGood(first_weapon.weaponID);
+        return first_weapon;
+    }
+
+    #endregion
     #region Stage Sections
 
     public StageSection GetSection()

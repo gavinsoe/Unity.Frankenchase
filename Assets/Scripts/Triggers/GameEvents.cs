@@ -29,7 +29,7 @@ public class GameEvents : MonoBehaviour
             }
             
         }
-        else if (other.tag == "Frankenstein" && !triggered)
+        else if (other.tag == "Monster" && !triggered)
         {
             if (!activateSecondaryEffect)
             {
@@ -38,6 +38,21 @@ public class GameEvents : MonoBehaviour
             else
             {
                 FrankensteinEvents(effectSecondary);
+            }
+        }
+    }
+
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.tag == "Player" && !triggered)
+        {
+            if (!activateSecondaryEffect)
+            {
+                PlayerEvents(effectPrimary);
+            }
+            else
+            {
+                PlayerEvents(effectSecondary);
             }
         }
     }
@@ -68,7 +83,8 @@ public class GameEvents : MonoBehaviour
         else if (effect.type == EffectType.HoldingPhase)
         {
             // Temporarily change to do damage
-            MonsterController.instance.TakeDamage(100);
+            //MonsterController.instance.TakeDamage(100);
+            Character2D.instance.Attack(gameObject);
 
             /*
             // Trigger the holding phase

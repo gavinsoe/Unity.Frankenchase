@@ -37,7 +37,7 @@ public class NavigationManager : MonoBehaviour
 
         // Set character states
         Character2D.instance.Kill();
-        Frankenstein.instance.Kill();
+        MonsterController.instance.Kill();
     }
 
     public void TitleScreen()
@@ -121,7 +121,7 @@ public class NavigationManager : MonoBehaviour
 
         // Set character states
         Character2D.instance.Pause();
-        Frankenstein.instance.Pause();
+        MonsterController.instance.Pause();
 
         // Update SoomlaLevelUp State
         SoomlaLevelUp.GetLevel(Constants.lvlup_level_main).Pause();
@@ -144,7 +144,7 @@ public class NavigationManager : MonoBehaviour
 
         // Set character states
         Character2D.instance.Resume();
-        Frankenstein.instance.Resume();
+        MonsterController.instance.Resume();
 
         // Update SoomlaLevelUp State
         SoomlaLevelUp.GetLevel(Constants.lvlup_level_main).Start();
@@ -167,7 +167,7 @@ public class NavigationManager : MonoBehaviour
         
         // Set character states
         Character2D.instance.Pause();
-        Frankenstein.instance.Pause();
+        MonsterController.instance.Pause();
 
         // Trigger event
         HoldingPhase.instance.TriggerEvent();
@@ -188,7 +188,7 @@ public class NavigationManager : MonoBehaviour
 
         // Set character states
         Character2D.instance.Resume();
-        Frankenstein.instance.Resume();
+        MonsterController.instance.Resume();
     }
 
     public void Rate()

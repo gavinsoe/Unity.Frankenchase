@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using Soomla.Store;
 
 public class Character2D : MonoBehaviour
 {
@@ -21,6 +22,13 @@ public class Character2D : MonoBehaviour
 
     private bool doubleJump = false; // Whether or not the double jump has been used
     private Rigidbody2D body; // A link to the rigidbody objecty of the character
+
+    #region Weapons
+
+    public Weapon equippedWeapon;
+    private bool weaponOnCooldown;
+
+    #endregion
 
     #region Death Orb related variables
 
@@ -70,7 +78,10 @@ public class Character2D : MonoBehaviour
 
         // Set default speed
         currentSpeed = defaultSpeed;
-        
+
+        // Initialise equipped weapon
+        equippedWeapon = Game.instance.GetEquippedWeapon();
+
         // Allow other classes to access this class
         instance = this;
     }
@@ -162,6 +173,43 @@ public class Character2D : MonoBehaviour
         }
 
     }
+
+    #region Attack related
+    public void Attack(GameObject target)
+    {
+        // Attacks everytime something is in range (no cooldown time)
+        if (equippedWeapon.type == WeaponType.Sword)
+        {
+            if (target.tag == "Monster")
+            {
+                anim.SetTrigger("Attack");
+                MonsterController.instance.TakeDamageDelay(0);
+            }
+        }
+        // Attacks everytime something is in range (has cooldown)
+        else if (equippedWeapon.type == WeaponType.Whip)
+        {
+           if (target.tag == "Monster" && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") &&
+               !weaponOnCooldown)
+           {
+               anim.SetTrigger("Attack");
+               MonsterController.instance.TakeDamageDelay(0.25f);
+               weaponOnCooldown = true;
+               Invoke("ResetCooldown", equippedWeapon.cooldown);
+           }
+        }
+        // Has aim time.
+        else if (equippedWeapon.type == WeaponType.Crossbow)
+        {
+
+        }
+    }
+
+    public void ResetCooldown()
+    {
+        weaponOnCooldown = false;
+    }
+    #endregion
 
     public void Pause()
     {
@@ -289,5 +337,5 @@ public class Character2D : MonoBehaviour
         
     }
     #endregion
-
 }
+

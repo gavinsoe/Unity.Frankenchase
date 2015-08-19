@@ -15,7 +15,7 @@ GameObject:
   - 114: {fileID: 11413476}
   m_Layer: 12
   m_Name: Monster
-  m_TagString: Frankenstein
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32,7 +32,7 @@ GameObject:
   - 114: {fileID: 11463396}
   m_Layer: 14
   m_Name: Event Trigger
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -187,16 +187,20 @@ MonoBehaviour:
   - name: Sorcerer
     anim: {fileID: 9100000, guid: 2d80f34d00d967a4d9f7e9fc050b9bc9, type: 2}
     environment: 0
-  defaultSpeed: 4.5
+  defaultSpeed: 3.5
   currentSpeed: 0
   speedBoost: 1
   speedBoostDuration: 2
   maxHealth: 400
+  curHealth: 0
   damageTxtObject: {fileID: 168272, guid: ab6c9fa573ddc3843a92d80570c4230e, type: 2}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 65536
   groundedRadius: .200000003
+  xDir: 5
+  yDir: 5
+  forceMode: 1
 --- !u!114 &11463396
 MonoBehaviour:
   m_ObjectHideFlags: 1
