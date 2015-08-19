@@ -227,7 +227,7 @@ public class MonsterController : MonoBehaviour {
 
         // Slightly push/stagger monster away when attacked
         body.AddForce(new Vector2(xDir, yDir), forceMode);
-        SetSpeed(Character2D.instance.currentSpeed + speedBoost, 0.5f);
+        SetSpeed(Character2D.instance.currentSpeed + speedBoost, speedBoostDuration);
     }
 
     public void Targeted()
