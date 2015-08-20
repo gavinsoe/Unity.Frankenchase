@@ -2739,52 +2739,20 @@ MonoBehaviour:
   locationTownEnd: 3000
   score: 0
   sectionsCastle:
-  - prefab: {fileID: 185438, guid: f723167604c87ec439bd51f352ffccd3, type: 2}
+  - prefab: {fileID: 130408, guid: 50ec762f1c7af2449bb87023023465fb, type: 2}
     startDistance: 0
     endDistance: 0
     environment: 0
-  - prefab: {fileID: 171166, guid: b93988559eed1e748a2e6c95dfe71246, type: 2}
+  - prefab: {fileID: 108528, guid: 8526a61619e45054d8fa6facf184080d, type: 2}
     startDistance: 0
     endDistance: 0
     environment: 0
-  - prefab: {fileID: 125868, guid: e136e2117a1f01c459d23d72759b3a56, type: 2}
+  - prefab: {fileID: 170664, guid: 0cf01adc3ddb055438893330826ac007, type: 2}
     startDistance: 0
     endDistance: 0
     environment: 0
-  - prefab: {fileID: 183070, guid: 482e57fca53f37f43ad358c8a01bd697, type: 2}
+  - prefab: {fileID: 193436, guid: 0faa10cf79398944fb0a52515b3a5f04, type: 2}
     startDistance: 0
-    endDistance: 0
-    environment: 0
-  - prefab: {fileID: 132616, guid: 266479dd0d39b714199ceb9c94133dfb, type: 2}
-    startDistance: 0
-    endDistance: 0
-    environment: 0
-  - prefab: {fileID: 166580, guid: 73e93842c2ffffe44a5c0974920392f3, type: 2}
-    startDistance: 0
-    endDistance: 0
-    environment: 0
-  - prefab: {fileID: 151972, guid: 262064e6a215c204ba75571a30d8b9be, type: 2}
-    startDistance: 0
-    endDistance: 0
-    environment: 0
-  - prefab: {fileID: 115686, guid: 6e0195d69b3cc9043b000fb8d309ff20, type: 2}
-    startDistance: 0
-    endDistance: 0
-    environment: 0
-  - prefab: {fileID: 172418, guid: b08b796624a2e464cb90c749f50ed029, type: 2}
-    startDistance: 0
-    endDistance: 0
-    environment: 0
-  - prefab: {fileID: 132544, guid: cbd432d239b59484ea53299923611bd5, type: 2}
-    startDistance: 0
-    endDistance: 0
-    environment: 0
-  - prefab: {fileID: 103840, guid: 5568cd6751991b74b99c99b66b95857d, type: 2}
-    startDistance: 0
-    endDistance: 0
-    environment: 0
-  - prefab: {fileID: 173516, guid: 69ac6a4699f7448468ba596c4659f710, type: 2}
-    startDistance: 20000
     endDistance: 0
     environment: 0
   sectionsGraveyard:

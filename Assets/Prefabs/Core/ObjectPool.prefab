@@ -49,17 +49,17 @@ MonoBehaviour:
   - name: Creep_Bat_Top
     Prefab: {fileID: 179426, guid: c10206a1f481ed846b36783031342d57, type: 2}
     Count: 5
-  - name: Castle_Section_1
-    Prefab: {fileID: 185438, guid: f723167604c87ec439bd51f352ffccd3, type: 2}
+  - name: Section_Castle_01
+    Prefab: {fileID: 130408, guid: 50ec762f1c7af2449bb87023023465fb, type: 2}
     Count: 1
-  - name: Castle_Section_2
-    Prefab: {fileID: 171166, guid: b93988559eed1e748a2e6c95dfe71246, type: 2}
+  - name: Section_Castle_02
+    Prefab: {fileID: 108528, guid: 8526a61619e45054d8fa6facf184080d, type: 2}
     Count: 1
-  - name: Castle_Section_3
-    Prefab: {fileID: 125868, guid: e136e2117a1f01c459d23d72759b3a56, type: 2}
+  - name: Section_Castle_03
+    Prefab: {fileID: 170664, guid: 0cf01adc3ddb055438893330826ac007, type: 2}
     Count: 1
-  - name: Castle_Section_4
-    Prefab: {fileID: 183070, guid: 482e57fca53f37f43ad358c8a01bd697, type: 2}
+  - name: Section_Castle_04
+    Prefab: {fileID: 193436, guid: 0faa10cf79398944fb0a52515b3a5f04, type: 2}
     Count: 1
   - name: Castle_Section_5
     Prefab: {fileID: 132616, guid: 266479dd0d39b714199ceb9c94133dfb, type: 2}

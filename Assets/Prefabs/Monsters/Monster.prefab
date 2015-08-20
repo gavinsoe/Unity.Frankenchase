@@ -30,7 +30,7 @@ GameObject:
   - 4: {fileID: 405384}
   - 58: {fileID: 5854210}
   - 114: {fileID: 11463396}
-  m_Layer: 14
+  m_Layer: 21
   m_Name: Event Trigger
   m_TagString: Monster
   m_Icon: {fileID: 0}
@@ -168,19 +168,19 @@ MonoBehaviour:
     environment: 0
   - name: Golem
     anim: {fileID: 9100000, guid: 18c76f010bf03704c93855e3660ca313, type: 2}
-    environment: 1
+    environment: 0
   - name: Hunter
     anim: {fileID: 9100000, guid: b2702a573861ad3489754ad99d4fe419, type: 2}
     environment: 0
   - name: Naga
     anim: {fileID: 9100000, guid: b63c493a0449e9f438e4e55bc26e3b5d, type: 2}
-    environment: 1
+    environment: 0
   - name: Phantom
     anim: {fileID: 9100000, guid: fcd140c1ca5a6b34da2a2157f4259148, type: 2}
-    environment: 1
+    environment: 0
   - name: Ram God
     anim: {fileID: 9100000, guid: 0dbee8d1fc5fa7342a05565c7876a919, type: 2}
-    environment: 1
+    environment: 0
   - name: Skelly
     anim: {fileID: 9100000, guid: 696860181599f1547be5f3f3c1d59434, type: 2}
     environment: 0

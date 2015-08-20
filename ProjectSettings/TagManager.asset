@@ -42,8 +42,8 @@ TagManager:
   - Destroyer
   - SectionEnd
   - Spawner
-  - 
-  - 
+  - WeaponTrigger
+  - MonsterTrigger
   - 
   - 
   - 

@@ -315,9 +315,9 @@ public class Character2D : MonoBehaviour
     #endregion
     #region Speed adjustment
 
-    public void SetSpeed(float velocity, float duration)
+    public void SetSpeed(float percentage, float duration)
     {
-        currentSpeed = velocity;
+        currentSpeed = defaultSpeed * percentage;
         CancelInvoke("ResetSpeed");
         Invoke("ResetSpeed", duration);
 
