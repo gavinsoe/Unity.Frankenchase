@@ -12,7 +12,7 @@ GameObject:
   - 95: {fileID: 9576582}
   - 58: {fileID: 5858168}
   - 114: {fileID: 11403490}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Graveyard_Trap_Witch
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 481258}
   - 212: {fileID: 21212326}
   - 95: {fileID: 9548030}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Candle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,7 +25,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 427582}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 488114}
   - 212: {fileID: 21213662}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Window_Big
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +56,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 484944}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Decorations
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   - 4: {fileID: 426092}
   - 212: {fileID: 21246292}
   - 95: {fileID: 9565422}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Candle 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400474}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Section_2
   m_TagString: StageSection
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 468112}
   - 61: {fileID: 6129918}
-  m_Layer: 18
+  m_Layer: 8
   m_Name: SectionEnd
   m_TagString: SectionEnd
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
@@ -121,7 +121,7 @@ GameObject:
   - 4: {fileID: 423650}
   - 212: {fileID: 21201940}
   - 95: {fileID: 9515206}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Candle 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,7 +137,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 409048}
   - 212: {fileID: 21262068}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Window_Big 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

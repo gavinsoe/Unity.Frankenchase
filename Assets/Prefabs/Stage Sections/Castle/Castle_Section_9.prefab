@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 402108}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Decorations
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24,7 +24,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 431562}
   - 95: {fileID: 9595520}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Castle_Trap_Bat_Small 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - 212: {fileID: 21293514}
   - 61: {fileID: 6178660}
   - 114: {fileID: 11402200}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 432842}
   - 212: {fileID: 21250804}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Window_Big 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 437454}
   - 212: {fileID: 21226098}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Window_Big 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 442592}
   - 212: {fileID: 21202536}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Window_Big
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 456960}
   - 61: {fileID: 6122476}
-  m_Layer: 18
+  m_Layer: 8
   m_Name: SectionEnd
   m_TagString: SectionEnd
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
@@ -124,7 +124,7 @@ GameObject:
   - 212: {fileID: 21225466}
   - 61: {fileID: 6145078}
   - 114: {fileID: 11433734}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -140,7 +140,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 468578}
   - 58: {fileID: 5892202}
-  m_Layer: 15
+  m_Layer: 8
   m_Name: Castle_Trigger_Bat_Top
   m_TagString: CreepBatTop
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -155,7 +155,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 457354}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Section_9
   m_TagString: StageSection
   m_Icon: {fileID: 0}
@@ -171,7 +171,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 415646}
   - 95: {fileID: 9521766}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Castle_Trap_Bat_Small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,7 +189,7 @@ GameObject:
   - 212: {fileID: 21222456}
   - 61: {fileID: 6177166}
   - 114: {fileID: 11490224}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,7 +204,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 455224}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -220,7 +220,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 475722}
   - 95: {fileID: 9548380}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Castle_Trap_Bat_Small 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

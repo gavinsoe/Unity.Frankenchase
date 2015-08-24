@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 435158}
   - 61: {fileID: 6139506}
   - 114: {fileID: 11430144}
-  m_Layer: 14
+  m_Layer: 13
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ GameObject:
   - 95: {fileID: 9521444}
   - 61: {fileID: 6196180}
   - 114: {fileID: 11403802}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Graveyard_Trap_Skeleton
   m_TagString: Untagged
   m_Icon: {fileID: 0}

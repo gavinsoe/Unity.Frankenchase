@@ -11,7 +11,7 @@ GameObject:
   - 212: {fileID: 21273806}
   - 61: {fileID: 6126560}
   - 114: {fileID: 11499420}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 442220}
   - 95: {fileID: 9509686}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Castle_Trap_Bat_Small
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 402490}
   - 61: {fileID: 6177912}
   - 114: {fileID: 11425058}
-  m_Layer: 14
+  m_Layer: 13
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ GameObject:
   - 95: {fileID: 9545566}
   - 61: {fileID: 6192534}
   - 114: {fileID: 11401024}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Graveyard_Trap_ZombieGrave_Green
   m_TagString: Untagged
   m_Icon: {fileID: 0}

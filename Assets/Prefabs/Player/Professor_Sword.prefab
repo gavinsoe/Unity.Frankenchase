@@ -9,7 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 443722}
   - 212: {fileID: 21203154}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: DeathOrbs 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ GameObject:
   - 4: {fileID: 451490}
   - 212: {fileID: 21285616}
   - 95: {fileID: 9581510}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: Slow Debuff
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 484536}
   - 95: {fileID: 9554818}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: DeathOrbs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61,8 +61,7 @@ GameObject:
   - 50: {fileID: 5091920}
   - 114: {fileID: 11446862}
   - 114: {fileID: 11476760}
-  - 61: {fileID: 6104098}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: Professor_Sword
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -78,7 +77,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 474258}
   - 212: {fileID: 21223712}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: DeathOrbs 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,25 +93,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 400432}
   - 212: {fileID: 21252480}
-  m_Layer: 11
-  m_Name: Sprite
+  m_Layer: 13
+  m_Name: Weapon Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &160348
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 449746}
-  m_Layer: 11
-  m_Name: CeilingCheck
-  m_TagString: Untagged
-  m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -124,7 +108,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 487592}
-  m_Layer: 11
+  - 68: {fileID: 6871150}
+  m_Layer: 0
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
@@ -142,7 +127,7 @@ GameObject:
   - 223: {fileID: 22364668}
   - 114: {fileID: 11431286}
   - 114: {fileID: 11490398}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: DeathTimer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -158,7 +143,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 445990}
   - 212: {fileID: 21295242}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: DeathOrbs 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +160,7 @@ GameObject:
   - 224: {fileID: 22484860}
   - 222: {fileID: 22266330}
   - 114: {fileID: 11435204}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: Timer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -193,7 +178,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 423752}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!4 &423752
 Transform:
   m_ObjectHideFlags: 1
@@ -201,11 +186,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 128162}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4, y: -2, z: 0}
+  m_LocalPosition: {x: -4, y: -2, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 487592}
-  - {fileID: 449746}
   - {fileID: 484536}
   - {fileID: 22486958}
   - {fileID: 451490}
@@ -236,18 +220,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 484536}
   m_RootOrder: 2
---- !u!4 &449746
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 160348}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: .0879999995, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 423752}
-  m_RootOrder: 1
 --- !u!4 &451490
 Transform:
   m_ObjectHideFlags: 1
@@ -259,7 +231,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 423752}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!4 &474258
 Transform:
   m_ObjectHideFlags: 1
@@ -286,7 +258,7 @@ Transform:
   - {fileID: 443722}
   - {fileID: 445990}
   m_Father: {fileID: 423752}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!4 &487592
 Transform:
   m_ObjectHideFlags: 1
@@ -314,19 +286,20 @@ Rigidbody2D:
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!61 &6104098
-BoxCollider2D:
+--- !u!68 &6871150
+EdgeCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 128162}
+  m_GameObject: {fileID: 171750}
   m_Enabled: 1
-  m_Material: {fileID: 6200000, guid: 66b2ce71bbda47445869f10efbb09d62, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -.0299999993, y: -.200000003}
-  serializedVersion: 2
-  m_Size: {x: .25, y: .589999974}
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+  - {x: -.5, y: 0}
+  - {x: .5, y: 0}
 --- !u!95 &9554818
 Animator:
   serializedVersion: 3
@@ -443,11 +416,13 @@ MonoBehaviour:
   doubleJumpForce: 400
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 66048
+    m_Bits: 768
   groundedRadius: .100000001
   equippedWeapon:
     type: 0
   arrow: {fileID: 199476, guid: 92e5821d40d3b5f4eb7e635c444bba23, type: 2}
+  arrowSpawnXOffset: .241899997
+  arrowSpawnYOffset: -.177000001
   deathOrb: {fileID: 123370}
   deathTimer: {fileID: 196248}
   debuffDeathTimer: 10
@@ -664,7 +639,7 @@ RectTransform:
   m_Children:
   - {fileID: 22484860}
   m_Father: {fileID: 423752}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: -.342000008, y: -.273000002}

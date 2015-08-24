@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 481584}
   - 61: {fileID: 6157864}
   - 114: {fileID: 11476072}
-  m_Layer: 14
+  m_Layer: 13
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ GameObject:
   - 95: {fileID: 9578762}
   - 61: {fileID: 6128270}
   - 114: {fileID: 11448270}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Castle_Trap_Bookshelf_Death
   m_TagString: Untagged
   m_Icon: {fileID: 0}

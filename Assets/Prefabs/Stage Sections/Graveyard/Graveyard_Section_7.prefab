@@ -11,7 +11,7 @@ GameObject:
   - 212: {fileID: 21217798}
   - 251: {fileID: 25174844}
   - 68: {fileID: 6807844}
-  m_Layer: 16
+  m_Layer: 8
   m_Name: Floor_Graveyard_Grass_Mid 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 461530}
   - 61: {fileID: 6111254}
-  m_Layer: 18
+  m_Layer: 8
   m_Name: SectionEnd
   m_TagString: SectionEnd
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
@@ -42,7 +42,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 491328}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Graveyard_Section_7
   m_TagString: StageSection
   m_Icon: {fileID: 0}
@@ -57,7 +57,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 488416}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 458936}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Decorations
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 434640}
   - 58: {fileID: 5885694}
-  m_Layer: 15
+  m_Layer: 8
   m_Name: Graveyard_Trigger_Witch_Mid
   m_TagString: CreepWitchMid
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -103,7 +103,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 458838}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}

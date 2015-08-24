@@ -9,7 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 425848}
   - 212: {fileID: 21257022}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Window_Big
   m_TagString: Untagged
   m_Icon: {fileID: 0}

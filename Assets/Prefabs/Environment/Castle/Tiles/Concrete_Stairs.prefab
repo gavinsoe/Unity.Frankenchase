@@ -11,7 +11,7 @@ GameObject:
   - 212: {fileID: 21269668}
   - 68: {fileID: 6861500}
   - 251: {fileID: 25129876}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Concrete_Stairs
   m_TagString: Untagged
   m_Icon: {fileID: 0}

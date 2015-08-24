@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 452262}
   - 61: {fileID: 6180404}
   - 114: {fileID: 11481684}
-  m_Layer: 14
+  m_Layer: 13
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ GameObject:
   - 95: {fileID: 9561672}
   - 61: {fileID: 6130398}
   - 114: {fileID: 11431190}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Castle_Trap_Bookrack
   m_TagString: Untagged
   m_Icon: {fileID: 0}

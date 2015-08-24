@@ -9,7 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 415536}
   - 58: {fileID: 5810988}
-  m_Layer: 15
+  m_Layer: 8
   m_Name: Castle_Trigger_Bat_Top 1
   m_TagString: CreepBatTop
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -27,7 +27,7 @@ GameObject:
   - 212: {fileID: 21298928}
   - 68: {fileID: 6864054}
   - 251: {fileID: 25156590}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Concrete_Mid 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 493530}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60,7 +60,7 @@ GameObject:
   - 212: {fileID: 21226182}
   - 68: {fileID: 6803300}
   - 251: {fileID: 25120340}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Concrete_End 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78,7 +78,7 @@ GameObject:
   - 212: {fileID: 21224408}
   - 68: {fileID: 6860080}
   - 251: {fileID: 25185050}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Concrete_Mid 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - 4: {fileID: 458186}
   - 212: {fileID: 21282784}
   - 95: {fileID: 9571662}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Torch 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,7 +113,7 @@ GameObject:
   - 212: {fileID: 21227446}
   - 68: {fileID: 6859024}
   - 251: {fileID: 25170780}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Concrete_Mid 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,7 +129,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 449692}
   - 212: {fileID: 21225314}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Pillar_Long
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,7 +147,7 @@ GameObject:
   - 212: {fileID: 21202546}
   - 68: {fileID: 6810958}
   - 251: {fileID: 25151324}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Concrete_Mid 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -163,7 +163,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 459902}
   - 61: {fileID: 6184182}
-  m_Layer: 18
+  m_Layer: 8
   m_Name: SectionEnd
   m_TagString: SectionEnd
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
@@ -181,7 +181,7 @@ GameObject:
   - 212: {fileID: 21202882}
   - 68: {fileID: 6861028}
   - 251: {fileID: 25171192}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Concrete_Mid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -199,7 +199,7 @@ GameObject:
   - 212: {fileID: 21267550}
   - 68: {fileID: 6801288}
   - 251: {fileID: 25103306}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Concrete_Mid 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -217,7 +217,7 @@ GameObject:
   - 212: {fileID: 21280366}
   - 61: {fileID: 6134424}
   - 114: {fileID: 11405686}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -235,7 +235,7 @@ GameObject:
   - 212: {fileID: 21289996}
   - 68: {fileID: 6880134}
   - 251: {fileID: 25117200}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Concrete_Mid 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -251,7 +251,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 411214}
   - 95: {fileID: 9542902}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Castle_Trap_Bat_Small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -269,7 +269,7 @@ GameObject:
   - 212: {fileID: 21227514}
   - 61: {fileID: 6117842}
   - 114: {fileID: 11421766}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -285,7 +285,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 462100}
   - 95: {fileID: 9528636}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Castle_Trap_Bat_Small 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -300,7 +300,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 447080}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -316,7 +316,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 443060}
   - 58: {fileID: 5816648}
-  m_Layer: 15
+  m_Layer: 8
   m_Name: Castle_Trigger_Bat_Bot
   m_TagString: CreepBatBot
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -334,7 +334,7 @@ GameObject:
   - 212: {fileID: 21257624}
   - 68: {fileID: 6834454}
   - 251: {fileID: 25161144}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Concrete_End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -351,7 +351,7 @@ GameObject:
   - 4: {fileID: 491818}
   - 61: {fileID: 6167466}
   - 114: {fileID: 11462978}
-  m_Layer: 14
+  m_Layer: 8
   m_Name: JumpTrigger
   m_TagString: JumpTrigger
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
@@ -369,7 +369,7 @@ GameObject:
   - 212: {fileID: 21278554}
   - 68: {fileID: 6835544}
   - 251: {fileID: 25132772}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Concrete_End 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -384,7 +384,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 415082}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Section_12
   m_TagString: StageSection
   m_Icon: {fileID: 0}
@@ -400,7 +400,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 479044}
   - 212: {fileID: 21255450}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Pillar_Long 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -416,7 +416,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 435456}
   - 212: {fileID: 21280342}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Pillar_Long 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -431,7 +431,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 454638}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Decorations
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -449,7 +449,7 @@ GameObject:
   - 212: {fileID: 21298406}
   - 68: {fileID: 6813064}
   - 251: {fileID: 25143070}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Concrete_End 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -466,7 +466,7 @@ GameObject:
   - 4: {fileID: 438348}
   - 212: {fileID: 21217382}
   - 95: {fileID: 9566208}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Torch
   m_TagString: Untagged
   m_Icon: {fileID: 0}

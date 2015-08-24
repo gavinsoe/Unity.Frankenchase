@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 431984}
   - 212: {fileID: 21210108}
   - 95: {fileID: 9523688}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Town_StreetLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}

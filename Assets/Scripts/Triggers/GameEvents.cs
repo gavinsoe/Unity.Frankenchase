@@ -29,17 +29,6 @@ public class GameEvents : MonoBehaviour
             }
             
         }
-        else if (other.tag == "Monster" && !triggered)
-        {
-            if (!activateSecondaryEffect)
-            {
-                FrankensteinEvents(effectPrimary);
-            }
-            else
-            {
-                FrankensteinEvents(effectSecondary);
-            }
-        }
     }
 
     void OnTriggerStay2D(Collider2D other)
@@ -80,7 +69,7 @@ public class GameEvents : MonoBehaviour
             triggered = true;
             if (destroyOnTrigger) Destroy(gameObject);
         }
-        else if (effect.type == EffectType.HoldingPhase)
+        else if (effect.type == EffectType.Attack)
         {
             // Temporarily change to do damage
             //MonsterController.instance.TakeDamage(100);
@@ -92,17 +81,6 @@ public class GameEvents : MonoBehaviour
             triggered = true;
             if (destroyOnTrigger) Destroy(gameObject);
              */
-        }
-    }
-
-    void FrankensteinEvents(Effect effect)
-    {
-        if (effect.type == EffectType.Jump &&
-            Frankenstein.instance.facingRight)
-        {
-            Frankenstein.instance.jump = true;
-            triggered = true;
-            if (destroyOnTrigger) Destroy(gameObject);
         }
     }
 

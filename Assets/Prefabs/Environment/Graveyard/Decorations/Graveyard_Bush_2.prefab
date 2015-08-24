@@ -9,7 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 458094}
   - 212: {fileID: 21283640}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Bush_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

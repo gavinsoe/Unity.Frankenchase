@@ -11,7 +11,7 @@ GameObject:
   - 212: {fileID: 21273210}
   - 114: {fileID: 11419856}
   - 58: {fileID: 5822802}
-  m_Layer: 14
+  m_Layer: 13
   m_Name: Arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}

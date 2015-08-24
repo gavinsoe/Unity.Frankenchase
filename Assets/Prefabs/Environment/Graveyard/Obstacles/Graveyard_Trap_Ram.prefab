@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 469146}
   - 58: {fileID: 5846310}
   - 114: {fileID: 11421900}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Death Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30,7 +30,7 @@ GameObject:
   - 61: {fileID: 6132132}
   - 114: {fileID: 11446004}
   - 50: {fileID: 5042430}
-  m_Layer: 12
+  m_Layer: 11
   m_Name: Graveyard_Trap_Ram
   m_TagString: Untagged
   m_Icon: {fileID: 0}

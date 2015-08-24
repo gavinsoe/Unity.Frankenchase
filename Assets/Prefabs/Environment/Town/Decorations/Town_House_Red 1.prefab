@@ -9,7 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 478442}
   - 212: {fileID: 21218796}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Town_House_Red 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 488404}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Bookrack_Stacked_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24,7 +24,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 475628}
   - 212: {fileID: 21292506}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Type_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 489794}
   - 212: {fileID: 21244286}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Type_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

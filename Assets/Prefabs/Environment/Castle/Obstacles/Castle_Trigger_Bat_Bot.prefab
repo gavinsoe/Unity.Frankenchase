@@ -9,7 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 449382}
   - 58: {fileID: 5886552}
-  m_Layer: 15
+  m_Layer: 14
   m_Name: Castle_Trigger_Bat_Bot
   m_TagString: CreepBatBot
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}

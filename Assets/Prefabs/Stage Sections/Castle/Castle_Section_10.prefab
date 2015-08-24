@@ -9,7 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 472306}
   - 61: {fileID: 6106376}
-  m_Layer: 18
+  m_Layer: 8
   m_Name: SectionEnd
   m_TagString: SectionEnd
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
@@ -25,7 +25,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 455196}
   - 212: {fileID: 21256618}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Castle_Bookrack_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - 4: {fileID: 432836}
   - 212: {fileID: 21294238}
   - 95: {fileID: 9505336}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Bookshelf_Candle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 415986}
   - 212: {fileID: 21251178}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Castle_Bookrack_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 434390}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Section_10
   m_TagString: StageSection
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 476474}
   - 212: {fileID: 21265054}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Castle_Bookrack_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 465678}
   - 212: {fileID: 21298362}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Castle_Bookrack_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,7 +120,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 448584}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,7 +135,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 466718}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Decorations
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,7 +151,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 469540}
   - 212: {fileID: 21202324}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Castle_Bookshelf_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -167,7 +167,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 458256}
   - 212: {fileID: 21215916}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Castle_Bookrack_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,7 +183,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 436460}
   - 212: {fileID: 21205760}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Castle_Bookrack_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

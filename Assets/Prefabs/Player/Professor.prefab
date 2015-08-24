@@ -10,7 +10,7 @@ GameObject:
   - 224: {fileID: 22466142}
   - 222: {fileID: 22261068}
   - 114: {fileID: 11475430}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: Timer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ GameObject:
   - 223: {fileID: 22374858}
   - 114: {fileID: 11447224}
   - 114: {fileID: 11435028}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: DeathTimer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   - 4: {fileID: 446178}
   - 212: {fileID: 21219110}
   - 95: {fileID: 9574476}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: Slow Debuff
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61,7 +61,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 468642}
   - 212: {fileID: 21222358}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: DeathOrbs 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77,7 +77,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 433280}
   - 95: {fileID: 9566104}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: DeathOrbs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 471968}
   - 212: {fileID: 21268090}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 472088}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
@@ -123,7 +123,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 472090}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: CeilingCheck
   m_TagString: Untagged
   m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
@@ -142,8 +142,8 @@ GameObject:
   - 50: {fileID: 5072088}
   - 114: {fileID: 11486664}
   - 114: {fileID: 11423136}
-  - 61: {fileID: 6172088}
-  m_Layer: 11
+  - 68: {fileID: 6812702}
+  m_Layer: 10
   m_Name: Professor
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -159,7 +159,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 442028}
   - 212: {fileID: 21250362}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: DeathOrbs 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 447146}
   - 212: {fileID: 21250064}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: DeathOrbs 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -288,7 +288,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 172092}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4, y: -2, z: 0}
+  m_LocalPosition: {x: 13.5, y: -144.399994, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 472088}
@@ -314,8 +314,8 @@ Rigidbody2D:
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!61 &6172088
-BoxCollider2D:
+--- !u!68 &6812702
+EdgeCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -324,9 +324,10 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 66b2ce71bbda47445869f10efbb09d62, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -.0299999993, y: -.200000003}
-  serializedVersion: 2
-  m_Size: {x: .25, y: .589999974}
+  m_Offset: {x: 0, y: -.5}
+  m_Points:
+  - {x: -.5, y: 0}
+  - {x: .5, y: 0}
 --- !u!95 &9566104
 Animator:
   serializedVersion: 3
@@ -470,8 +471,13 @@ MonoBehaviour:
   doubleJumpForce: 400
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 66048
+    m_Bits: 768
   groundedRadius: .100000001
+  equippedWeapon:
+    type: 0
+  arrow: {fileID: 0}
+  arrowSpawnXOffset: .241899997
+  arrowSpawnYOffset: -.177000001
   deathOrb: {fileID: 144504}
   deathTimer: {fileID: 108052}
   debuffDeathTimer: 10
@@ -607,7 +613,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -354108773
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 880e11ef7ec778d4ca3f9e9f557db2c5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7fda59a8e95f1a14482c90466e646054, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!222 &22261068
 CanvasRenderer:

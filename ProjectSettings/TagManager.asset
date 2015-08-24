@@ -30,20 +30,20 @@ TagManager:
   - UI
   - 
   - 
-  - Menu Items
   - Environment
-  - Obstacle
-  - Professor
-  - Monster
-  - Powerup
-  - Triggers
-  - Creep Spawner
   - Bottom Floor
-  - Destroyer
-  - SectionEnd
-  - Spawner
-  - WeaponTrigger
-  - MonsterTrigger
+  - Player
+  - Player Events
+  - Monster
+  - Monster Events
+  - Game Events
+  - Stage Triggers
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 

@@ -11,7 +11,7 @@ GameObject:
   - 212: {fileID: 21294086}
   - 68: {fileID: 6821108}
   - 251: {fileID: 25137570}
-  m_Layer: 16
+  m_Layer: 8
   m_Name: Floor_Concrete_Mid 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ GameObject:
   - 4: {fileID: 458028}
   - 61: {fileID: 6161232}
   - 114: {fileID: 11488024}
-  m_Layer: 14
+  m_Layer: 8
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,7 +46,7 @@ GameObject:
   - 33: {fileID: 3398500}
   - 64: {fileID: 6456838}
   - 23: {fileID: 2380160}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Brick Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   - 212: {fileID: 21268376}
   - 68: {fileID: 6872858}
   - 251: {fileID: 25166104}
-  m_Layer: 16
+  m_Layer: 8
   m_Name: Floor_Concrete_Mid 17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80,7 +80,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 405582}
   - 212: {fileID: 21287098}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Window_Small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   - 33: {fileID: 3335466}
   - 64: {fileID: 6419124}
   - 23: {fileID: 2371504}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Brick Wall 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114,7 +114,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 450370}
   - 58: {fileID: 5803830}
-  m_Layer: 15
+  m_Layer: 8
   m_Name: Castle_Trigger_Bat_Bot
   m_TagString: CreepBatBot
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -132,7 +132,7 @@ GameObject:
   - 212: {fileID: 21207702}
   - 68: {fileID: 6843092}
   - 251: {fileID: 25114178}
-  m_Layer: 16
+  m_Layer: 8
   m_Name: Floor_Concrete_Mid 11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -150,7 +150,7 @@ GameObject:
   - 212: {fileID: 21237506}
   - 68: {fileID: 6863310}
   - 251: {fileID: 25125000}
-  m_Layer: 16
+  m_Layer: 8
   m_Name: Floor_Concrete_Mid 22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,7 +168,7 @@ GameObject:
   - 33: {fileID: 3371674}
   - 64: {fileID: 6460306}
   - 23: {fileID: 2363886}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Brick Wall 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -186,7 +186,7 @@ GameObject:
   - 33: {fileID: 3399748}
   - 64: {fileID: 6446588}
   - 23: {fileID: 2397172}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Brick Wall 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -202,7 +202,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 412898}
   - 212: {fileID: 21213480}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Pillar_Long
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -218,7 +218,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 439902}
   - 212: {fileID: 21280278}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Castle_Bookshelf_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -236,7 +236,7 @@ GameObject:
   - 212: {fileID: 21283006}
   - 68: {fileID: 6891934}
   - 251: {fileID: 25168264}
-  m_Layer: 16
+  m_Layer: 8
   m_Name: Floor_Concrete_Mid 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -252,7 +252,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 427414}
   - 61: {fileID: 6183866}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SectionEnd
   m_TagString: SectionEnd
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
@@ -270,7 +270,7 @@ GameObject:
   - 33: {fileID: 3313244}
   - 64: {fileID: 6499894}
   - 23: {fileID: 2341412}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Brick Wall 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -286,7 +286,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 427928}
   - 212: {fileID: 21220140}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Window_Big
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -305,7 +305,7 @@ GameObject:
   - 95: {fileID: 9505684}
   - 61: {fileID: 6184752}
   - 114: {fileID: 11421304}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Castle_Trap_Bookshelf_Death
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -323,7 +323,7 @@ GameObject:
   - 33: {fileID: 3327124}
   - 64: {fileID: 6427698}
   - 23: {fileID: 2333498}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Brick Wall 23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -341,7 +341,7 @@ GameObject:
   - 33: {fileID: 3379954}
   - 64: {fileID: 6455032}
   - 23: {fileID: 2371226}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Brick Wall 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -360,7 +360,7 @@ GameObject:
   - 95: {fileID: 9556378}
   - 61: {fileID: 6198226}
   - 114: {fileID: 11412232}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Castle_Trap_Bookrack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -378,7 +378,7 @@ GameObject:
   - 33: {fileID: 3355232}
   - 64: {fileID: 6409972}
   - 23: {fileID: 2324130}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Brick Wall 11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -396,7 +396,7 @@ GameObject:
   - 33: {fileID: 3329232}
   - 64: {fileID: 6442740}
   - 23: {fileID: 2321074}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Brick Wall 12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -411,7 +411,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 469672}
-  m_Layer: 16
+  m_Layer: 8
   m_Name: Bottom Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -429,7 +429,7 @@ GameObject:
   - 33: {fileID: 3356148}
   - 64: {fileID: 6493934}
   - 23: {fileID: 2303596}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Brick Wall 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -447,7 +447,7 @@ GameObject:
   - 33: {fileID: 3338108}
   - 64: {fileID: 6484634}
   - 23: {fileID: 2360218}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Brick Wall 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -465,7 +465,7 @@ GameObject:
   - 33: {fileID: 3371904}
   - 64: {fileID: 6438992}
   - 23: {fileID: 2385002}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Brick Wall 18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -482,7 +482,7 @@ GameObject:
   - 4: {fileID: 492576}
   - 61: {fileID: 6161868}
   - 114: {fileID: 11481742}
-  m_Layer: 14
+  m_Layer: 8
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -498,7 +498,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 484026}
   - 58: {fileID: 5801308}
-  m_Layer: 15
+  m_Layer: 8
   m_Name: Castle_Trigger_Bat_Top
   m_TagString: CreepBatTop
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -516,7 +516,7 @@ GameObject:
   - 33: {fileID: 3300684}
   - 64: {fileID: 6444150}
   - 23: {fileID: 2312140}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Brick Wall 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -534,7 +534,7 @@ GameObject:
   - 33: {fileID: 3376152}
   - 64: {fileID: 6442564}
   - 23: {fileID: 2365194}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Brick Wall 19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -552,7 +552,7 @@ GameObject:
   - 33: {fileID: 3314896}
   - 64: {fileID: 6412824}
   - 23: {fileID: 2308550}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Brick Wall 15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -568,7 +568,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 452838}
   - 212: {fileID: 21232496}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -586,7 +586,7 @@ GameObject:
   - 212: {fileID: 21279100}
   - 68: {fileID: 6802198}
   - 251: {fileID: 25170548}
-  m_Layer: 16
+  m_Layer: 8
   m_Name: Floor_Concrete_Mid 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -604,7 +604,7 @@ GameObject:
   - 212: {fileID: 21278298}
   - 68: {fileID: 6844628}
   - 251: {fileID: 25153084}
-  m_Layer: 16
+  m_Layer: 8
   m_Name: Floor_Concrete_Mid 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -622,7 +622,7 @@ GameObject:
   - 33: {fileID: 3374654}
   - 64: {fileID: 6491916}
   - 23: {fileID: 2386160}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Brick Wall 20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -640,7 +640,7 @@ GameObject:
   - 212: {fileID: 21236006}
   - 68: {fileID: 6842184}
   - 251: {fileID: 25194824}
-  m_Layer: 16
+  m_Layer: 8
   m_Name: Floor_Concrete_Mid 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -657,7 +657,7 @@ GameObject:
   - 4: {fileID: 414140}
   - 212: {fileID: 21256842}
   - 95: {fileID: 9527032}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Candle 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -675,7 +675,7 @@ GameObject:
   - 212: {fileID: 21277412}
   - 68: {fileID: 6829050}
   - 251: {fileID: 25101940}
-  m_Layer: 16
+  m_Layer: 8
   m_Name: Floor_Concrete_Mid 19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -690,7 +690,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 448968}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -708,7 +708,7 @@ GameObject:
   - 33: {fileID: 3368514}
   - 64: {fileID: 6443278}
   - 23: {fileID: 2358918}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Brick Wall 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -726,7 +726,7 @@ GameObject:
   - 212: {fileID: 21271726}
   - 68: {fileID: 6807078}
   - 251: {fileID: 25147824}
-  m_Layer: 16
+  m_Layer: 8
   m_Name: Floor_Concrete_Mid 12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -743,7 +743,7 @@ GameObject:
   - 4: {fileID: 486798}
   - 212: {fileID: 21223412}
   - 95: {fileID: 9522398}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Candle 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -761,7 +761,7 @@ GameObject:
   - 212: {fileID: 21269352}
   - 68: {fileID: 6856130}
   - 251: {fileID: 25100344}
-  m_Layer: 16
+  m_Layer: 8
   m_Name: Floor_Concrete_Mid 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -778,7 +778,7 @@ GameObject:
   - 4: {fileID: 414700}
   - 212: {fileID: 21229674}
   - 95: {fileID: 9539412}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Candle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -796,7 +796,7 @@ GameObject:
   - 33: {fileID: 3325522}
   - 64: {fileID: 6488574}
   - 23: {fileID: 2310686}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Brick Wall 22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -814,7 +814,7 @@ GameObject:
   - 212: {fileID: 21216766}
   - 68: {fileID: 6854348}
   - 251: {fileID: 25135910}
-  m_Layer: 16
+  m_Layer: 8
   m_Name: Floor_Concrete_Mid 20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -832,7 +832,7 @@ GameObject:
   - 212: {fileID: 21283602}
   - 68: {fileID: 6872208}
   - 251: {fileID: 25195808}
-  m_Layer: 16
+  m_Layer: 8
   m_Name: Floor_Concrete_Mid 21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -848,7 +848,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 473448}
   - 212: {fileID: 21293318}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Castle_Bookrack_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -863,7 +863,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 403868}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Test
   m_TagString: StageSection
   m_Icon: {fileID: 0}
@@ -881,7 +881,7 @@ GameObject:
   - 212: {fileID: 21206358}
   - 68: {fileID: 6823582}
   - 251: {fileID: 25149750}
-  m_Layer: 16
+  m_Layer: 8
   m_Name: Floor_Concrete_Mid 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -898,7 +898,7 @@ GameObject:
   - 4: {fileID: 467724}
   - 212: {fileID: 21265674}
   - 95: {fileID: 9542358}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Bookshelf_Candle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -917,7 +917,7 @@ GameObject:
   - 95: {fileID: 9569084}
   - 61: {fileID: 6148456}
   - 114: {fileID: 11426138}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Castle_Trap_Spider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -935,7 +935,7 @@ GameObject:
   - 33: {fileID: 3363796}
   - 64: {fileID: 6427494}
   - 23: {fileID: 2392122}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Brick Wall 17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -953,7 +953,7 @@ GameObject:
   - 212: {fileID: 21225212}
   - 68: {fileID: 6862894}
   - 251: {fileID: 25185378}
-  m_Layer: 16
+  m_Layer: 8
   m_Name: Floor_Concrete_Mid 23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -970,7 +970,7 @@ GameObject:
   - 4: {fileID: 462456}
   - 61: {fileID: 6112462}
   - 114: {fileID: 11495616}
-  m_Layer: 14
+  m_Layer: 8
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -988,7 +988,7 @@ GameObject:
   - 212: {fileID: 21296214}
   - 68: {fileID: 6885722}
   - 251: {fileID: 25131348}
-  m_Layer: 16
+  m_Layer: 8
   m_Name: Floor_Concrete_Mid 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1006,7 +1006,7 @@ GameObject:
   - 33: {fileID: 3382078}
   - 64: {fileID: 6411770}
   - 23: {fileID: 2344512}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Brick Wall 24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1021,7 +1021,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 406472}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1037,7 +1037,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 432878}
   - 212: {fileID: 21276156}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Castle_Bookrack_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1055,7 +1055,7 @@ GameObject:
   - 212: {fileID: 21201656}
   - 68: {fileID: 6878868}
   - 251: {fileID: 25169838}
-  m_Layer: 16
+  m_Layer: 8
   m_Name: Floor_Concrete_Mid 24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1073,7 +1073,7 @@ GameObject:
   - 212: {fileID: 21212462}
   - 68: {fileID: 6893818}
   - 251: {fileID: 25151618}
-  m_Layer: 16
+  m_Layer: 8
   m_Name: Floor_Concrete_Mid 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1089,7 +1089,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 414970}
   - 95: {fileID: 9530422}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Castle_Bat_Small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1107,7 +1107,7 @@ GameObject:
   - 212: {fileID: 21281936}
   - 68: {fileID: 6859256}
   - 251: {fileID: 25164292}
-  m_Layer: 16
+  m_Layer: 8
   m_Name: Floor_Concrete_Mid 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1122,7 +1122,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 426468}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Decorations
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1140,7 +1140,7 @@ GameObject:
   - 212: {fileID: 21244298}
   - 68: {fileID: 6864460}
   - 251: {fileID: 25199764}
-  m_Layer: 16
+  m_Layer: 8
   m_Name: Floor_Concrete_Mid 14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1156,7 +1156,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 426450}
   - 58: {fileID: 5883726}
-  m_Layer: 15
+  m_Layer: 8
   m_Name: Castle_Trigger_Bat_Mid
   m_TagString: CreepBatMid
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -1174,7 +1174,7 @@ GameObject:
   - 33: {fileID: 3314910}
   - 64: {fileID: 6417352}
   - 23: {fileID: 2344550}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Brick Wall 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1192,7 +1192,7 @@ GameObject:
   - 212: {fileID: 21233804}
   - 61: {fileID: 6175028}
   - 114: {fileID: 11403930}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1210,7 +1210,7 @@ GameObject:
   - 33: {fileID: 3351834}
   - 64: {fileID: 6467556}
   - 23: {fileID: 2327458}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Brick Wall 14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1229,7 +1229,7 @@ GameObject:
   - 95: {fileID: 9549164}
   - 61: {fileID: 6128316}
   - 114: {fileID: 11440254}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Castle_Trap_Bookshelf_Slow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1247,7 +1247,7 @@ GameObject:
   - 33: {fileID: 3348362}
   - 64: {fileID: 6405756}
   - 23: {fileID: 2321750}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Brick Wall 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1265,7 +1265,7 @@ GameObject:
   - 33: {fileID: 3374886}
   - 64: {fileID: 6413024}
   - 23: {fileID: 2327634}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Brick Wall 21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1283,7 +1283,7 @@ GameObject:
   - 212: {fileID: 21227258}
   - 68: {fileID: 6820216}
   - 251: {fileID: 25109256}
-  m_Layer: 16
+  m_Layer: 8
   m_Name: Floor_Concrete_Mid 16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1301,7 +1301,7 @@ GameObject:
   - 212: {fileID: 21260496}
   - 68: {fileID: 6827260}
   - 251: {fileID: 25100384}
-  m_Layer: 16
+  m_Layer: 8
   m_Name: Floor_Concrete_Mid 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1319,7 +1319,7 @@ GameObject:
   - 212: {fileID: 21250516}
   - 68: {fileID: 6863332}
   - 251: {fileID: 25138156}
-  m_Layer: 16
+  m_Layer: 8
   m_Name: Floor_Concrete_Mid 18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1337,7 +1337,7 @@ GameObject:
   - 33: {fileID: 3304432}
   - 64: {fileID: 6421172}
   - 23: {fileID: 2360870}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Brick Wall 16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1353,7 +1353,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 419472}
   - 212: {fileID: 21284322}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Pillar_Short
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1371,7 +1371,7 @@ GameObject:
   - 212: {fileID: 21294376}
   - 68: {fileID: 6857192}
   - 251: {fileID: 25104682}
-  m_Layer: 16
+  m_Layer: 8
   m_Name: Floor_Concrete_Mid 15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1389,7 +1389,7 @@ GameObject:
   - 212: {fileID: 21253814}
   - 68: {fileID: 6833814}
   - 251: {fileID: 25154998}
-  m_Layer: 16
+  m_Layer: 8
   m_Name: Floor_Concrete_Mid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1406,7 +1406,7 @@ GameObject:
   - 4: {fileID: 412678}
   - 212: {fileID: 21260870}
   - 95: {fileID: 9501156}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Torch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4337,6 +4337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c25c92f51b5b304b877e7e3855d947b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
 --- !u!114 &11488024
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4348,6 +4349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c25c92f51b5b304b877e7e3855d947b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
 --- !u!114 &11495616
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4359,6 +4361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c25c92f51b5b304b877e7e3855d947b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
 --- !u!212 &21201656
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -5484,12 +5487,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 157110}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25100384
 PlatformEffector2D:
@@ -5498,12 +5502,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 192464}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25101940
 PlatformEffector2D:
@@ -5512,12 +5517,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 152894}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25104682
 PlatformEffector2D:
@@ -5526,12 +5532,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 197640}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25109256
 PlatformEffector2D:
@@ -5540,12 +5547,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 191930}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25114178
 PlatformEffector2D:
@@ -5554,12 +5562,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 106590}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25125000
 PlatformEffector2D:
@@ -5568,12 +5577,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 109228}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25131348
 PlatformEffector2D:
@@ -5582,12 +5592,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 171316}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25135910
 PlatformEffector2D:
@@ -5596,12 +5607,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 158464}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25137570
 PlatformEffector2D:
@@ -5610,12 +5622,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100774}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25138156
 PlatformEffector2D:
@@ -5624,12 +5637,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 194894}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25147824
 PlatformEffector2D:
@@ -5638,12 +5652,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 156236}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25149750
 PlatformEffector2D:
@@ -5652,12 +5667,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 167238}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25151618
 PlatformEffector2D:
@@ -5666,12 +5682,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 180468}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25153084
 PlatformEffector2D:
@@ -5680,12 +5697,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 149270}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25154998
 PlatformEffector2D:
@@ -5694,12 +5712,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 198546}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25164292
 PlatformEffector2D:
@@ -5708,12 +5727,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 182792}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25166104
 PlatformEffector2D:
@@ -5722,12 +5742,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 101774}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25168264
 PlatformEffector2D:
@@ -5736,12 +5757,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 114152}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25169838
 PlatformEffector2D:
@@ -5750,12 +5772,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 179936}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25170548
 PlatformEffector2D:
@@ -5764,12 +5787,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 148950}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25185378
 PlatformEffector2D:
@@ -5778,12 +5802,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 170384}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25194824
 PlatformEffector2D:
@@ -5792,12 +5817,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 151240}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25195808
 PlatformEffector2D:
@@ -5806,12 +5832,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 159768}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25199764
 PlatformEffector2D:
@@ -5820,12 +5847,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 184072}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!1001 &100100000
 Prefab:

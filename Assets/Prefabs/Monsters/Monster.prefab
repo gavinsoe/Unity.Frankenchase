@@ -11,7 +11,6 @@ GameObject:
   - 212: {fileID: 21291916}
   - 95: {fileID: 9550684}
   - 50: {fileID: 5052802}
-  - 61: {fileID: 6176092}
   - 114: {fileID: 11413476}
   m_Layer: 12
   m_Name: Monster
@@ -28,9 +27,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 405384}
-  - 58: {fileID: 5854210}
   - 114: {fileID: 11463396}
-  m_Layer: 21
+  - 61: {fileID: 6157052}
+  m_Layer: 12
   m_Name: Event Trigger
   m_TagString: Monster
   m_Icon: {fileID: 0}
@@ -105,32 +104,19 @@ Rigidbody2D:
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!58 &5854210
-CircleCollider2D:
+--- !u!61 &6157052
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 174046}
   m_Enabled: 1
-  m_Material: {fileID: 6200000, guid: 66b2ce71bbda47445869f10efbb09d62, type: 2}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: -.170000002}
-  serializedVersion: 2
-  m_Radius: .200000003
---- !u!61 &6176092
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 123888}
-  m_Enabled: 1
-  m_Material: {fileID: 6200000, guid: 66b2ce71bbda47445869f10efbb09d62, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: .0149999997, y: -.170000002}
+  m_Offset: {x: 0, y: -.100000001}
   serializedVersion: 2
-  m_Size: {x: .280000001, y: .649999976}
+  m_Size: {x: .400000006, y: .800000012}
 --- !u!95 &9550684
 Animator:
   serializedVersion: 3
@@ -197,7 +183,7 @@ MonoBehaviour:
   damageTxtObject: {fileID: 168272, guid: ab6c9fa573ddc3843a92d80570c4230e, type: 2}
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 65536
+    m_Bits: 512
   groundedRadius: .200000003
   xDir: 5
   yDir: 5
@@ -214,7 +200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effectPrimary:
-    type: 4
+    type: 3
     coefficient: 0
     duration: 0
   effectSecondary:

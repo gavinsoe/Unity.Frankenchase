@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 432904}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Decorations
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24,7 +24,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 417660}
   - 61: {fileID: 6167192}
-  m_Layer: 18
+  m_Layer: 8
   m_Name: SectionEnd
   m_TagString: SectionEnd
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
@@ -41,7 +41,7 @@ GameObject:
   - 4: {fileID: 440916}
   - 61: {fileID: 6112058}
   - 114: {fileID: 11472540}
-  m_Layer: 14
+  m_Layer: 8
   m_Name: JumpTrigger
   m_TagString: JumpTrigger
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
@@ -58,7 +58,7 @@ GameObject:
   - 4: {fileID: 418910}
   - 212: {fileID: 21215466}
   - 95: {fileID: 9589166}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Torch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 417568}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 495212}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Section_4
   m_TagString: StageSection
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - 95: {fileID: 9596228}
   - 61: {fileID: 6193260}
   - 114: {fileID: 11425756}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Castle_Trap_Spider
   m_TagString: Untagged
   m_Icon: {fileID: 0}

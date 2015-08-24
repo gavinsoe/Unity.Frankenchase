@@ -11,7 +11,7 @@ GameObject:
   - 212: {fileID: 21230744}
   - 251: {fileID: 25143286}
   - 68: {fileID: 6880590}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Brick_Half_Mid
   m_TagString: Untagged
   m_Icon: {fileID: 0}

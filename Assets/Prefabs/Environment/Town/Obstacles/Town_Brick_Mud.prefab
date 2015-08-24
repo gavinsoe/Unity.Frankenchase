@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 460028}
   - 61: {fileID: 6192094}
   - 114: {fileID: 11473498}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Muddy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ GameObject:
   - 212: {fileID: 21274036}
   - 68: {fileID: 6873120}
   - 251: {fileID: 25189002}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Town_Brick_Mud
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - 212: {fileID: 21293754}
   - 68: {fileID: 6856766}
   - 251: {fileID: 25106774}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Concrete_End
   m_TagString: Untagged
   m_Icon: {fileID: 0}

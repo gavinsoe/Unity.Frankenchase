@@ -11,7 +11,7 @@ GameObject:
   - 212: {fileID: 21297376}
   - 251: {fileID: 25192268}
   - 68: {fileID: 6855510}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Stone_Mid
   m_TagString: Untagged
   m_Icon: {fileID: 0}

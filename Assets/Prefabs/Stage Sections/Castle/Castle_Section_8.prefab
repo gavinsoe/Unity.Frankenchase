@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 457866}
   - 212: {fileID: 21265030}
   - 95: {fileID: 9574290}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Torch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,7 +25,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 434078}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 458948}
   - 212: {fileID: 21220302}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Castle_Bookrack_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +56,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400954}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Section_8
   m_TagString: StageSection
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 476880}
   - 212: {fileID: 21263196}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Castle_Bookrack_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 440722}
   - 212: {fileID: 21278310}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Castle_Bookrack_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 414624}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Decorations
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,7 +119,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 420398}
   - 212: {fileID: 21248828}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Castle_Bookshelf_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,7 +135,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 415748}
   - 212: {fileID: 21214256}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Castle_Bookrack_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,7 +152,7 @@ GameObject:
   - 4: {fileID: 422474}
   - 212: {fileID: 21216824}
   - 95: {fileID: 9509656}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Torch 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   - 4: {fileID: 458326}
   - 212: {fileID: 21265232}
   - 95: {fileID: 9530542}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Bookshelf_Candle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -185,7 +185,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 444898}
   - 212: {fileID: 21276974}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Pillar_Long
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,7 +201,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 472284}
   - 61: {fileID: 6119116}
-  m_Layer: 18
+  m_Layer: 8
   m_Name: SectionEnd
   m_TagString: SectionEnd
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}

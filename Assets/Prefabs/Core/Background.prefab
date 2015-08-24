@@ -12,13 +12,13 @@ GameObject:
   - 64: {fileID: 6477926}
   - 23: {fileID: 2302832}
   - 114: {fileID: 11496138}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Background 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &140610
 GameObject:
   m_ObjectHideFlags: 0
@@ -31,13 +31,13 @@ GameObject:
   - 64: {fileID: 6437046}
   - 23: {fileID: 2381732}
   - 114: {fileID: 11477578}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Background 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &165622
 GameObject:
   m_ObjectHideFlags: 0
@@ -50,7 +50,7 @@ GameObject:
   - 64: {fileID: 6488972}
   - 23: {fileID: 2343474}
   - 114: {fileID: 11400696}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65,9 +65,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 487554}
-  - 68: {fileID: 6809934}
   - 114: {fileID: 11463118}
-  m_Layer: 16
+  - 61: {fileID: 6191922}
+  m_Layer: 9
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,13 +86,13 @@ GameObject:
   - 64: {fileID: 6409860}
   - 23: {fileID: 2394006}
   - 114: {fileID: 11470780}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Background 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &190264
 GameObject:
   m_ObjectHideFlags: 0
@@ -105,7 +105,7 @@ GameObject:
   - 64: {fileID: 6436968}
   - 23: {fileID: 2390426}
   - 114: {fileID: 11468500}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -344,6 +344,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 140610}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!61 &6191922
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 167382}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: -3}
+  serializedVersion: 2
+  m_Size: {x: 20, y: 1}
 --- !u!64 &6409860
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -404,20 +417,6 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!68 &6809934
-EdgeCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 167382}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: -2.5}
-  m_Points:
-  - {x: 10, y: 0}
-  - {x: -10, y: 0}
 --- !u!114 &11400696
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -481,7 +480,7 @@ MonoBehaviour:
     scaleX: 16
     scaleY: 6
   - environment: 2
-    material: {fileID: 2100000, guid: 38b194ab750b0734c9091ba4d41d9851, type: 2}
+    material: {fileID: 0}
     movementMultiplier: .5
     scaleX: 0
     scaleY: 0
@@ -509,7 +508,7 @@ MonoBehaviour:
     scaleX: 16
     scaleY: 6
   - environment: 2
-    material: {fileID: 2100000, guid: 38b194ab750b0734c9091ba4d41d9851, type: 2}
+    material: {fileID: 0}
     movementMultiplier: .5
     scaleX: 0
     scaleY: 0
@@ -537,7 +536,7 @@ MonoBehaviour:
     scaleX: 16
     scaleY: 6
   - environment: 2
-    material: {fileID: 2100000, guid: 38b194ab750b0734c9091ba4d41d9851, type: 2}
+    material: {fileID: 0}
     movementMultiplier: .5
     scaleX: 0
     scaleY: 0
@@ -565,7 +564,7 @@ MonoBehaviour:
     scaleX: 16
     scaleY: 6
   - environment: 2
-    material: {fileID: 2100000, guid: 38b194ab750b0734c9091ba4d41d9851, type: 2}
+    material: {fileID: 0}
     movementMultiplier: .5
     scaleX: 0
     scaleY: 0

@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 405734}
   - 212: {fileID: 21215246}
   - 95: {fileID: 9545538}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Candle
   m_TagString: Untagged
   m_Icon: {fileID: 0}

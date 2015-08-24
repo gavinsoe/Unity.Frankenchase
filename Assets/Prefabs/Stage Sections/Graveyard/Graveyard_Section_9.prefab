@@ -11,7 +11,7 @@ GameObject:
   - 212: {fileID: 21258680}
   - 251: {fileID: 25115686}
   - 68: {fileID: 6837332}
-  m_Layer: 16
+  m_Layer: 8
   m_Name: Floor_Graveyard_Grass_Mid 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ GameObject:
   - 212: {fileID: 21209642}
   - 251: {fileID: 25173572}
   - 68: {fileID: 6807762}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47,7 +47,7 @@ GameObject:
   - 212: {fileID: 21244550}
   - 251: {fileID: 25175910}
   - 68: {fileID: 6838738}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63,7 +63,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 476656}
   - 212: {fileID: 21281380}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Earth_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81,7 +81,7 @@ GameObject:
   - 212: {fileID: 21262742}
   - 251: {fileID: 25155394}
   - 68: {fileID: 6897690}
-  m_Layer: 16
+  m_Layer: 8
   m_Name: Floor_Graveyard_Grass_Mid 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 432132}
   - 212: {fileID: 21295502}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Bush_Flower_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 478242}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 409076}
   - 212: {fileID: 21299050}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Bush_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -143,7 +143,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 457998}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Decorations
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -159,7 +159,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 467482}
   - 212: {fileID: 21264032}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 431166}
   - 61: {fileID: 6126038}
-  m_Layer: 18
+  m_Layer: 8
   m_Name: SectionEnd
   m_TagString: SectionEnd
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
@@ -190,7 +190,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 417760}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Graveyard_Section_9
   m_TagString: StageSection
   m_Icon: {fileID: 0}
@@ -208,7 +208,7 @@ GameObject:
   - 212: {fileID: 21264778}
   - 251: {fileID: 25188480}
   - 68: {fileID: 6855412}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -226,7 +226,7 @@ GameObject:
   - 212: {fileID: 21200682}
   - 251: {fileID: 25132436}
   - 68: {fileID: 6891896}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Left 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -244,7 +244,7 @@ GameObject:
   - 212: {fileID: 21249480}
   - 251: {fileID: 25190748}
   - 68: {fileID: 6893734}
-  m_Layer: 16
+  m_Layer: 8
   m_Name: Floor_Graveyard_Grass_Mid 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 473248}
   - 212: {fileID: 21210368}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -275,7 +275,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 419900}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -293,7 +293,7 @@ GameObject:
   - 212: {fileID: 21235614}
   - 61: {fileID: 6199494}
   - 114: {fileID: 11479166}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Graveyard_Trap_Tombstone_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -311,7 +311,7 @@ GameObject:
   - 212: {fileID: 21248270}
   - 251: {fileID: 25163432}
   - 68: {fileID: 6851090}
-  m_Layer: 16
+  m_Layer: 8
   m_Name: Floor_Graveyard_Grass_Mid 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -327,7 +327,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 450896}
   - 212: {fileID: 21258352}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Earth_Mid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +343,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 420746}
   - 212: {fileID: 21281008}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Tree_Small_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -358,7 +358,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 499298}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Environment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -376,7 +376,7 @@ GameObject:
   - 212: {fileID: 21287974}
   - 251: {fileID: 25165944}
   - 68: {fileID: 6899430}
-  m_Layer: 16
+  m_Layer: 8
   m_Name: Floor_Graveyard_Grass_Mid 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -394,7 +394,7 @@ GameObject:
   - 212: {fileID: 21277216}
   - 251: {fileID: 25124200}
   - 68: {fileID: 6875552}
-  m_Layer: 16
+  m_Layer: 8
   m_Name: Floor_Graveyard_Grass_Mid 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -410,7 +410,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 473448}
   - 212: {fileID: 21230800}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Earth_Mid 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

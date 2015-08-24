@@ -9,7 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 450534}
   - 212: {fileID: 21227792}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Tree_Big_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ GameObject:
   - 212: {fileID: 21259744}
   - 251: {fileID: 25116742}
   - 68: {fileID: 6896348}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 403242}
   - 212: {fileID: 21299766}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Bush_Flower_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61,7 +61,7 @@ GameObject:
   - 212: {fileID: 21232432}
   - 251: {fileID: 25166520}
   - 68: {fileID: 6814574}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 38
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79,7 +79,7 @@ GameObject:
   - 212: {fileID: 21238742}
   - 251: {fileID: 25125420}
   - 68: {fileID: 6808224}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 29
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 428562}
   - 212: {fileID: 21289064}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Tall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,7 +113,7 @@ GameObject:
   - 212: {fileID: 21204562}
   - 251: {fileID: 25104262}
   - 68: {fileID: 6816942}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,7 +129,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 464380}
   - 212: {fileID: 21254552}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Tree_Big_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,7 +147,7 @@ GameObject:
   - 212: {fileID: 21284170}
   - 251: {fileID: 25100628}
   - 68: {fileID: 6885244}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -162,7 +162,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 449692}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -180,7 +180,7 @@ GameObject:
   - 212: {fileID: 21210310}
   - 251: {fileID: 25162404}
   - 68: {fileID: 6877550}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,7 +196,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 455208}
   - 212: {fileID: 21294430}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Tree_Big_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -214,7 +214,7 @@ GameObject:
   - 212: {fileID: 21265162}
   - 251: {fileID: 25111170}
   - 68: {fileID: 6822170}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -232,7 +232,7 @@ GameObject:
   - 212: {fileID: 21245864}
   - 251: {fileID: 25162464}
   - 68: {fileID: 6827240}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -248,7 +248,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 410230}
   - 212: {fileID: 21230580}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Bush_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -266,7 +266,7 @@ GameObject:
   - 212: {fileID: 21204642}
   - 251: {fileID: 25171092}
   - 68: {fileID: 6854514}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -284,7 +284,7 @@ GameObject:
   - 212: {fileID: 21208032}
   - 251: {fileID: 25151606}
   - 68: {fileID: 6884114}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 37
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -302,7 +302,7 @@ GameObject:
   - 212: {fileID: 21251284}
   - 251: {fileID: 25169498}
   - 68: {fileID: 6842838}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 34
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -321,7 +321,7 @@ GameObject:
   - 95: {fileID: 9539698}
   - 61: {fileID: 6118058}
   - 114: {fileID: 11451518}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Graveyard_Trap_ZombieGrave_Purple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -339,7 +339,7 @@ GameObject:
   - 212: {fileID: 21210762}
   - 251: {fileID: 25131810}
   - 68: {fileID: 6844168}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -357,7 +357,7 @@ GameObject:
   - 212: {fileID: 21282544}
   - 251: {fileID: 25186094}
   - 68: {fileID: 6872742}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -373,7 +373,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 405896}
   - 212: {fileID: 21222482}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Earthmound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -391,7 +391,7 @@ GameObject:
   - 212: {fileID: 21268534}
   - 251: {fileID: 25110554}
   - 68: {fileID: 6800590}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -409,7 +409,7 @@ GameObject:
   - 212: {fileID: 21255900}
   - 251: {fileID: 25184292}
   - 68: {fileID: 6838736}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 30
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -425,7 +425,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 473650}
   - 58: {fileID: 5891440}
-  m_Layer: 15
+  m_Layer: 8
   m_Name: Graveyard_Trigger_Ram
   m_TagString: CreepRam
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -442,7 +442,7 @@ GameObject:
   - 4: {fileID: 429582}
   - 61: {fileID: 6152732}
   - 114: {fileID: 11424248}
-  m_Layer: 14
+  m_Layer: 8
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -460,7 +460,7 @@ GameObject:
   - 212: {fileID: 21275044}
   - 251: {fileID: 25173638}
   - 68: {fileID: 6894934}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -478,7 +478,7 @@ GameObject:
   - 212: {fileID: 21250150}
   - 251: {fileID: 25180658}
   - 68: {fileID: 6817262}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -494,7 +494,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 422494}
   - 212: {fileID: 21250550}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Bush_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -509,7 +509,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 497660}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -525,7 +525,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 475296}
   - 212: {fileID: 21286006}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Tree_Big_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -541,7 +541,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 419282}
   - 58: {fileID: 5867162}
-  m_Layer: 15
+  m_Layer: 8
   m_Name: Graveyard_Trigger_Witch_Top
   m_TagString: CreepWitchTop
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -556,7 +556,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 407130}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Graveyard_Test
   m_TagString: StageSection
   m_Icon: {fileID: 0}
@@ -574,7 +574,7 @@ GameObject:
   - 212: {fileID: 21203320}
   - 251: {fileID: 25170950}
   - 68: {fileID: 6875686}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -591,7 +591,7 @@ GameObject:
   - 4: {fileID: 482096}
   - 61: {fileID: 6124196}
   - 114: {fileID: 11424622}
-  m_Layer: 14
+  m_Layer: 8
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -609,7 +609,7 @@ GameObject:
   - 212: {fileID: 21297484}
   - 251: {fileID: 25134210}
   - 68: {fileID: 6813226}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -625,7 +625,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 432890}
   - 58: {fileID: 5811904}
-  m_Layer: 15
+  m_Layer: 8
   m_Name: Graveyard_Trigger_Witch_Mid
   m_TagString: CreepWitchMid
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -644,7 +644,7 @@ GameObject:
   - 95: {fileID: 9549878}
   - 61: {fileID: 6167324}
   - 114: {fileID: 11486546}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Graveyard_Trap_Zombie_Hands
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -660,7 +660,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 498822}
   - 212: {fileID: 21296752}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Tree_Big_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -678,7 +678,7 @@ GameObject:
   - 212: {fileID: 21226012}
   - 61: {fileID: 6113698}
   - 114: {fileID: 11494438}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Graveyard_Trap_Tombstone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -694,7 +694,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 449494}
   - 212: {fileID: 21208022}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Earthmound_Grass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -712,7 +712,7 @@ GameObject:
   - 212: {fileID: 21208008}
   - 251: {fileID: 25115178}
   - 68: {fileID: 6891754}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -728,7 +728,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 445980}
   - 212: {fileID: 21260214}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -746,7 +746,7 @@ GameObject:
   - 212: {fileID: 21272862}
   - 251: {fileID: 25171210}
   - 68: {fileID: 6850570}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -764,7 +764,7 @@ GameObject:
   - 212: {fileID: 21246288}
   - 251: {fileID: 25184944}
   - 68: {fileID: 6866362}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -782,7 +782,7 @@ GameObject:
   - 212: {fileID: 21270628}
   - 61: {fileID: 6112138}
   - 114: {fileID: 11482674}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Graveyard_Trap_Tombstone_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -800,7 +800,7 @@ GameObject:
   - 212: {fileID: 21253246}
   - 251: {fileID: 25141432}
   - 68: {fileID: 6887632}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -818,7 +818,7 @@ GameObject:
   - 212: {fileID: 21224318}
   - 251: {fileID: 25132342}
   - 68: {fileID: 6859618}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -836,7 +836,7 @@ GameObject:
   - 212: {fileID: 21296104}
   - 61: {fileID: 6133450}
   - 114: {fileID: 11494562}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Graveyard_Trap_Tombstone_Dug
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -852,7 +852,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 477630}
   - 212: {fileID: 21264622}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Tree_Big_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -870,7 +870,7 @@ GameObject:
   - 212: {fileID: 21298222}
   - 61: {fileID: 6109886}
   - 114: {fileID: 11453930}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Graveyard_Trap_Tombstone_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -888,7 +888,7 @@ GameObject:
   - 212: {fileID: 21296904}
   - 251: {fileID: 25195528}
   - 68: {fileID: 6850680}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -904,7 +904,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 433700}
   - 212: {fileID: 21299036}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Skull_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -923,7 +923,7 @@ GameObject:
   - 95: {fileID: 9570974}
   - 61: {fileID: 6168064}
   - 114: {fileID: 11452264}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Graveyard_Trap_ZombieGrave_Green
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -941,7 +941,7 @@ GameObject:
   - 212: {fileID: 21282548}
   - 251: {fileID: 25172642}
   - 68: {fileID: 6837062}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -957,7 +957,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 499296}
   - 212: {fileID: 21293094}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -975,7 +975,7 @@ GameObject:
   - 212: {fileID: 21252012}
   - 251: {fileID: 25144516}
   - 68: {fileID: 6804554}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 36
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -993,7 +993,7 @@ GameObject:
   - 212: {fileID: 21212352}
   - 61: {fileID: 6132708}
   - 114: {fileID: 11454750}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Graveyard_Trap_Tombstone_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1009,7 +1009,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 415398}
   - 212: {fileID: 21294498}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Tree_Small_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1027,7 +1027,7 @@ GameObject:
   - 212: {fileID: 21218132}
   - 61: {fileID: 6114770}
   - 114: {fileID: 11456364}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Graveyard_Trap_Tombstone_Moss_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1044,7 +1044,7 @@ GameObject:
   - 4: {fileID: 409656}
   - 61: {fileID: 6115852}
   - 114: {fileID: 11423208}
-  m_Layer: 14
+  m_Layer: 8
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1063,7 +1063,7 @@ GameObject:
   - 95: {fileID: 9578446}
   - 61: {fileID: 6199838}
   - 114: {fileID: 11485928}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Graveyard_Trap_Skeleton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1081,7 +1081,7 @@ GameObject:
   - 212: {fileID: 21267810}
   - 251: {fileID: 25139512}
   - 68: {fileID: 6816598}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1097,7 +1097,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 481518}
   - 212: {fileID: 21258368}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Tree_Small_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1115,7 +1115,7 @@ GameObject:
   - 212: {fileID: 21278994}
   - 251: {fileID: 25193994}
   - 68: {fileID: 6838748}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1133,7 +1133,7 @@ GameObject:
   - 212: {fileID: 21229124}
   - 251: {fileID: 25196822}
   - 68: {fileID: 6880480}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1151,7 +1151,7 @@ GameObject:
   - 212: {fileID: 21287436}
   - 251: {fileID: 25160954}
   - 68: {fileID: 6800626}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1168,7 +1168,7 @@ GameObject:
   - 4: {fileID: 443606}
   - 61: {fileID: 6146974}
   - 114: {fileID: 11418578}
-  m_Layer: 14
+  m_Layer: 8
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1184,7 +1184,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 448156}
   - 212: {fileID: 21256722}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Skull_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1199,7 +1199,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 489590}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Decorations
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1217,7 +1217,7 @@ GameObject:
   - 212: {fileID: 21274880}
   - 251: {fileID: 25104764}
   - 68: {fileID: 6870052}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1235,7 +1235,7 @@ GameObject:
   - 212: {fileID: 21223670}
   - 251: {fileID: 25102068}
   - 68: {fileID: 6847424}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1253,7 +1253,7 @@ GameObject:
   - 212: {fileID: 21259160}
   - 251: {fileID: 25113508}
   - 68: {fileID: 6870140}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1271,7 +1271,7 @@ GameObject:
   - 212: {fileID: 21217374}
   - 251: {fileID: 25133230}
   - 68: {fileID: 6863978}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 35
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1289,7 +1289,7 @@ GameObject:
   - 212: {fileID: 21292684}
   - 251: {fileID: 25147206}
   - 68: {fileID: 6821254}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1307,7 +1307,7 @@ GameObject:
   - 212: {fileID: 21258970}
   - 251: {fileID: 25199492}
   - 68: {fileID: 6854488}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1325,7 +1325,7 @@ GameObject:
   - 212: {fileID: 21233188}
   - 251: {fileID: 25113544}
   - 68: {fileID: 6854658}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1343,7 +1343,7 @@ GameObject:
   - 212: {fileID: 21200158}
   - 61: {fileID: 6130484}
   - 114: {fileID: 11467798}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Graveyard_Trap_Tombstone_Moss_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1359,7 +1359,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 407896}
   - 58: {fileID: 5818038}
-  m_Layer: 15
+  m_Layer: 8
   m_Name: Graveyard_Trigger_Witch_Bot
   m_TagString: CreepWitchBot
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -1375,7 +1375,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 455552}
   - 212: {fileID: 21235154}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Bush_Flower_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1391,7 +1391,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 436048}
   - 61: {fileID: 6198246}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SectionEnd
   m_TagString: SectionEnd
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
@@ -1409,7 +1409,7 @@ GameObject:
   - 212: {fileID: 21286430}
   - 251: {fileID: 25159722}
   - 68: {fileID: 6856418}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Graveyard_Grass_Mid 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3366,6 +3366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c25c92f51b5b304b877e7e3855d947b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
 --- !u!114 &11423208
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3377,6 +3378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c25c92f51b5b304b877e7e3855d947b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
 --- !u!114 &11424248
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3388,6 +3390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c25c92f51b5b304b877e7e3855d947b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
 --- !u!114 &11424622
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3399,6 +3402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c25c92f51b5b304b877e7e3855d947b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
 --- !u!114 &11451518
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5442,12 +5446,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 114540}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25102068
 PlatformEffector2D:
@@ -5456,12 +5461,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 186562}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25104262
 PlatformEffector2D:
@@ -5470,12 +5476,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 111358}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25104764
 PlatformEffector2D:
@@ -5484,12 +5491,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 186112}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25110554
 PlatformEffector2D:
@@ -5498,12 +5506,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 127750}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25111170
 PlatformEffector2D:
@@ -5512,12 +5521,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 117866}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25113508
 PlatformEffector2D:
@@ -5526,12 +5536,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 186694}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25113544
 PlatformEffector2D:
@@ -5540,12 +5551,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 189412}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25115178
 PlatformEffector2D:
@@ -5554,12 +5566,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 150092}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25116742
 PlatformEffector2D:
@@ -5568,12 +5581,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 101676}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25125420
 PlatformEffector2D:
@@ -5582,12 +5596,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 107870}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25131810
 PlatformEffector2D:
@@ -5596,12 +5611,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 123262}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25132342
 PlatformEffector2D:
@@ -5610,12 +5626,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 161478}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25133230
 PlatformEffector2D:
@@ -5624,12 +5641,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 187046}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25134210
 PlatformEffector2D:
@@ -5638,12 +5656,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 147828}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25139512
 PlatformEffector2D:
@@ -5652,12 +5671,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 175740}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25141432
 PlatformEffector2D:
@@ -5666,12 +5686,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 161246}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25144516
 PlatformEffector2D:
@@ -5680,12 +5701,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 170764}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25147206
 PlatformEffector2D:
@@ -5694,12 +5716,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 187276}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25151606
 PlatformEffector2D:
@@ -5708,12 +5731,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 121908}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25159722
 PlatformEffector2D:
@@ -5722,12 +5746,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 199656}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25160954
 PlatformEffector2D:
@@ -5736,12 +5761,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 181706}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25162404
 PlatformEffector2D:
@@ -5750,12 +5776,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 116966}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25162464
 PlatformEffector2D:
@@ -5764,12 +5791,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 121668}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25166520
 PlatformEffector2D:
@@ -5778,12 +5806,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 106404}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25169498
 PlatformEffector2D:
@@ -5792,12 +5821,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 122694}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25170950
 PlatformEffector2D:
@@ -5806,12 +5836,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 145322}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25171092
 PlatformEffector2D:
@@ -5820,12 +5851,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 121796}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25171210
 PlatformEffector2D:
@@ -5834,12 +5866,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 152138}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25172642
 PlatformEffector2D:
@@ -5848,12 +5881,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 169306}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25173638
 PlatformEffector2D:
@@ -5862,12 +5896,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 132094}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25180658
 PlatformEffector2D:
@@ -5876,12 +5911,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 133892}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25184292
 PlatformEffector2D:
@@ -5890,12 +5926,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 128196}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25184944
 PlatformEffector2D:
@@ -5904,12 +5941,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 159700}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25186094
 PlatformEffector2D:
@@ -5918,12 +5956,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 126168}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25193994
 PlatformEffector2D:
@@ -5932,12 +5971,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 178536}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25195528
 PlatformEffector2D:
@@ -5946,12 +5986,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 166478}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25196822
 PlatformEffector2D:
@@ -5960,12 +6001,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 181322}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!251 &25199492
 PlatformEffector2D:
@@ -5974,12 +6016,13 @@ PlatformEffector2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 189184}
   m_Enabled: 1
+  m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 6144
-  m_OneWay: 1
-  m_SideFriction: 0
-  m_SideBounce: 0
+  m_UseOneWay: 1
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
   m_SideAngleVariance: 0
 --- !u!1001 &100100000
 Prefab:

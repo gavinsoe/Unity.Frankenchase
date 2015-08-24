@@ -11,7 +11,7 @@ GameObject:
   - 212: {fileID: 21276574}
   - 61: {fileID: 6164152}
   - 114: {fileID: 11459834}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 416350}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 424864}
   - 212: {fileID: 21267392}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,7 +57,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 412000}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Section_3
   m_TagString: StageSection
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ GameObject:
   - 4: {fileID: 414000}
   - 212: {fileID: 21217230}
   - 95: {fileID: 9509062}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Candle 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 447288}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Decorations
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 457566}
   - 95: {fileID: 9575668}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Castle_Trap_Bat_Small 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,7 +123,7 @@ GameObject:
   - 212: {fileID: 21254154}
   - 61: {fileID: 6167544}
   - 114: {fileID: 11434104}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -140,7 +140,7 @@ GameObject:
   - 4: {fileID: 425868}
   - 212: {fileID: 21232480}
   - 95: {fileID: 9530400}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Candle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156,7 +156,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 432274}
   - 61: {fileID: 6123228}
-  m_Layer: 18
+  m_Layer: 8
   m_Name: SectionEnd
   m_TagString: SectionEnd
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
@@ -172,7 +172,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 470878}
   - 95: {fileID: 9572694}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Castle_Trap_Bat_Small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,7 +189,7 @@ GameObject:
   - 4: {fileID: 411720}
   - 212: {fileID: 21273418}
   - 95: {fileID: 9527302}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Candle 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - 95: {fileID: 9579158}
   - 61: {fileID: 6110554}
   - 114: {fileID: 11406714}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Castle_Trap_Spider
   m_TagString: Untagged
   m_Icon: {fileID: 0}

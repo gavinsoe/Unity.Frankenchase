@@ -12,7 +12,7 @@ GameObject:
   - 61: {fileID: 6107050}
   - 50: {fileID: 5042692}
   - 114: {fileID: 11421560}
-  m_Layer: 15
+  m_Layer: 14
   m_Name: Creep Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51,7 +51,7 @@ GameObject:
   - 61: {fileID: 6187990}
   - 50: {fileID: 5028234}
   - 114: {fileID: 11416952}
-  m_Layer: 17
+  m_Layer: 15
   m_Name: Destroyer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   - 61: {fileID: 6156922}
   - 50: {fileID: 5067530}
   - 114: {fileID: 11459902}
-  m_Layer: 19
+  m_Layer: 15
   m_Name: Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}

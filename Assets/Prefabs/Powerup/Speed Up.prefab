@@ -11,7 +11,7 @@ GameObject:
   - 212: {fileID: 21258060}
   - 61: {fileID: 6158060}
   - 114: {fileID: 11404216}
-  m_Layer: 13
+  m_Layer: 11
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 458060}
-  m_Layer: 13
+  m_Layer: 11
   m_Name: Speed Up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,9 +82,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc0c6a206640c438bb144f3db87069, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effect: 0
-  effectCoefficient: 14
-  effectDuration: 5
+  effectPrimary:
+    type: 0
+    coefficient: 0
+    duration: 0
+  effectSecondary:
+    type: 0
+    coefficient: 0
+    duration: 0
+  activateSecondaryEffect: 0
+  destroyOnTrigger: 0
+  triggered: 0
 --- !u!212 &21258060
 SpriteRenderer:
   m_ObjectHideFlags: 1

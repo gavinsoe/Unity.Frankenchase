@@ -11,7 +11,7 @@ GameObject:
   - 212: {fileID: 21261938}
   - 61: {fileID: 6114222}
   - 114: {fileID: 11488614}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Graveyard_Trap_Tombstone_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

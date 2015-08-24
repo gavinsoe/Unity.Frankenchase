@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 469752}
   - 212: {fileID: 21253116}
   - 95: {fileID: 9561162}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle_Torch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
