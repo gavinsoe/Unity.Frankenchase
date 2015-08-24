@@ -129,27 +129,23 @@ public class Character2D : MonoBehaviour
         // Do not proceed if in a paused state
         if (paused) return;
        
-        // Only control player if grounded or airControl is turned on
-        if (grounded)
+        // The Speed animator parameter is set to the absolute value of the horizontal input.
+        anim.SetFloat("Speed", Mathf.Abs(move));
+
+        // Move the character
+        body.velocity = new Vector2(move * currentSpeed, body.velocity.y);
+
+        // If the input is moving the palyer right and the player is facing left
+        if (move > 0 && !facingRight)
         {
-            // The Speed animator parameter is set to the absolute value of the horizontal input.
-            anim.SetFloat("Speed", Mathf.Abs(move));
-
-            // Move the character
-            body.velocity = new Vector2(move * currentSpeed, body.velocity.y);
-
-            // If the input is moving the palyer right and the player is facing left
-            if (move > 0 && !facingRight)
-            {
-                // ... flip the player.
-                Flip();
-            }
-            // Otherwise if the input is moving the player left and the player is facing right...
-            else if (move < 0 && facingRight)
-            {
-                // ...flip the player
-                Flip();
-            }
+            // ... flip the player.
+            Flip();
+        }
+        // Otherwise if the input is moving the player left and the player is facing right...
+        else if (move < 0 && facingRight)
+        {
+            // ...flip the player
+            Flip();
         }
         
         // If the player should jump...
