@@ -177,12 +177,14 @@ public class Character2D : MonoBehaviour
     public void Attack(GameObject target)
     {
         // Attacks everytime something is in range (no cooldown time)
-        if (equippedWeapon.type == WeaponType.Sword)
+        if (equippedWeapon.type == WeaponType.Sword && !weaponOnCooldown)
         {
             if (target.tag == "Monster")
             {
                 anim.SetTrigger("Attack");
-                MonsterController.instance.TakeDamageDelay(0);
+                MonsterController.instance.TakeDamageDelay(0.25f);
+                weaponOnCooldown = true;
+                Invoke("ResetCooldown", equippedWeapon.cooldown);
             }
         }
         // Attacks everytime something is in range (has cooldown)

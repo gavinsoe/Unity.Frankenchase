@@ -51,14 +51,14 @@ public class Weapon : System.Object
             // Retrieve upgrade level 
             upgradeLevel = StoreInventory.GetItemBalance(StoreAssets.UPGRADE_SWORD_ID);
             type = WeaponType.Sword;
-            cooldown = 0;
+            cooldown = 0.75f;
         }
         else if (weaponID == StoreAssets.WEAPON_WHIP_ID)
         {
             // Retrieve upgrade level
             upgradeLevel = StoreInventory.GetItemBalance(StoreAssets.UPGRADE_WHIP_ID);
             type = WeaponType.Whip;
-            cooldown = 1;
+            cooldown = 2;
         }
         else if (weaponID == StoreAssets.WEAPON_CROSSBOW_ID)
         {

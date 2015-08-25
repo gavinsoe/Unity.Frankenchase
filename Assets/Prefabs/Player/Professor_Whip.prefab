@@ -61,6 +61,7 @@ GameObject:
   - 50: {fileID: 5091920}
   - 114: {fileID: 11446862}
   - 114: {fileID: 11476760}
+  - 61: {fileID: 6193154}
   m_Layer: 10
   m_Name: Professor_Whip
   m_TagString: Player
@@ -342,6 +343,19 @@ BoxCollider2D:
   m_Offset: {x: .674550176, y: -.761771441}
   serializedVersion: 2
   m_Size: {x: 3.39184618, y: .060945034}
+--- !u!61 &6193154
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 128162}
+  m_Enabled: 1
+  m_Material: {fileID: 6200000, guid: 66b2ce71bbda47445869f10efbb09d62, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.0299999993, y: -.150000006}
+  serializedVersion: 2
+  m_Size: {x: .25, y: .600000024}
 --- !u!68 &6878118
 EdgeCollider2D:
   m_ObjectHideFlags: 1
