@@ -67,7 +67,6 @@ public class Game : MonoBehaviour
     {
         // Initialise game
         InitializeWorld();
-        LoadSettings();
 
         // Retreive / Update highscore
         GUITitleScreen.instance.UpdateHighscore();
@@ -233,7 +232,6 @@ public class Game : MonoBehaviour
         distanceScore = 0;
         holdPhaseScore = 0;
         score = 0;
-        HoldingPhase.instance.ResetEndurance();
 
         // Update the score on the GUI
         GUIScore.instance.SetScore(score);
@@ -252,9 +250,6 @@ public class Game : MonoBehaviour
         // Initialise Soomla Highway (online statistics)
         SoomlaHighway.Initialize();
         
-        // Initialise Soomla Store (Items and stuff)
-        SoomlaStore.Initialize(new StoreAssets());
-
         // Initialise Soomla Profile (Social media integrations)
         SoomlaProfile.Initialize();
 
@@ -276,71 +271,24 @@ public class Game : MonoBehaviour
         InitializeArsenal();
     }
 
-    private void LoadSettings()
-    {
-        // Sound
-        if (PlayerPrefs.GetInt(Constants.settings_sound) == 1)
-        {
-            GUITitleScreen.instance.SetSoundBtnState(true);
-            AudioListener.volume = 1;
-        }
-        else
-        {
-            GUITitleScreen.instance.SetSoundBtnState(false);
-            AudioListener.volume = 0;
-        }
-    }
-
-    public void ToggleSound()
-    {
-        if (GUITitleScreen.instance.GetSoundBtnState())
-        {
-            AudioListener.volume = 1;
-            PlayerPrefs.SetInt(Constants.settings_sound, 1);
-        }
-        else
-        {
-            AudioListener.volume = 0;
-            PlayerPrefs.SetInt(Constants.settings_sound, 0);
-        }
-    }
-
     #region Weapons
 
     private void InitializeArsenal()
     {
-        // Make sure player owns the weapons
-        if (StoreInventory.GetItemBalance(StoreAssets.WEAPON_SWORD_ID) <= 0)
-            StoreInventory.GiveItem(StoreAssets.WEAPON_SWORD_ID, 1);
-        if (StoreInventory.GetItemBalance(StoreAssets.WEAPON_WHIP_ID) <= 0)
-            StoreInventory.GiveItem(StoreAssets.WEAPON_WHIP_ID, 1);
-        if (StoreInventory.GetItemBalance(StoreAssets.WEAPON_CROSSBOW_ID) <= 0)
-            StoreInventory.GiveItem(StoreAssets.WEAPON_CROSSBOW_ID, 1);
-
-        weaponArsenal = new Dictionary<string,Weapon>();
-        var weaponIDs = StoreAssets.GetItemsInCategory(StoreAssets.CATEGORY_WEAPON_NAME);
-        foreach (var weaponID in weaponIDs)
-        {
-            weaponArsenal.Add(weaponID, new Weapon(weaponID));
-        }
+        weaponArsenal = new Dictionary<string, Weapon>();
+        weaponArsenal.Add(Constants.weapon_sword, new Weapon(Constants.weapon_sword));
+        weaponArsenal.Add(Constants.weapon_whip, new Weapon(Constants.weapon_whip));
+        weaponArsenal.Add(Constants.weapon_crossbow, new Weapon(Constants.weapon_crossbow));
     }
 
     public Weapon GetEquippedWeapon()
     {
-        // Temporarilt equip whip (for testing)
-        StoreInventory.EquipVirtualGood(StoreAssets.WEAPON_SWORD_ID);
+        return weaponArsenal[GameData.equippedWeapon];
+    }
 
-        foreach (var weapon in weaponArsenal.Values)
-        {
-            if (weapon.equipped)
-            {
-                return weapon;
-            }
-        }
-        // Should never reach this point, but if it does, return first weapon and equip it
-        var first_weapon = weaponArsenal.Values.First();
-        StoreInventory.EquipVirtualGood(first_weapon.weaponID);
-        return first_weapon;
+    public void EquipWeapon(string weapon_id)
+    {
+        GameData.equippedWeapon = weapon_id;
     }
 
     #endregion

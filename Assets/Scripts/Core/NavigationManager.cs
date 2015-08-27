@@ -26,7 +26,6 @@ public class NavigationManager : MonoBehaviour
     {
         // Show and hide GUIs
         GUIGameOver.instance.Show();
-        GUIHoldingPhase.instance.Hide();
         GUIPause.instance.Hide();
         GUIPlayMode.instance.Hide();
         GUIScore.instance.Show();
@@ -44,7 +43,6 @@ public class NavigationManager : MonoBehaviour
     {
         // Show and hide GUIs
         GUIGameOver.instance.Hide();
-        GUIHoldingPhase.instance.Hide();
         GUIPause.instance.Hide();
         GUIPlayMode.instance.Hide();
         GUIScore.instance.Hide();
@@ -67,7 +65,6 @@ public class NavigationManager : MonoBehaviour
 
         // Show and hide GUIs
         GUIGameOver.instance.Hide();
-        GUIHoldingPhase.instance.Hide();
         GUIPause.instance.Hide();
         GUIPlayMode.instance.Show();
         GUIScore.instance.Show();
@@ -89,7 +86,6 @@ public class NavigationManager : MonoBehaviour
 
         // Show and hide GUIs
         GUIGameOver.instance.Hide();
-        GUIHoldingPhase.instance.Hide();
         GUIPause.instance.Hide();
         GUIPlayMode.instance.Show();
         GUIScore.instance.Show();
@@ -110,7 +106,6 @@ public class NavigationManager : MonoBehaviour
     {
         // Show and hide GUIs
         GUIGameOver.instance.Hide();
-        GUIHoldingPhase.instance.Hide();
         GUIPause.instance.Show();
         GUIPlayMode.instance.Hide();
         GUIScore.instance.Show();
@@ -133,7 +128,6 @@ public class NavigationManager : MonoBehaviour
     {
         // Show and hide GUIs
         GUIGameOver.instance.Hide();
-        GUIHoldingPhase.instance.Hide();
         GUIPause.instance.Hide();
         GUIPlayMode.instance.Show();
         GUIScore.instance.Show();
@@ -156,7 +150,6 @@ public class NavigationManager : MonoBehaviour
     {
         // Show and hide GUIs
         GUIGameOver.instance.Hide();
-        GUIHoldingPhase.instance.Show();
         GUIPause.instance.Hide();
         GUIPlayMode.instance.Hide();
         GUIScore.instance.Show();
@@ -177,7 +170,6 @@ public class NavigationManager : MonoBehaviour
     {
         // Show and hide GUIs
         GUIGameOver.instance.Hide();
-        GUIHoldingPhase.instance.Hide();
         GUIPause.instance.Hide();
         GUIPlayMode.instance.Show();
         GUIScore.instance.Show();

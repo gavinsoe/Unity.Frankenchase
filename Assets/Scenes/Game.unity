@@ -210,11 +210,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 11468500, guid: 9084ef7fec85e404ea25ae96223fd43b, type: 2}
-      propertyPath: backgrounds.Array.data[2].material
-      value: 
-      objectReference: {fileID: 2100000, guid: 38b194ab750b0734c9091ba4d41d9851, type: 2}
-    - target: {fileID: 11470780, guid: 9084ef7fec85e404ea25ae96223fd43b, type: 2}
+    - target: {fileID: 11496138, guid: 9084ef7fec85e404ea25ae96223fd43b, type: 2}
       propertyPath: backgrounds.Array.data[2].material
       value: 
       objectReference: {fileID: 2100000, guid: 38b194ab750b0734c9091ba4d41d9851, type: 2}
@@ -222,7 +218,11 @@ Prefab:
       propertyPath: backgrounds.Array.data[2].material
       value: 
       objectReference: {fileID: 2100000, guid: 38b194ab750b0734c9091ba4d41d9851, type: 2}
-    - target: {fileID: 11496138, guid: 9084ef7fec85e404ea25ae96223fd43b, type: 2}
+    - target: {fileID: 11470780, guid: 9084ef7fec85e404ea25ae96223fd43b, type: 2}
+      propertyPath: backgrounds.Array.data[2].material
+      value: 
+      objectReference: {fileID: 2100000, guid: 38b194ab750b0734c9091ba4d41d9851, type: 2}
+    - target: {fileID: 11468500, guid: 9084ef7fec85e404ea25ae96223fd43b, type: 2}
       propertyPath: backgrounds.Array.data[2].material
       value: 
       objectReference: {fileID: 2100000, guid: 38b194ab750b0734c9091ba4d41d9851, type: 2}

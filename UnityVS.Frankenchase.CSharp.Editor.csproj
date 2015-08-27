@@ -91,6 +91,15 @@
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
     </Reference>
+    <Reference Include="ES2Editor">
+      <HintPath>Assets\Plugins\Editor\ES2Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="ES2">
+      <HintPath>Assets\Plugins\ES2.dll</HintPath>
+    </Reference>
+    <Reference Include="MoodkieSecurity">
+      <HintPath>Assets\Plugins\MoodkieSecurity.dll</HintPath>
+    </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>Assets\UnityVS\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
@@ -116,6 +125,9 @@
     <Compile Include="Assets\Soomla\Editor\SoomlaSettingsEditor.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Easy Save 2\changelog.txt" />
+    <None Include="Assets\Easy Save 2\readme.txt" />
+    <None Include="Assets\link.xml" />
     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
     <None Include="Assets\Plugins\Android\google-play-services_lib\AndroidManifest.xml" />
     <None Include="Assets\Plugins\Android\google-play-services_lib\proguard.txt" />

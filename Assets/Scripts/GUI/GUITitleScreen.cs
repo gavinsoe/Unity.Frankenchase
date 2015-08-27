@@ -33,6 +33,20 @@ public class GUITitleScreen : GUIBaseClass
         SoundToggleBtn = SoundToggleBtnObject.GetComponent<Toggle>();
     }
 
+    void Start()
+    {
+        // Initialise button states
+        if (SoundToggleBtn.isOn != GameData.settingSound)
+        {
+            SoundToggleBtn.isOn = GameData.settingSound;
+            ToggleSound();
+        } else
+        {
+            ToggleSound();
+        }
+            
+    }
+    
     public void UpdateHighscore()
     {
         var score = SoomlaLevelUp.GetLevel(Constants.lvlup_level_main).GetSingleScore().Record;
@@ -40,13 +54,14 @@ public class GUITitleScreen : GUIBaseClass
         HighscoreText.text = score.ToString("0");
     }
 
-    public void SetSoundBtnState(bool state)
+    public void ToggleSound()
     {
-        SoundToggleBtn.isOn = state;
-    }
+        
+        GameData.settingSound = SoundToggleBtn.isOn;
 
-    public bool GetSoundBtnState()
-    {
-        return SoundToggleBtn.isOn;
+        if (GameData.settingSound)
+            AudioListener.volume = 1;
+        else
+            AudioListener.volume = 0;
     }
 }

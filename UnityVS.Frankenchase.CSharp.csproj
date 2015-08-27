@@ -55,6 +55,12 @@
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
     </Reference>
+    <Reference Include="ES2">
+      <HintPath>Assets\Plugins\ES2.dll</HintPath>
+    </Reference>
+    <Reference Include="MoodkieSecurity">
+      <HintPath>Assets\Plugins\MoodkieSecurity.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UnityVS.Frankenchase.CSharp.Plugins.csproj">
@@ -63,6 +69,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Easy Save 2\ES2Init.cs" />
+    <Compile Include="Assets\Easy Save 2\Types\ES2_AudioClip.cs" />
+    <Compile Include="Assets\Easy Save 2\Types\ES2_Sprite.cs" />
     <Compile Include="Assets\Scripts\BackgroundParallax.cs" />
     <Compile Include="Assets\Scripts\Behaviours\ArrowController.cs" />
     <Compile Include="Assets\Scripts\Behaviours\Character2D.cs" />
@@ -83,10 +92,10 @@
     <Compile Include="Assets\Scripts\Core\BackgroundController.cs" />
     <Compile Include="Assets\Scripts\Core\BackgroundPositioning.cs" />
     <Compile Include="Assets\Scripts\Core\Game.cs" />
+    <Compile Include="Assets\Scripts\Core\GameData.cs" />
     <Compile Include="Assets\Scripts\Core\HoldingPhase.cs" />
     <Compile Include="Assets\Scripts\Core\NavigationManager.cs" />
     <Compile Include="Assets\Scripts\Core\PlayerSpawner.cs" />
-    <Compile Include="Assets\Scripts\Core\StoreAssets.cs" />
     <Compile Include="Assets\Scripts\GUI\GUIBaseClass.cs" />
     <Compile Include="Assets\Scripts\GUI\GUIGameOver.cs" />
     <Compile Include="Assets\Scripts\GUI\GUIHoldingPhase.cs" />
@@ -107,6 +116,9 @@
     <Compile Include="Assets\Scripts\Triggers\TrapTrigger.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Easy Save 2\changelog.txt" />
+    <None Include="Assets\Easy Save 2\readme.txt" />
+    <None Include="Assets\link.xml" />
     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
     <None Include="Assets\Plugins\Android\google-play-services_lib\AndroidManifest.xml" />
     <None Include="Assets\Plugins\Android\google-play-services_lib\proguard.txt" />

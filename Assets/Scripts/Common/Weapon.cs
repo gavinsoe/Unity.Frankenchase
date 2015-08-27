@@ -14,25 +14,6 @@ public class Weapon : System.Object
     // ID corresponding to the weapon (in soomla)
     public string weaponID { get; set; }
 
-    // Whether this weapon is currently equipped
-    public bool equipped { 
-        get
-        {
-            return StoreInventory.IsVirtualGoodEquipped(weaponID);
-        }
-        set
-        {
-            if (value == true)
-            {
-                StoreInventory.EquipVirtualGood(weaponID);
-            } 
-            else
-            {
-                StoreInventory.UnEquipVirtualGood(weaponID);
-            }
-        } 
-    }
-
     // Name of the weapon
     public WeaponType type;
 
@@ -45,30 +26,27 @@ public class Weapon : System.Object
     // Function to update the stats of the weapon
     public void Update()
     {
-        var upgradeLevel = 0;
-        if (weaponID == StoreAssets.WEAPON_SWORD_ID)
+        if (weaponID == Constants.weapon_sword)
         {
             // Retrieve upgrade level 
-            upgradeLevel = StoreInventory.GetItemBalance(StoreAssets.UPGRADE_SWORD_ID);
+            damage = 10 + (10 * GameData.upgradeLevelSword);
             type = WeaponType.Sword;
             cooldown = 0.75f;
         }
-        else if (weaponID == StoreAssets.WEAPON_WHIP_ID)
+        else if (weaponID == Constants.weapon_whip)
         {
             // Retrieve upgrade level
-            upgradeLevel = StoreInventory.GetItemBalance(StoreAssets.UPGRADE_WHIP_ID);
+            damage = 10 + (10 * GameData.upgradeLevelWhip);
             type = WeaponType.Whip;
             cooldown = 2;
         }
-        else if (weaponID == StoreAssets.WEAPON_CROSSBOW_ID)
+        else if (weaponID == Constants.weapon_crossbow)
         {
             // Retreive upgrade level
-            upgradeLevel = StoreInventory.GetItemBalance(StoreAssets.UPGRADE_CROSSBOW_ID);
+            damage = 10 + (10 * GameData.upgradeLevelWhip);
             type = WeaponType.Crossbow;
             cooldown = 3;
         }
 
-        // Update the damage
-        damage = 10 + (10 * upgradeLevel);
     }
 }

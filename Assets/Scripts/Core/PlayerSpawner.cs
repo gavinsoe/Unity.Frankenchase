@@ -13,7 +13,7 @@ public class PlayerSpawner : MonoBehaviour {
         {
             if (character.weaponID == equippedWeapon.weaponID)
             {
-                var player = Instantiate(character.prefab, transform.position, transform.rotation);
+                Instantiate(character.prefab, transform.position, transform.rotation);
 
                 break;
             }

@@ -46,6 +46,9 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Easy Save 2\ES2Init.cs" />
+     <Compile Include="Assets\Easy Save 2\Types\ES2_AudioClip.cs" />
+     <Compile Include="Assets\Easy Save 2\Types\ES2_Sprite.cs" />
      <Compile Include="Assets\Scripts\BackgroundParallax.cs" />
      <Compile Include="Assets\Scripts\Behaviours\ArrowController.cs" />
      <Compile Include="Assets\Scripts\Behaviours\Character2D.cs" />
@@ -66,10 +69,10 @@
      <Compile Include="Assets\Scripts\Core\BackgroundController.cs" />
      <Compile Include="Assets\Scripts\Core\BackgroundPositioning.cs" />
      <Compile Include="Assets\Scripts\Core\Game.cs" />
+     <Compile Include="Assets\Scripts\Core\GameData.cs" />
      <Compile Include="Assets\Scripts\Core\HoldingPhase.cs" />
      <Compile Include="Assets\Scripts\Core\NavigationManager.cs" />
      <Compile Include="Assets\Scripts\Core\PlayerSpawner.cs" />
-     <Compile Include="Assets\Scripts\Core\StoreAssets.cs" />
      <Compile Include="Assets\Scripts\GUI\GUIBaseClass.cs" />
      <Compile Include="Assets\Scripts\GUI\GUIGameOver.cs" />
      <Compile Include="Assets\Scripts\GUI\GUIHoldingPhase.cs" />
@@ -122,6 +125,7 @@
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\color\common_signin_btn_text_light.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-hi\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-th\common_strings.xml" />
+     <None Include="Assets\Easy Save 2\changelog.txt" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-en-rGB\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-lv\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ka-rGE\common_strings.xml" />
@@ -162,6 +166,7 @@
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-ca\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-es\wallet_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-cs\common_strings.xml" />
+     <None Include="Assets\Easy Save 2\readme.txt" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-nb\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-km-rKH\common_strings.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-sv\common_strings.xml" />
@@ -203,6 +208,7 @@
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-ru\common_strings.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-ar\common_strings.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values\wallet_strings.xml" />
+     <None Include="Assets\link.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-hu\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ko\common_strings.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\drawable\common_signin_btn_text_dark.xml" />
@@ -249,6 +255,12 @@
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values\common_strings.xml" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="ES2">
+ <HintPath>D:/Prj/Unity/Frankenchase/Assets/Plugins/ES2.dll</HintPath>
+ </Reference>
+ <Reference Include="MoodkieSecurity">
+ <HintPath>D:/Prj/Unity/Frankenchase/Assets/Plugins/MoodkieSecurity.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>D:/Unity/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
