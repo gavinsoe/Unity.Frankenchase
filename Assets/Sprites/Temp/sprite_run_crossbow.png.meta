@@ -1,11 +1,10 @@
 fileFormatVersion: 2
-guid: 09271b30dab79d249a92112550d8071b
-timeCreated: 1439362437
+guid: 278dcb62adbb0604f9126f7000a8c162
+timeCreated: 1440679528
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: sprite_weapon_run_revolver_0
-    21300002: sprite_weapon_run_revolver_1
+    21300000: sprite_run_crossbow_0
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -51,25 +50,15 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: sprite_weapon_run_revolver_0
+    - name: sprite_run_crossbow_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 50
         y: 0
-        width: 192
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: sprite_weapon_run_revolver_1
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 192
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
