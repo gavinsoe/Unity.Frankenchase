@@ -79,7 +79,7 @@ public class Frankenstein : MonoBehaviour
             // Only do this when frankenstein is not immune
             if (!trigger.triggered)
             {
-                SetSpeed(Character2D.instance.currentSpeed + 1, 2);
+                SetSpeed(Character2D.instance.defaultSpeed + 1, 2);
             }
         }
     }

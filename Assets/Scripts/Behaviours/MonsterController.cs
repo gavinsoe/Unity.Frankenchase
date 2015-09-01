@@ -114,7 +114,7 @@ public class MonsterController : MonoBehaviour {
             // Only do this when frankenstein is not immune
             if (!trigger.triggered)
             {
-                SetSpeed(Character2D.instance.currentSpeed + speedBoost, speedBoostDuration);
+                SetSpeed(Character2D.instance.defaultSpeed + speedBoost, speedBoostDuration);
             }
         }
         #endregion
@@ -227,7 +227,7 @@ public class MonsterController : MonoBehaviour {
 
         // Slightly push/stagger monster away when attacked
         body.AddForce(new Vector2(xDir, yDir), forceMode);
-        SetSpeed(Character2D.instance.currentSpeed + speedBoost, speedBoostDuration);
+        SetSpeed(Character2D.instance.defaultSpeed + speedBoost, speedBoostDuration);
     }
 
     public void Targeted()

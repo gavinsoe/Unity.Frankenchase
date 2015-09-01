@@ -8,8 +8,7 @@ public class Character2D : MonoBehaviour
     public static Character2D instance;
     public bool facingRight = true; // For determining which way the player is currently facing.
 
-    [SerializeField] private float defaultSpeed = 10f; // The default running speed
-    public float currentSpeed; // Current speed character is running at
+    [SerializeField] public float defaultSpeed = 10f; // The default running speed
     [SerializeField] private float jumpForce = 400f; // Amount of force added when the player jumps.
     [SerializeField] private float doubleJumpForce = 300f;
 
@@ -20,6 +19,7 @@ public class Character2D : MonoBehaviour
 
     private Animator anim; // Reference to the player's animator component.
 
+    private float move; // 1 = move, 0 = stop
     private bool doubleJump = false; // Whether or not the double jump has been used
     private Rigidbody2D body; // A link to the rigidbody objecty of the character
 
@@ -80,7 +80,7 @@ public class Character2D : MonoBehaviour
         deathTimerText = deathTimer.GetComponent<Text>();
 
         // Set default speed
-        currentSpeed = defaultSpeed;
+        move = 1;
 
         // Initialise equipped weapon
         equippedWeapon = Game.instance.GetEquippedWeapon();
@@ -124,7 +124,7 @@ public class Character2D : MonoBehaviour
         }
     }
 
-    public void Move(float move, bool jump)
+    public void Move(bool jump)
     {
         // Do not proceed if in a paused state
         if (paused) return;
@@ -133,23 +133,10 @@ public class Character2D : MonoBehaviour
         anim.SetFloat("Speed", Mathf.Abs(move));
 
         // Move the character
-        body.velocity = new Vector2(move * currentSpeed, body.velocity.y);
+        body.velocity = new Vector2(move * defaultSpeed, body.velocity.y);
 
-        // If the input is moving the palyer right and the player is facing left
-        if (move > 0 && !facingRight)
-        {
-            // ... flip the player.
-            Flip();
-        }
-        // Otherwise if the input is moving the player left and the player is facing right...
-        else if (move < 0 && facingRight)
-        {
-            // ...flip the player
-            Flip();
-        }
-        
         // If the player should jump...
-        if (((grounded && anim.GetBool("Ground")) || !doubleJump) && jump)
+        if (((grounded && anim.GetBool("Ground")) || !doubleJump) && jump  && move != 0)
         {
             // reset velocity for double jump
             body.velocity = new Vector2(body.velocity.x, 0);
@@ -255,17 +242,6 @@ public class Character2D : MonoBehaviour
         body.WakeUp();
     }
 
-    private void Flip()
-    {
-        // Switch the way the player is labelled as facing.
-        facingRight = !facingRight;
-
-        // Multiply the player's local scale by -1.
-        Vector3 theScale = transform.localScale;
-        theScale.x *= -1;
-        transform.localScale = theScale;
-    }
-
     // Kill the character
     public void Kill()
     {
@@ -311,45 +287,45 @@ public class Character2D : MonoBehaviour
     }
 
     #endregion
-    #region Speed adjustment
+    #region Slow
 
-    public void SetSpeed(float percentage, float duration)
+    public void Slow(float percentage, float duration)
     {
-        currentSpeed = defaultSpeed * percentage;
-        CancelInvoke("ResetSpeed");
-        Invoke("ResetSpeed", duration);
+        move = percentage;
+        animSlow.SetBool("Slowed", true);
+        profSpriteRenderer.material.SetColor("_Color", new Color(0.5f, 0.74f, 0.47f, 1f));
 
-        // Update animation
-        if (currentSpeed < defaultSpeed)
-        {
-            ToggleSlowDebuff(true);
-        }
-        else
-        {
-            ToggleSlowDebuff(false);
-        }
+        CancelInvoke("RemoveSlow");
+        Invoke("RemoveSlow", duration);
     }
 
-    private void ResetSpeed()
+    private void RemoveSlow()
     {
-        currentSpeed = defaultSpeed;
-        ToggleSlowDebuff(false);
+        move = 1;
+        animSlow.SetBool("Slowed", false);
+        profSpriteRenderer.material.SetColor("_Color", new Color(1f, 1f, 1f, 1f));
     }
 
-    private void ToggleSlowDebuff(bool active)
+    #endregion
+    #region Stun Effect
+
+    public void Stun(float duration)
     {
-        if (active)
-        {
-            animSlow.SetBool("Slowed", true);
-            profSpriteRenderer.material.SetColor("_Color",new Color(0.5f, 0.74f, 0.47f, 1f));
-        }
-        else
-        {
-            animSlow.SetBool("Slowed", false);
-            profSpriteRenderer.material.SetColor("_Color", new Color(1f, 1f, 1f, 1f));
-        }            
-        
+        // Pause current animation
+        anim.SetBool("Stunned", true);
+        move = 0;
+
+        CancelInvoke("RemoveStun");
+        Invoke("RemoveStun", duration);
     }
+
+    private void RemoveStun()
+    {
+        // Resume character movement and animation
+        anim.SetBool("Stunned", false);
+        move = 1;
+    }
+
     #endregion
 }
 

@@ -467,7 +467,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   facingRight: 1
   defaultSpeed: 4
-  currentSpeed: 0
   jumpForce: 500
   doubleJumpForce: 400
   whatIsGround:
@@ -485,7 +484,7 @@ MonoBehaviour:
   debuffResetTimer: 10
   debuffStacks: 0
   debuffSlow: {fileID: 122678}
-  profSprite: {fileID: 157534}
+  profSprite: {fileID: 115702}
 --- !u!114 &11476760
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -178,38 +178,12 @@ public class Game : MonoBehaviour
             }
             else if (distanceFromMonster > maxDistanceFromMonster * 0.8)
             {
-                if (Character2D.instance.currentSpeed > MonsterController.instance.currentSpeed)
-                {
-                    //GUIPlayMode.instance.TriggerDistanceIndicator("Catching up! 0.8");
-                }
-                else
-                {
-                    //GUIPlayMode.instance.TriggerDistanceIndicator("He's getting away! 0.8");
-                }
             }
             else if (distanceFromMonster > maxDistanceFromMonster * 0.6)
             {
-                if (Character2D.instance.currentSpeed > MonsterController.instance.currentSpeed)
-                {
-                    //GUIPlayMode.instance.TriggerDistanceIndicator("Catching up! 0.6");
-                }
-                else
-                {
-                    //GUIPlayMode.instance.TriggerDistanceIndicator("He's getting away! 0.6");
-                }
-                
             }
             else if (distanceFromMonster > maxDistanceFromMonster * 0.4)
             {
-                if (Character2D.instance.currentSpeed > MonsterController.instance.currentSpeed)
-                {
-                    //GUIPlayMode.instance.TriggerDistanceIndicator("Catching up! 0.4");
-                }
-                else
-                {
-                    //GUIPlayMode.instance.TriggerDistanceIndicator("He's getting away! 0.4");
-                }
-                
             }
 
         }

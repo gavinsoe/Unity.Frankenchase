@@ -48,17 +48,17 @@ public class GameEvents : MonoBehaviour
 
     void PlayerEvents(Effect effect)
     {
-        if (effect.type == EffectType.Speed)
+        if (effect.type == EffectType.Slow)
         {
             // Speed up/down depending on whether it's a trap/powerup
-            Character2D.instance.SetSpeed(effect.coefficient, effect.duration);
+            Character2D.instance.Slow(effect.coefficient, effect.duration);
             triggered = true;
             if (destroyOnTrigger) Destroy(gameObject);
         }
-        else if (effect.type == EffectType.Death)
+        else if (effect.type == EffectType.Stun)
         {
             // Game Over
-            NavigationManager.instance.GameOver();
+            Character2D.instance.Stun(effect.duration);
             triggered = true;
             if (destroyOnTrigger) Destroy(gameObject);
         }
