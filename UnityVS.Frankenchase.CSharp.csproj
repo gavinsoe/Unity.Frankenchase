@@ -87,7 +87,6 @@
     <Compile Include="Assets\Scripts\BackgroundParallax.cs" />
     <Compile Include="Assets\Scripts\Behaviours\ArrowController.cs" />
     <Compile Include="Assets\Scripts\Behaviours\Character2D.cs" />
-    <Compile Include="Assets\Scripts\Behaviours\Frankenstein.cs" />
     <Compile Include="Assets\Scripts\Behaviours\MonsterController.cs" />
     <Compile Include="Assets\Scripts\Behaviours\Ram.cs" />
     <Compile Include="Assets\Scripts\CameraRunner.cs" />
@@ -105,12 +104,10 @@
     <Compile Include="Assets\Scripts\Core\BackgroundPositioning.cs" />
     <Compile Include="Assets\Scripts\Core\Game.cs" />
     <Compile Include="Assets\Scripts\Core\GameData.cs" />
-    <Compile Include="Assets\Scripts\Core\HoldingPhase.cs" />
     <Compile Include="Assets\Scripts\Core\NavigationManager.cs" />
     <Compile Include="Assets\Scripts\Core\PlayerSpawner.cs" />
     <Compile Include="Assets\Scripts\GUI\GUIBaseClass.cs" />
     <Compile Include="Assets\Scripts\GUI\GUIGameOver.cs" />
-    <Compile Include="Assets\Scripts\GUI\GUIHoldingPhase.cs" />
     <Compile Include="Assets\Scripts\GUI\GUIPause.cs" />
     <Compile Include="Assets\Scripts\GUI\GUIPlayMode.cs" />
     <Compile Include="Assets\Scripts\GUI\GUIScore.cs" />

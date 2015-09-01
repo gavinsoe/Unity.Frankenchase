@@ -146,26 +146,6 @@ public class NavigationManager : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    public void HoldingPhaseStart()
-    {
-        // Show and hide GUIs
-        GUIGameOver.instance.Hide();
-        GUIPause.instance.Hide();
-        GUIPlayMode.instance.Hide();
-        GUIScore.instance.Show();
-        GUITitleScreen.instance.Hide();
-
-        // Update the state of the game
-        Game.instance.currentState = GameState.HoldingPhase;
-        
-        // Set character states
-        Character2D.instance.Pause();
-        MonsterController.instance.Pause();
-
-        // Trigger event
-        HoldingPhase.instance.TriggerEvent();
-    }
-
     public void HoldingPhaseEnd()
     {
         // Show and hide GUIs
