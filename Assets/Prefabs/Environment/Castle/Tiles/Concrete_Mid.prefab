@@ -9,8 +9,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 454966}
   - 212: {fileID: 21293754}
-  - 68: {fileID: 6856766}
-  - 251: {fileID: 25106774}
+  - 251: {fileID: 25194012}
+  - 61: {fileID: 6167134}
   m_Layer: 8
   m_Name: Concrete_Mid
   m_TagString: Untagged
@@ -30,20 +30,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!68 &6856766
-EdgeCollider2D:
+--- !u!61 &6167134
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 144346}
   m_Enabled: 1
-  m_Material: {fileID: 6200000, guid: 96cdccc0d0046e241a7aef9ec8f8b813, type: 2}
+  m_Material: {fileID: 6200000, guid: 080781311c1b0c546b01413fd881b4e8, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 1
-  m_Offset: {x: 0, y: .5}
-  m_Points:
-  - {x: -.5, y: 0}
-  - {x: .5, y: 0}
+  m_Offset: {x: 0, y: .449999988}
+  serializedVersion: 2
+  m_Size: {x: 1, y: .100000001}
 --- !u!212 &21293754
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -70,21 +69,21 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf5c0e2ece7b5294f89c673005f031fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!251 &25106774
+--- !u!251 &25194012
 PlatformEffector2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 144346}
   m_Enabled: 1
-  m_UseColliderMask: 1
+  m_UseColliderMask: 0
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 2048
   m_UseOneWay: 1
+  m_SurfaceArc: 180
   m_UseSideFriction: 0
   m_UseSideBounce: 0
-  m_SideAngleVariance: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

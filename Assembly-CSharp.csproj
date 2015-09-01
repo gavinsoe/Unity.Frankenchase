@@ -49,7 +49,6 @@
      <Compile Include="Assets\Easy Save 2\ES2Init.cs" />
      <Compile Include="Assets\Easy Save 2\Types\ES2_AudioClip.cs" />
      <Compile Include="Assets\Easy Save 2\Types\ES2_Sprite.cs" />
-     <Compile Include="Assets\Scripts\BackgroundParallax.cs" />
      <Compile Include="Assets\Scripts\Behaviours\ArrowController.cs" />
      <Compile Include="Assets\Scripts\Behaviours\Character2D.cs" />
      <Compile Include="Assets\Scripts\Behaviours\MonsterController.cs" />
