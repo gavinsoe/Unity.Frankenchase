@@ -63,4 +63,32 @@ public class Weapon : System.Object
         }
 
     }
+
+    // Upgrades the weapon
+    public void Upgrade()
+    {
+        // Check if sufficient funds are available
+        if (GameData.money >= upgradeCost)
+        {
+            // Take money
+            GameData.money -= upgradeCost;
+
+            // Upgrade corresponding weaopn
+            if (type == WeaponType.Sword)
+            {
+                GameData.upgradeLevelSword += 1;
+            }
+            else if (type == WeaponType.Whip)
+            {
+                GameData.upgradeLevelWhip += 1;
+            }
+            else if (type == WeaponType.Crossbow)
+            {
+                GameData.upgradeLevelCrossbow += 1;
+            }
+
+            // Update weapon stats
+            Update();
+        }
+    }
 }
