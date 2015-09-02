@@ -18,24 +18,11 @@ public class Game : MonoBehaviour
 
     public GameState currentState = GameState.TitleScreen; // Stores the state of the game.
 
-    private Vector3 lastPosition; // used to calculate the distance the professor has traveled
-    private float distanceTraveled; // Keeps track on how far the professor has travelled.
-    private float distanceScore; // Score obtained based on how far professor has travelled
-    public float distanceScoreMultiplier = 1f; // To be multiplied by the distance to calculate score
-    private float holdPhaseScore; // Bonus score obtained in the holding phase
-    public float holdPhaseScoreMultiplier = 50f; // To be multiplied by the holding time to calculate score.
-
     public float distanceFromMonster;
     public float maxDistanceFromMonster;
 
-    public Direction currentDirection; // The direction the character is travelling
     public Environment currentEnvironment; // The current environment the character is in
     public float currentLocation; // current location of the character (different from distance travelled)
-    public float locationCastleEnd; // location where the Castle Environment ends
-    public float locationGraveyardEnd; // location where the Graveyard Environment ends
-    public float locationTownEnd; // location where the TownEnvironment ends
-
-    public float score; // The total score of current playthrough
 
     // Collection of stages
     public List<StageSection> sectionsCastle;
@@ -81,87 +68,12 @@ public class Game : MonoBehaviour
         {
             UpdateDistanceFromTarget();
         }
-
-        if ((currentState == GameState.ChasingPhase ||
-            currentState == GameState.HoldingPhase) &&
-            Character2D.instance != null)
-        {
-            // Distance travelled within the last frame.
-            var deltaDistance = Mathf.Abs(Character2D.instance.transform.position.x - lastPosition.x);
-                        
-            // Make sure the value for deltaDistance makes sense
-            // In this case it makes sure that the change in distance within a frame cannot be more than 1
-            if (deltaDistance < 1)
-            {
-                distanceTraveled += deltaDistance;
-
-                UpdateScore(deltaDistance);
-                
-                // Currently not used, environment will be based on Monster's health.
-                //UpdateEnvironment(deltaDistance);
-            }
-
-            // Store location of last position 
-            lastPosition = Character2D.instance.transform.position;
-        }
-
-    }
-    
-    private void UpdateScore(float deltaDistance)
-    {
-        // Calculate the score obtained by distance travelled
-        distanceScore = distanceTraveled * distanceScoreMultiplier;
-
-        // Calculate holding phase score
-        if (currentState == GameState.HoldingPhase)
-        {
-            holdPhaseScore += Time.deltaTime * holdPhaseScoreMultiplier;
-        }
-
-        // Update score and GUI
-        score = distanceScore + holdPhaseScore;
-        GUIScore.instance.SetScore(score);
     }
 
     /// <summary>
     /// Currently not used, environment will be based on the Monster's health.
     /// </summary>
     /// <param name="deltaDistance"></param>
-    private void UpdateEnvironment(float deltaDistance)
-    {
-        if (currentDirection == Direction.Right)
-        {
-            currentLocation += deltaDistance;
-            // Cannot go above the last environment
-            if (currentLocation > locationTownEnd)
-            {
-                currentLocation = locationTownEnd;
-            }
-        }
-        else
-        {
-            currentLocation -= deltaDistance;
-            // Cannot go lower than 0
-            if (currentLocation < 0)
-            {
-                currentLocation = 0;
-            }
-        }
-
-        // Determine the current location
-        if (currentLocation < locationCastleEnd)
-        {
-            currentEnvironment = Environment.Castle;
-        }
-        else if (currentLocation < locationGraveyardEnd)
-        {
-            currentEnvironment = Environment.Graveyard;
-        }
-        else
-        {
-            currentEnvironment = Environment.Town;
-        }
-    }
 
     private void UpdateDistanceFromTarget()
     {
@@ -185,7 +97,6 @@ public class Game : MonoBehaviour
             else if (distanceFromMonster > maxDistanceFromMonster * 0.4)
             {
             }
-
         }
     }
 
@@ -193,7 +104,6 @@ public class Game : MonoBehaviour
     {
         currentState = GameState.GameOver;
 
-        SoomlaLevelUp.GetLevel(Constants.lvlup_level_main).SetSingleScoreValue(score);
         SoomlaLevelUp.GetLevel(Constants.lvlup_level_main).End(true);
 
         GUITitleScreen.instance.UpdateHighscore();
@@ -202,16 +112,7 @@ public class Game : MonoBehaviour
     // Initialise game state
     public void InitializeStats()
     {
-        distanceTraveled = 0;
-        distanceScore = 0;
-        holdPhaseScore = 0;
-        score = 0;
-
-        // Update the score on the GUI
-        GUIScore.instance.SetScore(score);
-
         // Initialise location        
-        currentDirection = Direction.Right;
         currentEnvironment = Environment.Castle;
         currentLocation = 0;
 
@@ -273,8 +174,8 @@ public class Game : MonoBehaviour
         if (currentEnvironment == Environment.Castle)
         {
             var sections = sectionsCastle
-                           .Where(s => s.startDistance < distanceTraveled &&
-                                      (s.endDistance < distanceTraveled || s.endDistance == 0)).ToArray();
+                           .Where(s => s.startRank <= GameData.rank && 
+                                      (s.endRank >= GameData.rank || s.endRank == 0)).ToArray();
             
             // Randomise which section to retrieve
             var rand = UnityEngine.Random.Range(0, sections.Length);
@@ -288,8 +189,8 @@ public class Game : MonoBehaviour
         else if (currentEnvironment == Environment.Graveyard)
         {
             var sections = sectionsGraveyard
-                           .Where(s => s.startDistance < distanceTraveled &&
-                                      (s.endDistance < distanceTraveled || s.endDistance == 0)).ToArray();
+                           .Where(s => s.startRank <= GameData.rank &&
+                                      (s.endRank >= GameData.rank || s.endRank == 0)).ToArray();
 
             // Randomise which section to retrieve
             var rand = UnityEngine.Random.Range(0, sections.Length);
@@ -303,8 +204,8 @@ public class Game : MonoBehaviour
         else // if (currentEnvironment == Environment.Town)
         {
             var sections = sectionsTown
-                           .Where(s => s.startDistance < distanceTraveled &&
-                                      (s.endDistance < distanceTraveled || s.endDistance == 0)).ToArray();
+                           .Where(s => s.startRank <= GameData.rank &&
+                                      (s.endRank >= GameData.rank || s.endRank == 0)).ToArray();
 
             // Randomise which section to retrieve
             var rand = UnityEngine.Random.Range(0, sections.Length);

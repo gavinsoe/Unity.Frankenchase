@@ -192,7 +192,7 @@ public class Character2D : MonoBehaviour
         {
             anim.SetTrigger("Aim");
             weaponOnCooldown = true;
-            MonsterController.instance.Targeted();
+            MonsterController.instance.Targeted(equippedWeapon.cooldown);
             Invoke("ResetCooldown", equippedWeapon.cooldown);
         }
     }

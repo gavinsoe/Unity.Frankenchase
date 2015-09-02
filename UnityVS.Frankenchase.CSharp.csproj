@@ -104,7 +104,6 @@
     <Compile Include="Assets\Scripts\GUI\GUIGameOver.cs" />
     <Compile Include="Assets\Scripts\GUI\GUIPause.cs" />
     <Compile Include="Assets\Scripts\GUI\GUIPlayMode.cs" />
-    <Compile Include="Assets\Scripts\GUI\GUIScore.cs" />
     <Compile Include="Assets\Scripts\GUI\GUITitleScreen.cs" />
     <Compile Include="Assets\Scripts\StateMachineBehavior\AnimationEndDestroy.cs" />
     <Compile Include="Assets\Scripts\StateMachineBehavior\AnimationEndShootProjectile.cs" />

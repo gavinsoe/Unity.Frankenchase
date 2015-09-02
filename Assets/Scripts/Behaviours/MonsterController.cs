@@ -229,10 +229,12 @@ public class MonsterController : MonoBehaviour {
         SetSpeed(Character2D.instance.defaultSpeed + speedBoost, speedBoostDuration);
     }
 
-    public void Targeted()
+    public void Targeted(float aimTime)
     {
         var scope = Instantiate(scopeObject);
         scope.transform.SetParent(transform, false);
+        scope.GetComponent<Animator>().SetFloat("AimTime", (1 / aimTime));
+       
     }
     #endregion
 }

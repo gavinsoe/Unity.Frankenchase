@@ -11,12 +11,12 @@ public class StageSection : System.Object
     /// <summary>
     /// Location where this section will start to spawn
     /// </summary>
-    public float startDistance;
+    public float startRank;
 
     /// <summary>
     /// Location where this section will stop spawning
     /// </summary>
-    public float endDistance;
+    public float endRank;
 
     /// <summary>
     /// Environment this stage section belongs to

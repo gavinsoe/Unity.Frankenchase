@@ -16,7 +16,7 @@ public static class GameData : System.Object
         _upgradeLevelBoots = 1;
         _upgradeLevelSword = 1;
         _upgradeLevelWhip = 1;
-        _upgradeLevelWhip = 1;
+        _upgradeLevelCrossbow = 1;
         _equippedWeapon = Constants.weapon_sword;
         _settingSound = true;
 

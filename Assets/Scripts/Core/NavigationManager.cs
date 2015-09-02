@@ -28,7 +28,6 @@ public class NavigationManager : MonoBehaviour
         GUIGameOver.instance.Show();
         GUIPause.instance.Hide();
         GUIPlayMode.instance.Hide();
-        GUIScore.instance.Show();
         GUITitleScreen.instance.Hide();
 
         // Update the state of the game
@@ -45,7 +44,6 @@ public class NavigationManager : MonoBehaviour
         GUIGameOver.instance.Hide();
         GUIPause.instance.Hide();
         GUIPlayMode.instance.Hide();
-        GUIScore.instance.Hide();
         GUITitleScreen.instance.Show();
 
         // Load the Scene
@@ -67,7 +65,6 @@ public class NavigationManager : MonoBehaviour
         GUIGameOver.instance.Hide();
         GUIPause.instance.Hide();
         GUIPlayMode.instance.Show();
-        GUIScore.instance.Show();
         GUITitleScreen.instance.Hide();
 
         // Load the Scene
@@ -88,7 +85,6 @@ public class NavigationManager : MonoBehaviour
         GUIGameOver.instance.Hide();
         GUIPause.instance.Hide();
         GUIPlayMode.instance.Show();
-        GUIScore.instance.Show();
         GUITitleScreen.instance.Hide();
 
         // Load the scene
@@ -108,7 +104,6 @@ public class NavigationManager : MonoBehaviour
         GUIGameOver.instance.Hide();
         GUIPause.instance.Show();
         GUIPlayMode.instance.Hide();
-        GUIScore.instance.Show();
         GUITitleScreen.instance.Hide();
 
         // Update the state of the game
@@ -130,7 +125,6 @@ public class NavigationManager : MonoBehaviour
         GUIGameOver.instance.Hide();
         GUIPause.instance.Hide();
         GUIPlayMode.instance.Show();
-        GUIScore.instance.Show();
         GUITitleScreen.instance.Hide();
 
         // Update the state of the game
@@ -152,7 +146,6 @@ public class NavigationManager : MonoBehaviour
         GUIGameOver.instance.Hide();
         GUIPause.instance.Hide();
         GUIPlayMode.instance.Show();
-        GUIScore.instance.Show();
         GUITitleScreen.instance.Hide();
 
         // Update the state of the game
