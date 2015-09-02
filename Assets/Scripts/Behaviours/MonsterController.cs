@@ -15,8 +15,7 @@ public class MonsterController : MonoBehaviour {
 
     #region Movement
 
-    [SerializeField]
-    private float defaultSpeed = 10f; // The default running speed
+    private float defaultSpeed; // The default running speed
     public float currentSpeed; // Current speed character is running at.
     public float speedBoost; // Amount of extra speed when boosted (when monster goes behind the professor)
     public float speedBoostDuration; // Duration of the speed buff
@@ -63,12 +62,6 @@ public class MonsterController : MonoBehaviour {
         body = GetComponent<Rigidbody2D>();
         trigger = GetComponentInChildren<GameEvents>();
 
-        // Set default speed of monster
-        currentSpeed = defaultSpeed;
-
-        // Set health
-        curHealth = maxHealth;
-
         // Allow other classes to access this class
         instance = this;
     }
@@ -81,6 +74,12 @@ public class MonsterController : MonoBehaviour {
         anim.runtimeAnimatorController = selectedMonster.anim;
         Game.instance.currentEnvironment = selectedMonster.environment;
 
+        // Initialise monster stats
+        defaultSpeed = selectedMonster.GetSpeed();
+        currentSpeed = defaultSpeed;
+
+        maxHealth = selectedMonster.GetMaxHealth();
+        curHealth = maxHealth;
     }
 
     private void FixedUpdate()
@@ -226,7 +225,7 @@ public class MonsterController : MonoBehaviour {
         }
 
         // Slightly push/stagger monster away when attacked
-        body.AddForce(new Vector2(xDir, yDir), forceMode);
+        //body.AddForce(new Vector2(xDir, yDir), forceMode);
         SetSpeed(Character2D.instance.defaultSpeed + speedBoost, speedBoostDuration);
     }
 

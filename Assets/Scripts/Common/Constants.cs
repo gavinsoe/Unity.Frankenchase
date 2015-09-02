@@ -23,5 +23,6 @@ public static class Constants {
     public static string data_upgrade_sword = "data_upgrade_sword";
     public static string data_upgrade_whip = "data_upgrade_whip";
     public static string data_upgrade_crossbow = "data_upgrade_crossbow";
+    public static string data_upgrade_boots = "data_upgrade_boots";
 }
 

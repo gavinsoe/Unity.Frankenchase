@@ -13,9 +13,10 @@ public static class GameData : System.Object
         
         _rank = 0;
         _money = 0;
-        _upgradeLevelSword = 0;
-        _upgradeLevelWhip = 0;
-        _upgradeLevelWhip = 0;
+        _bootsLevel = 1;
+        _upgradeLevelSword = 1;
+        _upgradeLevelWhip = 1;
+        _upgradeLevelWhip = 1;
         _equippedWeapon = Constants.weapon_sword;
         _settingSound = true;
 
@@ -26,6 +27,9 @@ public static class GameData : System.Object
 
         if (ES2.Exists(Constants.data_money))
             _money = ES2.Load<int>(Constants.data_money);
+
+        if (ES2.Exists(Constants.data_upgrade_boots))
+            _bootsLevel = ES2.Load<int>(Constants.data_upgrade_boots);
 
         if (ES2.Exists(Constants.data_upgrade_sword))
             _upgradeLevelSword = ES2.Load<int>(Constants.data_upgrade_sword);
@@ -74,6 +78,20 @@ public static class GameData : System.Object
         {
             _money = value;
             ES2.Save(_money, Constants.data_money);
+        }
+    }
+
+    private static int _bootsLevel;
+    public static int bootsLevel
+    {
+        get
+        {
+            return _bootsLevel;
+        }
+        set
+        {
+            _bootsLevel = value;
+            ES2.Save(_bootsLevel, Constants.data_upgrade_boots);
         }
     }
 

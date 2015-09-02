@@ -81,9 +81,11 @@ public class Character2D : MonoBehaviour
 
         // Set default speed
         move = 1;
+        defaultSpeed = Boots.speed;
 
         // Initialise equipped weapon
         equippedWeapon = Game.instance.GetEquippedWeapon();
+        defaultSpeed += equippedWeapon.speedBoost;
 
         // Allow other classes to access this class
         instance = this;

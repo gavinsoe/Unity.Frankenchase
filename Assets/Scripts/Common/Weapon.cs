@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using Soomla.Store;
 
 [System.Serializable]
 public class Weapon : System.Object
@@ -11,41 +10,56 @@ public class Weapon : System.Object
         Update();
     }
 
-    // ID corresponding to the weapon (in soomla)
+    // ID corresponding to the weapon
     public string weaponID { get; set; }
 
     // Name of the weapon
     public WeaponType type;
 
     // Damage the weapon does
-    public int damage { get; set; }
+    public float damage { get; set; }
 
     // Time between attacks (or aim time for range weapons)
     public float cooldown { get; set; }
+
+    // Speed boost from weapon
+    public float speedBoost { get; set; }
+
+    // Upgrade cost
+    public int upgradeCost { get; set; }
 
     // Function to update the stats of the weapon
     public void Update()
     {
         if (weaponID == Constants.weapon_sword)
         {
-            // Retrieve upgrade level 
-            damage = 10 + (10 * GameData.upgradeLevelSword);
             type = WeaponType.Sword;
-            cooldown = 0.75f;
+            
+            // Calculate stats based on rank
+            damage = 1 + (0.21f * (GameData.upgradeLevelSword - 1));
+            speedBoost = 0.05f + (0.05f * (GameData.upgradeLevelSword - 1));
+            cooldown = 1;
+            upgradeCost = Mathf.RoundToInt(20 * Mathf.Pow(1.21f, (float)GameData.upgradeLevelSword));
         }
         else if (weaponID == Constants.weapon_whip)
         {
-            // Retrieve upgrade level
-            damage = 10 + (10 * GameData.upgradeLevelWhip);
             type = WeaponType.Whip;
-            cooldown = 2;
+
+            // Calculate stats based on rank
+            damage = 2 + (1.21f * (GameData.upgradeLevelWhip - 1));
+            speedBoost = 0;
+            cooldown = 2 - (0.05f * (GameData.upgradeLevelWhip - 1));
+            upgradeCost = Mathf.RoundToInt(25 * Mathf.Pow(1.21f, (float)GameData.upgradeLevelWhip));
         }
         else if (weaponID == Constants.weapon_crossbow)
         {
-            // Retreive upgrade level
-            damage = 10 + (10 * GameData.upgradeLevelWhip);
             type = WeaponType.Crossbow;
-            cooldown = 3;
+
+            // Retreive upgrade level
+            damage = 1.5f + (0.71f * (GameData.upgradeLevelCrossbow - 1));
+            speedBoost = 0;
+            cooldown = 5 - (0.5f * Mathf.CeilToInt((GameData.upgradeLevelCrossbow - 1) / 4));
+            upgradeCost = Mathf.RoundToInt(30 * Mathf.Pow(1.21f, (float)GameData.upgradeLevelCrossbow));
         }
 
     }
