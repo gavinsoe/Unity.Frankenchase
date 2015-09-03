@@ -102,6 +102,7 @@
     <Compile Include="Assets\Scripts\Core\PlayerSpawner.cs" />
     <Compile Include="Assets\Scripts\GUI\GUIBaseClass.cs" />
     <Compile Include="Assets\Scripts\GUI\GUIGameOver.cs" />
+    <Compile Include="Assets\Scripts\GUI\GUIMoney.cs" />
     <Compile Include="Assets\Scripts\GUI\GUIPause.cs" />
     <Compile Include="Assets\Scripts\GUI\GUIPlayMode.cs" />
     <Compile Include="Assets\Scripts\GUI\GUITitleScreen.cs" />

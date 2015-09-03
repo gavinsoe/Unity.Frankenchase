@@ -29,6 +29,7 @@ public class GUIPlayMode : GUIBaseClass
         DistanceIndicatorAnimator = DistanceIndicatorObject.GetComponent<Animator>();
     }
 
+
     public void TriggerDistanceIndicator(string msg)
     {
         if (DistanceIndicatorAnimator.GetCurrentAnimatorStateInfo(0).IsName("Default"))
@@ -37,5 +38,6 @@ public class GUIPlayMode : GUIBaseClass
             DistanceIndicatorAnimator.SetTrigger("Popup");
         }
     }
+
 
 }
