@@ -27,6 +27,33 @@ public class GUITitleScreen : GUIBaseClass
     private GameObject CrossbowToggleBtnObject;
     private Toggle CrossbowToggleBtn;
 
+    [SerializeField]
+    private GameObject SwordUpgradeBtnObject;
+    [SerializeField]
+    private GameObject SwordUpgradeCostObject;
+    private Text SwordUpgradeCost;
+    [SerializeField]
+    private GameObject SwordLevelObject;
+    private Text SwordLevel;
+
+    [SerializeField]
+    private GameObject WhipUpgradeBtnObject;
+    [SerializeField]
+    private GameObject WhipUpgradeCostObject;
+    private Text WhipUpgradeCost;
+    [SerializeField]
+    private GameObject WhipLevelObject;
+    private Text WhipLevel;
+
+    [SerializeField]
+    private GameObject CrossbowUpgradeBtnObject;
+    [SerializeField]
+    private GameObject CrossbowUpgradeCostObject;
+    private Text CrossbowUpgradeCost;
+    [SerializeField]
+    private GameObject CrossbowLevelObject;
+    private Text CrossbowLevel;
+
     void Awake()
     {
         // make sure there is only 1 instance of this class.
@@ -46,6 +73,15 @@ public class GUITitleScreen : GUIBaseClass
         SwordToggleBtn = SwordToggleBtnObject.GetComponent<Toggle>();
         WhipToggleBtn = WhipToggleBtnObject.GetComponent<Toggle>();
         CrossbowToggleBtn = CrossbowToggleBtnObject.GetComponent<Toggle>();
+
+        SwordUpgradeCost = SwordUpgradeCostObject.GetComponent<Text>();
+        SwordLevel = SwordLevelObject.GetComponent<Text>();
+
+        WhipUpgradeCost = WhipUpgradeCostObject.GetComponent<Text>();
+        WhipLevel = WhipLevelObject.GetComponent<Text>();
+
+        CrossbowUpgradeCost = CrossbowUpgradeCostObject.GetComponent<Text>();
+        CrossbowLevel = CrossbowLevelObject.GetComponent<Text>();
     }
 
     void Start()
@@ -75,6 +111,26 @@ public class GUITitleScreen : GUIBaseClass
         }
     }
     
+    public void Update()
+    {
+        UpdateWeaponLevel();
+    }
+
+    public void UpdateWeaponLevel()
+    {
+        SwordUpgradeCost.text = Game.instance.weaponArsenal[Constants.weapon_sword]
+                                    .upgradeCost.ToString();
+        SwordLevel.text = GameData.upgradeLevelSword.ToString();
+
+        WhipUpgradeCost.text = Game.instance.weaponArsenal[Constants.weapon_whip]
+                                   .upgradeCost.ToString();
+        WhipLevel.text = GameData.upgradeLevelWhip.ToString();
+
+        CrossbowUpgradeCost.text = Game.instance.weaponArsenal[Constants.weapon_crossbow]
+                                       .upgradeCost.ToString();
+        CrossbowLevel.text = GameData.upgradeLevelCrossbow.ToString();
+    }
+
     public void UpdateHighscore()
     {
         var score = SoomlaLevelUp.GetLevel(Constants.lvlup_level_main).GetSingleScore().Record;
@@ -95,10 +151,41 @@ public class GUITitleScreen : GUIBaseClass
     public void equipWeapon(string weapon_id)
     {
         GameData.equippedWeapon = weapon_id;
+
+        if (weapon_id == Constants.weapon_sword)
+        {
+            SwordToggleBtnObject.SetActive(false);
+            WhipToggleBtnObject.SetActive(true);
+            CrossbowToggleBtnObject.SetActive(true);
+
+            SwordUpgradeBtnObject.SetActive(true);
+            WhipUpgradeBtnObject.SetActive(false);
+            CrossbowUpgradeBtnObject.SetActive(false);
+        }
+        else if (weapon_id == Constants.weapon_whip)
+        {
+            SwordToggleBtnObject.SetActive(true);
+            WhipToggleBtnObject.SetActive(false);
+            CrossbowToggleBtnObject.SetActive(true);
+
+            SwordUpgradeBtnObject.SetActive(false);
+            WhipUpgradeBtnObject.SetActive(true);
+            CrossbowUpgradeBtnObject.SetActive(false);
+        }
+        else if (weapon_id == Constants.weapon_crossbow)
+        {
+            SwordToggleBtnObject.SetActive(true);
+            WhipToggleBtnObject.SetActive(true);
+            CrossbowToggleBtnObject.SetActive(false);
+
+            SwordUpgradeBtnObject.SetActive(false);
+            WhipUpgradeBtnObject.SetActive(false);
+            CrossbowUpgradeBtnObject.SetActive(true);
+        }
     }
 
     public void upgradeWeapon(string weapon_id)
     {
-
+        Game.instance.GetEquippedWeapon().Upgrade();
     }
 }

@@ -29,7 +29,7 @@ public class Game : MonoBehaviour
     public List<StageSection> sectionsGraveyard;
     public List<StageSection> sectionsTown;
 
-    private Dictionary<string, Weapon> weaponArsenal; // List of available weapons (and upgrade Levels)
+    public Dictionary<string, Weapon> weaponArsenal; // List of available weapons (and upgrade Levels)
 
     // Stage sections that are currently active
     private Dictionary<string, StageSection> sectionsActive;
