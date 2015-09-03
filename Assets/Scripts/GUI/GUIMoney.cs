@@ -13,6 +13,17 @@ public class GUIMoney : GUIBaseClass
 
     void Awake()
     {
+        // make sure there is only 1 instance of this class.
+        if (instance == null)
+        {
+            DontDestroyOnLoad(gameObject);
+            instance = this;
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
+
         anim = GetComponent<Animator>();
         MoneyText = MoneyTextObject.GetComponent<Text>();
     }

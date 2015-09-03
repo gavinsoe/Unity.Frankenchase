@@ -106,6 +106,7 @@
     <Compile Include="Assets\Scripts\GUI\GUIPause.cs" />
     <Compile Include="Assets\Scripts\GUI\GUIPlayMode.cs" />
     <Compile Include="Assets\Scripts\GUI\GUITitleScreen.cs" />
+    <Compile Include="Assets\Scripts\GUI\GUIVictory.cs" />
     <Compile Include="Assets\Scripts\StateMachineBehavior\AnimationEndDestroy.cs" />
     <Compile Include="Assets\Scripts\StateMachineBehavior\AnimationEndShootProjectile.cs" />
     <Compile Include="Assets\Scripts\StateMachineBehavior\SetAimToFalse.cs" />

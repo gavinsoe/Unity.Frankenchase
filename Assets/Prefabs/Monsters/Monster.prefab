@@ -71,7 +71,7 @@ Transform:
   m_GameObject: {fileID: 123888}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.87, y: -1.88, z: -5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children:
   - {fileID: 424874}
   - {fileID: 405384}
@@ -91,6 +91,7 @@ Transform:
   m_RootOrder: 0
 --- !u!50 &5052802
 Rigidbody2D:
+  serializedVersion: 2
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -99,11 +100,11 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 3
-  m_FixedAngle: 1
   m_IsKinematic: 0
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!61 &6157052
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -173,7 +174,6 @@ MonoBehaviour:
   - name: Sorcerer
     anim: {fileID: 9100000, guid: 2d80f34d00d967a4d9f7e9fc050b9bc9, type: 2}
     environment: 0
-  defaultSpeed: 3.5999999
   currentSpeed: 0
   speedBoost: 1
   speedBoostDuration: 2
@@ -242,7 +242,15 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.y
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 123888}

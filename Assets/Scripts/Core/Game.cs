@@ -55,9 +55,6 @@ public class Game : MonoBehaviour
         // Initialise game
         InitializeWorld();
 
-        // Retreive / Update highscore
-        GUITitleScreen.instance.UpdateHighscore();
-
         // Default to Title Screen
         NavigationManager.instance.TitleScreen();
     }
@@ -106,7 +103,16 @@ public class Game : MonoBehaviour
 
         SoomlaLevelUp.GetLevel(Constants.lvlup_level_main).End(true);
 
-        GUITitleScreen.instance.UpdateHighscore();
+        GameData.rank -= 1;
+    }
+
+    public void Victory()
+    {
+        currentState = GameState.GameOver;
+
+        SoomlaLevelUp.GetLevel(Constants.lvlup_level_main).End(true);
+
+        GameData.rank += 1;
     }
 
     // Initialise game state
@@ -146,6 +152,15 @@ public class Game : MonoBehaviour
         InitializeArsenal();
     }
 
+    #region Money
+
+    public void LootMoney(int amount)
+    {
+        GameData.money += amount;
+        GUIMoney.instance.UpdateGold();
+    }
+
+    #endregion
     #region Weapons
 
     private void InitializeArsenal()

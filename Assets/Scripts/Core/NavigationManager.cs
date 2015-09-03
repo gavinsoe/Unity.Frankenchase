@@ -26,6 +26,7 @@ public class NavigationManager : MonoBehaviour
     {
         // Show and hide GUIs
         GUIGameOver.instance.Show();
+        GUIVictory.instance.Hide();
         GUIPause.instance.Hide();
         GUIPlayMode.instance.Hide();
         GUITitleScreen.instance.Hide();
@@ -38,10 +39,28 @@ public class NavigationManager : MonoBehaviour
         MonsterController.instance.Kill();
     }
 
+    public void Victory()
+    {
+        // Show and hide GUIs
+        GUIGameOver.instance.Hide();
+        GUIVictory.instance.Show();
+        GUIPause.instance.Hide();
+        GUIPlayMode.instance.Hide();
+        GUITitleScreen.instance.Hide();
+
+        // Update the state of the game
+        Game.instance.Victory();
+
+        // Set character states
+        Character2D.instance.Kill();
+        MonsterController.instance.Kill();
+    }
+
     public void TitleScreen()
     {
         // Show and hide GUIs
         GUIGameOver.instance.Hide();
+        GUIVictory.instance.Hide();
         GUIPause.instance.Hide();
         GUIPlayMode.instance.Hide();
         GUITitleScreen.instance.Show();
@@ -63,6 +82,7 @@ public class NavigationManager : MonoBehaviour
 
         // Show and hide GUIs
         GUIGameOver.instance.Hide();
+        GUIVictory.instance.Hide();
         GUIPause.instance.Hide();
         GUIPlayMode.instance.Show();
         GUITitleScreen.instance.Hide();
@@ -83,6 +103,7 @@ public class NavigationManager : MonoBehaviour
 
         // Show and hide GUIs
         GUIGameOver.instance.Hide();
+        GUIVictory.instance.Hide();
         GUIPause.instance.Hide();
         GUIPlayMode.instance.Show();
         GUITitleScreen.instance.Hide();
@@ -102,6 +123,7 @@ public class NavigationManager : MonoBehaviour
     {
         // Show and hide GUIs
         GUIGameOver.instance.Hide();
+        GUIVictory.instance.Hide();
         GUIPause.instance.Show();
         GUIPlayMode.instance.Hide();
         GUITitleScreen.instance.Hide();
@@ -123,6 +145,7 @@ public class NavigationManager : MonoBehaviour
     {
         // Show and hide GUIs
         GUIGameOver.instance.Hide();
+        GUIVictory.instance.Hide();
         GUIPause.instance.Hide();
         GUIPlayMode.instance.Show();
         GUITitleScreen.instance.Hide();
@@ -138,22 +161,6 @@ public class NavigationManager : MonoBehaviour
         SoomlaLevelUp.GetLevel(Constants.lvlup_level_main).Start();
 
         Time.timeScale = 1;
-    }
-
-    public void HoldingPhaseEnd()
-    {
-        // Show and hide GUIs
-        GUIGameOver.instance.Hide();
-        GUIPause.instance.Hide();
-        GUIPlayMode.instance.Show();
-        GUITitleScreen.instance.Hide();
-
-        // Update the state of the game
-        Game.instance.currentState = GameState.ChasingPhase;
-
-        // Set character states
-        Character2D.instance.Resume();
-        MonsterController.instance.Resume();
     }
 
     public void Rate()

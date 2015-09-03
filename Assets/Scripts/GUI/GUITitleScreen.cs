@@ -8,8 +8,8 @@ public class GUITitleScreen : GUIBaseClass
     public static GUITitleScreen instance;
 
     [SerializeField] 
-    private GameObject HighscoreObject; // A reference to the object containing the highscore text
-    private Text HighscoreText; // A reference to the highscore text object
+    private GameObject RankObject; // A reference to the object containing the highscore text
+    private Text RankText; // A reference to the highscore text object
 
     [SerializeField]
     private GameObject SoundToggleBtnObject; // A referebce to the object containing the sound toggle button
@@ -68,7 +68,7 @@ public class GUITitleScreen : GUIBaseClass
         }
 
         // Get the referenced object
-        HighscoreText = HighscoreObject.GetComponent<Text>();
+        RankText = RankObject.GetComponent<Text>();
         SoundToggleBtn = SoundToggleBtnObject.GetComponent<Toggle>();
         SwordToggleBtn = SwordToggleBtnObject.GetComponent<Toggle>();
         WhipToggleBtn = WhipToggleBtnObject.GetComponent<Toggle>();
@@ -114,6 +114,7 @@ public class GUITitleScreen : GUIBaseClass
     public void Update()
     {
         UpdateWeaponLevel();
+        UpdateRank();
     }
 
     public void UpdateWeaponLevel()
@@ -131,11 +132,9 @@ public class GUITitleScreen : GUIBaseClass
         CrossbowLevel.text = GameData.upgradeLevelCrossbow.ToString();
     }
 
-    public void UpdateHighscore()
+    public void UpdateRank()
     {
-        var score = SoomlaLevelUp.GetLevel(Constants.lvlup_level_main).GetSingleScore().Record;
-        if (score < 0 ) score = 0;
-        HighscoreText.text = score.ToString("0");
+        RankText.text = GameData.rank.ToString();
     }
 
     public void ToggleSound()
@@ -187,5 +186,6 @@ public class GUITitleScreen : GUIBaseClass
     public void upgradeWeapon(string weapon_id)
     {
         Game.instance.GetEquippedWeapon().Upgrade();
+        GUIMoney.instance.UpdateGold();
     }
 }

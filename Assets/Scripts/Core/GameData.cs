@@ -11,7 +11,7 @@ public static class GameData : System.Object
     {
         #region Default states
         
-        _rank = 0;
+        _rank = 1;
         _money = 0;
         _upgradeLevelBoots = 1;
         _upgradeLevelSword = 1;

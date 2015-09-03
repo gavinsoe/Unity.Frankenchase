@@ -221,7 +221,8 @@ public class MonsterController : MonoBehaviour {
         if (curHealth <= 0)
         {
             // Kill it somehow
-            //NavigationManager.instance.GameOver();
+            Game.instance.LootMoney(selectedMonster.GetGold());
+            NavigationManager.instance.Victory();
         }
 
         // Slightly push/stagger monster away when attacked
