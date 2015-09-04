@@ -24,8 +24,8 @@ public static class Boots : System.Object
     private static void Update()
     {
         speed = 4 + ((GameData.upgradeLevelBoots - 1) * 0.315f);
-        resistance = (GameData.upgradeLevelBoots - 1) * 3;
-        upgradeCost = Mathf.RoundToInt(50 * Mathf.Pow(1.215f, (float)GameData.upgradeLevelWhip));
+        resistance = ((GameData.upgradeLevelBoots - 1) * 3) / 100;
+        upgradeCost = Mathf.RoundToInt(50 * Mathf.Pow(1.215f, (float)GameData.upgradeLevelBoots));
     }
 
     public static void Upgrade()

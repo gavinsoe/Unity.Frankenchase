@@ -54,6 +54,13 @@ public class GUITitleScreen : GUIBaseClass
     private GameObject CrossbowLevelObject;
     private Text CrossbowLevel;
 
+    [SerializeField]
+    private GameObject BootsUpgradeCostObject;
+    private Text BootsUpgradeCost;
+    [SerializeField]
+    private GameObject BootsLevelObject;
+    private Text BootsLevel;
+
     void Awake()
     {
         // make sure there is only 1 instance of this class.
@@ -82,6 +89,9 @@ public class GUITitleScreen : GUIBaseClass
 
         CrossbowUpgradeCost = CrossbowUpgradeCostObject.GetComponent<Text>();
         CrossbowLevel = CrossbowLevelObject.GetComponent<Text>();
+
+        BootsUpgradeCost = BootsUpgradeCostObject.GetComponent<Text>();
+        BootsLevel = BootsLevelObject.GetComponent<Text>();
     }
 
     void Start()
@@ -114,6 +124,7 @@ public class GUITitleScreen : GUIBaseClass
     public void Update()
     {
         UpdateWeaponLevel();
+        UpdateBootsLevel();
         UpdateRank();
     }
 
@@ -130,6 +141,12 @@ public class GUITitleScreen : GUIBaseClass
         CrossbowUpgradeCost.text = Game.instance.weaponArsenal[Constants.weapon_crossbow]
                                        .upgradeCost.ToString();
         CrossbowLevel.text = GameData.upgradeLevelCrossbow.ToString();
+    }
+
+    public void UpdateBootsLevel()
+    {
+        BootsUpgradeCost.text = Boots.upgradeCost.ToString();
+        BootsLevel.text = GameData.upgradeLevelBoots.ToString();
     }
 
     public void UpdateRank()
@@ -186,6 +203,12 @@ public class GUITitleScreen : GUIBaseClass
     public void upgradeWeapon(string weapon_id)
     {
         Game.instance.GetEquippedWeapon().Upgrade();
+        GUIMoney.instance.UpdateGold();
+    }
+
+    public void upgradeBoots()
+    {
+        Boots.Upgrade();
         GUIMoney.instance.UpdateGold();
     }
 }

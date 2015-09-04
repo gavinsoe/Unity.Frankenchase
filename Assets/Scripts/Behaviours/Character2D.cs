@@ -297,8 +297,9 @@ public class Character2D : MonoBehaviour
         animSlow.SetBool("Slowed", true);
         profSpriteRenderer.material.SetColor("_Color", new Color(0.5f, 0.74f, 0.47f, 1f));
 
+        var reducedDuration = duration - (duration * Boots.resistance);
         CancelInvoke("RemoveSlow");
-        Invoke("RemoveSlow", duration);
+        Invoke("RemoveSlow", reducedDuration);
     }
 
     private void RemoveSlow()
@@ -317,8 +318,9 @@ public class Character2D : MonoBehaviour
         anim.SetBool("Stunned", true);
         move = 0;
 
+        var reducedDuration = duration - (duration * Boots.resistance);
         CancelInvoke("RemoveStun");
-        Invoke("RemoveStun", duration);
+        Invoke("RemoveStun", reducedDuration);
     }
 
     private void RemoveStun()
