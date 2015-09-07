@@ -136,7 +136,7 @@ public class MonsterController : MonoBehaviour {
     public void Kill()
     {
         paused = true;
-        anim.enabled = false;
+        //anim.enabled = false;
         body.isKinematic = true;
         body.Sleep();
     }
@@ -218,7 +218,8 @@ public class MonsterController : MonoBehaviour {
         text.GetComponentInChildren<Text>().text = damage.ToString();
         curHealth -= damage;
 
-        if (curHealth <= 0)
+        anim.SetFloat("Health", curHealth / maxHealth);
+        if (curHealth < 0)
         {
             // Kill it somehow
             Game.instance.LootMoney(selectedMonster.GetGold());

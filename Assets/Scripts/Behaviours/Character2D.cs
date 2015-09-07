@@ -163,6 +163,7 @@ public class Character2D : MonoBehaviour
     }
 
     #region Attack related
+
     public void Attack(GameObject target)
     {
         // Attacks everytime something is in range (no cooldown time)

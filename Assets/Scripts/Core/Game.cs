@@ -103,7 +103,8 @@ public class Game : MonoBehaviour
 
         SoomlaLevelUp.GetLevel(Constants.lvlup_level_main).End(true);
 
-        GameData.rank -= 1;
+        if (GameData.rank > 1) GameData.rank -= 1;
+        
     }
 
     public void Victory()

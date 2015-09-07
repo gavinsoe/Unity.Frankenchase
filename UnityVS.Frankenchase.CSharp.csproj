@@ -112,8 +112,6 @@
     <Compile Include="Assets\Scripts\StateMachineBehavior\SetAimToFalse.cs" />
     <Compile Include="Assets\Scripts\StateMachineBehavior\SpawnRam.cs" />
     <Compile Include="Assets\Scripts\Triggers\CreepSpawner.cs" />
-    <Compile Include="Assets\Scripts\Triggers\DestroyAfterAnimation.cs" />
-    <Compile Include="Assets\Scripts\Triggers\DestroyOnHoldPhase.cs" />
     <Compile Include="Assets\Scripts\Triggers\Destroyer.cs" />
     <Compile Include="Assets\Scripts\Triggers\GameEvents.cs" />
     <Compile Include="Assets\Scripts\Triggers\Spawner.cs" />

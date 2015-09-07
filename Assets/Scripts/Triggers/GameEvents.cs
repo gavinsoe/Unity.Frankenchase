@@ -71,16 +71,7 @@ public class GameEvents : MonoBehaviour
         }
         else if (effect.type == EffectType.Attack)
         {
-            // Temporarily change to do damage
-            //MonsterController.instance.TakeDamage(100);
             Character2D.instance.Attack(gameObject);
-
-            /*
-            // Trigger the holding phase
-            NavigationManager.instance.HoldingPhaseStart();
-            triggered = true;
-            if (destroyOnTrigger) Destroy(gameObject);
-             */
         }
     }
 
